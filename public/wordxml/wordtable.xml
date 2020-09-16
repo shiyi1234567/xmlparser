@@ -1,0 +1,259 @@
+WORD<?xml version="1.0" encoding="UTF-8"?>
+<Document>
+<Code Code="EMR090001" DisplayName="EMR090001 入院记录"/>
+<TemplateGUID>831650e5-21ce-4ddc-bb62-092fe3d92517</TemplateGUID>
+<TemplateType>Single</TemplateType>
+<TemplateProperty Code="Domain01" DisplayName="EMR090001 入院记录"/>
+<Title Code="" DisplayName="入院记录11111" NewDisplayName="入院记录11111">
+<TitleItems>
+</TitleItems>
+</Title>
+<StructuredBody>
+<MetaData Version="1" Editor="iEditor" Lang="zh-CN">
+<Component>
+<Section>
+<Code Code="Header" DisplayName="页眉" Instances="" BindKBBaseID="" BindKBName=""/>
+</Section>
+<Section>
+<Code Code="S002" DisplayName="主诉" Instances="0..1" BindKBBaseID="" BindKBName=""/>
+</Section>
+<Section>
+<Code Code="S003" DisplayName="现病史" Instances="0..1" BindKBBaseID="" BindKBName=""/>
+</Section>
+<Section>
+<Code Code="S004" DisplayName="既往史" Instances="0..1" BindKBBaseID="" BindKBName=""/>
+</Section>
+<Section>
+<Code Code="S005" DisplayName="个人史" Instances="0..1" BindKBBaseID="" BindKBName=""/>
+</Section>
+<Section>
+<Code Code="S010" DisplayName="家族史" Instances="0..1" BindKBBaseID="" BindKBName=""/>
+</Section>
+<Section>
+<Code Code="S011" DisplayName="体格检查" Instances="0..1" BindKBBaseID="" BindKBName=""/>
+</Section>
+<Section>
+<Code Code="S014" DisplayName="初步诊断" Instances="0..1" BindKBBaseID="" BindKBName=""/>
+</Section>
+</Component>
+</MetaData>
+<Scripts>
+</Scripts>
+<Medias>
+</Medias>
+<NInstanceData InstanceID="226||1" HappenDateTime="2020-07-17 10:08:39" DateTimeFormat="yyyy-MM-dd HH:mm:ss" TimeStamp="1594980519">
+<ScatterData>
+<Component>
+<Section>
+<Code Code="Header" DisplayName="页眉"/>
+<Text></Text>
+<StyleText></StyleText>
+</Section>
+<Section>
+<Code Code="S002" DisplayName="主诉"/>
+<Text>傻逼何二狗，傻逼何二狗，傻逼何二狗！</Text>
+<StyleText></StyleText>
+</Section>
+<Section>
+<Code Code="S003" DisplayName="现病史"/>
+<Text></Text>
+<StyleText></StyleText>
+</Section>
+<Section>
+<Code Code="S004" DisplayName="既往史"/>
+<Text></Text>
+<StyleText></StyleText>
+</Section>
+<Section>
+<Code Code="S005" DisplayName="个人史"/>
+<Text></Text>
+<StyleText></StyleText>
+</Section>
+<Section>
+<Code Code="S010" DisplayName="家族史"/>
+<Text></Text>
+<StyleText></StyleText>
+</Section>
+<Section>
+<Code Code="S011" DisplayName="体格检查"/>
+<Text></Text>
+<StyleText></StyleText>
+</Section>
+<Section>
+<Code Code="S014" DisplayName="初步诊断"/>
+<Text></Text>
+<StyleText></StyleText>
+</Section>
+</Component>
+</ScatterData>
+<abiword template="false" version="2.8.6" xmlns:svg="http://www.w3.org/2000/svg" xid-max="319" xmlns:dc="http://purl.org/dc/elements/1.1/" fileformat="1.1" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:awml="http://www.abisource.com/awml.dtd" xmlns="http://www.abisource.com/awml.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" props="dom-dir:ltr; document-footnote-restart-section:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-endnote-initial:1; lang:zh-CN; document-endnote-restart-section:0; document-footnote-restart-page:0; document-footnote-type:numeric; document-footnote-initial:1; document-endnote-place-endsection:0">
+<metadata>
+<m key="dc.format">application/x-abiword</m>
+<m key="abiword.generator">AbiWord</m>
+</metadata>
+<styles>
+<s type="P" name="Normal" basedon="" followedby="Current Settings" props="font-family:宋体; margin-top:0pt; font-variant:normal; margin-left:0pt; text-indent:0in; widows:2; font-style:normal; font-weight:normal; text-decoration:none; color:000000; line-height:1.5; text-align:justify; margin-bottom:0pt; text-position:normal; margin-right:0pt; bgcolor:transparent; font-size:12pt; font-stretch:normal"/>
+</styles>
+<pagesize pagetype="A4" orientation="portrait" width="210.000000" height="297.000000" units="mm" page-scale="1.000000"/>
+<section header="0" xid="105" props="page-margin-top:1.4799in">
+<p xid="106"></p>
+<p xid="69" props="text-align:left"><bookmark usage="1" type="start" name="226||1^S002" xid="70"/><c props="bgcolor:e0ecff; font-weight:bold; et:9; code:226||1^S002; display:inline; font-size:12pt">主诉</c><c props="display:inline; font-size:12pt">    </c><c props="display:inline; font-size:12pt"></c></p>
+<p xid="107" props="text-align:left"></p>
+<p xid="108" props="text-align:left"><bookmark usage="1" type="end" name="226||1^S002" xid="71"/></p>
+<p xid="72" props="text-align:left"><bookmark usage="1" type="start" name="226||1^S003" xid="73"/><c props="font-weight:bold; et:9; code:226||1^S003; display:inline; font-size:12pt">现病史</c></p>
+<p xid="138" props="text-align:left"></p>
+<table xid="200" props="list-tag:1">
+<cell xid="201" props="bot-attach:1; left-attach:0; right-attach:1; top-attach:0">
+<p xid="202" props="text-align:left"></p>
+</cell>
+<cell xid="204" props="bot-attach:1; left-attach:1; right-attach:2; top-attach:0">
+<p xid="205" props="text-align:left"></p>
+</cell>
+<cell xid="207" props="bot-attach:1; left-attach:2; right-attach:3; top-attach:0">
+<p xid="208" props="text-align:left"></p>
+</cell>
+<cell xid="210" props="left-attach:0; right-attach:1; bot-style:1; bot-attach:2; top-attach:1; right-style:1; left-style:1; bg-style:1; top-style:0">
+<p xid="211" props="text-align:left"></p>
+</cell>
+<cell xid="213" props="bot-attach:2; left-attach:1; right-attach:2; top-attach:1">
+<p xid="214" props="text-align:left"></p>
+</cell>
+<cell xid="216" props="bot-attach:2; left-attach:2; right-attach:3; top-attach:1">
+<p xid="217" props="text-align:left"></p>
+</cell>
+<cell xid="219" props="bot-attach:3; left-attach:0; right-attach:1; top-attach:2">
+<p xid="220" props="text-align:left"></p>
+</cell>
+<cell xid="222" props="bot-attach:3; left-attach:1; right-attach:2; top-attach:2">
+<p xid="223" props="text-align:left"></p>
+</cell>
+<cell xid="225" props="bot-attach:3; left-attach:2; right-attach:3; top-attach:2">
+<p xid="226" props="text-align:left"></p>
+</cell>
+</table>
+<p xid="139" props="text-align:left"><bookmark usage="1" type="end" name="226||1^S003" xid="74"/></p>
+<p xid="75" props="text-align:left"><bookmark usage="1" type="start" name="226||1^S004" xid="76"/><c props="font-weight:bold; et:9; code:226||1^S004; display:inline; font-size:12pt">既往史</c></p>
+<p xid="169" props="text-align:left"></p>
+<table xid="229" props="right-style:1; bg-style:1; left-style:1; bot-style:1; top-style:0; list-tag:1">
+<cell xid="230" props="bot-attach:1; left-attach:0; right-attach:1; top-attach:0">
+<p xid="231" props="text-align:left"></p>
+</cell>
+<cell xid="233" props="bot-attach:1; left-attach:1; right-attach:2; top-attach:0">
+<p xid="234" props="text-align:left"></p>
+</cell>
+<cell xid="236" props="bot-attach:1; left-attach:2; right-attach:3; top-attach:0">
+<p xid="237" props="text-align:left"></p>
+</cell>
+<cell xid="239" props="bot-attach:2; left-attach:0; right-attach:1; top-attach:1">
+<p xid="240" props="text-align:left"></p>
+</cell>
+<cell xid="242" props="bot-attach:2; left-attach:1; right-attach:2; top-attach:1">
+<p xid="243" props="text-align:left"></p>
+</cell>
+<cell xid="245" props="bot-attach:2; left-attach:2; right-attach:3; top-attach:1">
+<p xid="246" props="text-align:left"></p>
+</cell>
+<cell xid="248" props="bot-attach:3; left-attach:0; right-attach:1; top-attach:2">
+<p xid="249" props="text-align:left"></p>
+</cell>
+<cell xid="251" props="bot-attach:3; left-attach:1; right-attach:2; top-attach:2">
+<p xid="252" props="text-align:left"></p>
+</cell>
+<cell xid="254" props="bot-attach:3; left-attach:2; right-attach:3; top-attach:2">
+<p xid="255" props="text-align:left"></p>
+</cell>
+</table>
+<p xid="170" props="text-align:left"><bookmark usage="1" type="end" name="226||1^S004" xid="77"/></p>
+<p xid="78" props="text-align:left"><bookmark usage="1" type="start" name="226||1^S005" xid="79"/><c props="font-weight:bold; et:9; code:226||1^S005; display:inline; font-size:12pt">个人史</c></p>
+<p xid="258" props="text-align:left"></p>
+<table xid="260" props="right-style:1; bg-style:1; left-style:1; bot-style:1; top-style:0; list-tag:1">
+<cell xid="261" props="bot-attach:1; left-attach:0; right-attach:1; top-attach:0">
+<p xid="262" props="display:inline; font-size:12pt"></p>
+</cell>
+<cell xid="264" props="bot-attach:1; left-attach:1; right-attach:2; top-attach:0">
+<p xid="265" props="display:inline; font-size:12pt"></p>
+</cell>
+<cell xid="267" props="bot-attach:1; left-attach:2; right-attach:3; top-attach:0">
+<p xid="268" props="display:inline; font-size:12pt"></p>
+</cell>
+<cell xid="270" props="left-attach:0; right-attach:1; bot-style:1; bot-attach:2; top-attach:1; top-color:000000; right-style:1; left-style:1; bg-style:1; top-style:1">
+<p xid="271" props="display:inline; font-size:12pt"></p>
+</cell>
+<cell xid="273" props="bot-attach:2; left-attach:1; right-attach:2; top-attach:1">
+<p xid="274" props="display:inline; font-size:12pt"></p>
+</cell>
+<cell xid="276" props="bot-attach:2; left-attach:2; right-attach:3; top-attach:1">
+<p xid="277" props="display:inline; font-size:12pt"></p>
+</cell>
+<cell xid="279" props="bot-attach:3; left-attach:0; right-attach:1; top-attach:2">
+<p xid="280" props="display:inline; font-size:12pt"></p>
+</cell>
+<cell xid="282" props="bot-attach:3; left-attach:1; right-attach:2; top-attach:2">
+<p xid="283" props="display:inline; font-size:12pt"></p>
+</cell>
+<cell xid="285" props="bot-attach:3; left-attach:2; right-attach:3; top-attach:2">
+<p xid="286" props="display:inline; font-size:12pt"></p>
+</cell>
+</table>
+<p xid="259" props="text-align:left"><bookmark usage="1" type="end" name="226||1^S005" xid="80"/></p>
+<p xid="81" props="text-align:left"><bookmark usage="1" type="start" name="226||1^S010" xid="82"/><c props="font-weight:bold; et:9; code:226||1^S010; display:inline; font-size:12pt">家族史</c></p>
+<p xid="289" props="text-align:left"></p>
+<table xid="291" props="list-tag:1">
+<cell xid="292" props="bot-attach:1; left-attach:0; right-attach:1; top-attach:0">
+<p xid="293" props="display:inline; font-size:12pt"></p>
+</cell>
+<cell xid="295" props="bot-attach:1; left-attach:1; right-attach:2; top-attach:0">
+<p xid="296" props="display:inline; font-size:12pt"></p>
+</cell>
+<cell xid="298" props="bot-attach:1; left-attach:2; right-attach:3; top-attach:0">
+<p xid="299" props="display:inline; font-size:12pt"></p>
+</cell>
+<cell xid="301" props="left-attach:0; right-attach:1; bot-style:1; bot-attach:2; top-attach:1; top-color:000000; right-style:1; left-style:1; bg-style:1; top-style:0">
+<p xid="302" props="display:inline; font-size:12pt"></p>
+</cell>
+<cell xid="304" props="left-attach:1; right-attach:2; bot-style:1; bot-attach:2; top-attach:1; top-color:000000; right-style:1; left-style:1; bg-style:1; top-style:0">
+<p xid="305" props="display:inline; font-size:12pt"></p>
+</cell>
+<cell xid="307" props="left-attach:2; right-attach:3; bot-style:1; bot-attach:2; top-attach:1; top-color:000000; right-style:1; left-style:1; bg-style:1; top-style:0">
+<p xid="308" props="display:inline; font-size:12pt"></p>
+</cell>
+<cell xid="310" props="bot-attach:3; left-attach:0; right-attach:1; top-attach:2">
+<p xid="311" props="display:inline; font-size:12pt"></p>
+</cell>
+<cell xid="313" props="bot-attach:3; left-attach:1; right-attach:2; top-attach:2">
+<p xid="314" props="display:inline; font-size:12pt"></p>
+</cell>
+<cell xid="316" props="bot-attach:3; left-attach:2; right-attach:3; top-attach:2">
+<p xid="317" props="display:inline; font-size:12pt"></p>
+</cell>
+</table>
+<p xid="290" props="text-align:left"><bookmark usage="1" type="end" name="226||1^S010" xid="83"/></p>
+<p xid="84" props="text-align:left"><bookmark usage="1" type="start" name="226||1^S011" xid="85"/><c props="font-weight:bold; et:9; code:226||1^S011; display:inline; font-size:12pt">体格检查</c><bookmark usage="1" type="end" name="226||1^S011" xid="86"/></p>
+<p xid="87" props="text-align:left"><bookmark usage="1" type="start" name="226||1^S014" xid="88"/><c props="font-weight:bold; et:9; code:226||1^S014; display:inline; font-size:12pt">初步诊断</c></p>
+<p xid="90" props="text-align:left"><bookmark usage="1" type="end" name="226||1^S014" xid="89"/></p>
+</section>
+<section id="0" listid="0" parentid="0" type="header" xid="1">
+<p xid="2" props="text-align:left"></p>
+<table xid="8" props="table-row-heights:1.12cm/1.12cm/0.75cm/; list-tag:1; bg-style:1; left-color:000000; bot-style:0; table-column-props:5.37cm/7.87cm/4.00cm/; right-color:000000; top-color:000000; left-style:0; bot-color:000000; right-style:0; top-style:0">
+<cell xid="9" props="bot-attach:1; left-attach:0; right-attach:3; top-attach:0">
+<p style="Normal" xid="10" props="text-align:center"></p>
+</cell>
+<cell xid="18" props="bot-attach:2; left-attach:0; right-attach:3; top-attach:1">
+<p style="Normal" xid="19" props="text-align:center; tabstops:0.00cm/L0,17.48cm/L0; margin-right:-0.12cm"></p>
+</cell>
+<cell xid="27" props="bg-style:1; bot-style:1; bot-thickness:1.0pt; right-attach:1; left-thickness:1.0pt; right-thickness:1.0pt; top-color:000000; bot-color:000000; left-attach:0; top-style:0; right-style:0; left-style:0; top-thickness:1.0pt; bot-attach:3; top-attach:2">
+<p style="Normal" xid="28"></p>
+</cell>
+<cell xid="30" props="bg-style:1; bot-style:1; bot-thickness:1.0pt; right-attach:2; left-thickness:1.0pt; right-thickness:1.0pt; top-color:000000; bot-color:000000; left-attach:1; top-style:0; right-style:0; left-style:0; top-thickness:1.0pt; bot-attach:3; top-attach:2">
+<p style="Normal" xid="31" props="tabstops:14.74cm/L0,1.37cm/L0,6.74cm/L0; margin-right:0.00cm"></p>
+</cell>
+<cell xid="33" props="bg-style:1; bot-style:1; bot-thickness:1.0pt; right-attach:3; left-thickness:1.0pt; right-thickness:1.0pt; top-color:000000; bot-color:000000; left-attach:2; top-style:0; right-style:0; left-style:0; top-thickness:1.0pt; bot-attach:3; top-attach:2">
+<p style="Normal" xid="34" props="text-indent:0.00cm; tabstops:12.11cm/L0,11.24cm/L0,11.36cm/L0,11.61cm/L0; margin-left:0.00cm"></p>
+</cell>
+</table>
+<p xid="7" props="text-align:left; line-height:1pt"></p>
+</section>
+</abiword>
+</NInstanceData>
+</StructuredBody>
+</Document>

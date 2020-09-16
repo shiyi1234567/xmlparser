@@ -1,0 +1,1766 @@
+WORD<?xml version="1.0" encoding="UTF-8"?>
+<Document>
+<Code Code="EMR090001" DisplayName="EMR090001 入院记录"/>
+<TemplateGUID>c81d3f4e-5b7f-44c1-a618-f4cda305bc80</TemplateGUID>
+<TemplateType>Single</TemplateType>
+<TemplateProperty Code="Domain01" DisplayName="EMR090001 入院记录"/>
+<Title Code="" DisplayName="入院记录测试1" NewDisplayName="入院记录测试1">
+<TitleItems>
+</TitleItems>
+</Title>
+<StructuredBody>
+<MetaData Version="1" Editor="iEditor" Lang="zh-CN">
+<Component>
+<Section>
+<Code Code="Header" DisplayName="页眉" Instances="" BindKBBaseID="" BindKBName=""/>
+<Composite Virtual="True">
+<Code Code="V001" DisplayName="页眉" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+<SubItems>
+<MIString>
+<Code>L0001</Code>
+<SourceCode>L0001</SourceCode>
+<CCode>V001</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>姓名</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者基本信息.患者姓名[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetPatientInfo#FNAME:Name#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>V</ConfidentialityCode>
+<TabIndex>7</TabIndex>
+<Synch>True</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>False</AllowNull>
+<ReadOnly>True</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+<MIString>
+<Code>L0007</Code>
+<SourceCode>L0007</SourceCode>
+<CCode>V001</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>病案号</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者基本信息.住院病案号[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetPatientInfo#FNAME:IPRecordNo#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>V</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>True</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>False</AllowNull>
+<ReadOnly>True</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+<MIString>
+<Code>L0011</Code>
+<SourceCode>L0011</SourceCode>
+<CCode>V001</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>病区</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者出入院信息.当前病区[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetATDInfo#FNAME:CurWardDesc#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>True</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+<MIString>
+<Code>L0012</Code>
+<SourceCode>L0012</SourceCode>
+<CCode>V001</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>床号</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者出入院信息.当前床位[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetATDInfo#FNAME:CurBed#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>True</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+<MIString>
+<Code>L0010</Code>
+<SourceCode>L0010</SourceCode>
+<CCode>V001</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>科室</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者出入院信息.当前科室[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetATDInfo#FNAME:CurDeptDesc#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>True</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="Footer" DisplayName="页脚" Instances="" BindKBBaseID="" BindKBName=""/>
+</Section>
+<Section>
+<Code Code="S005" DisplayName="章节内容" Instances="0..1" BindKBBaseID="" BindKBName=""/>
+<Composite Virtual="True">
+<Code Code="V002" DisplayName="" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+<SubItems>
+<MILink>
+<Code>H0001</Code>
+<SourceCode>H0001</SourceCode>
+<CCode>V002</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>入院诊断</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者临床诊断信息.入院西医横排#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetClinicDiagInfo#FNAME:AdmDiagStringH#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>True</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<Url>{"name":"diagnoseRowV8","type":"C008"}</Url>
+<WriteBack>Replace</WriteBack>
+<AllowEdit>True</AllowEdit>
+</MILink>
+<MIString>
+<Code>L0016</Code>
+<SourceCode>L0016</SourceCode>
+<CCode>V002</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>总分</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+<MIDateTime>
+<Code>D0001</Code>
+<SourceCode>D0001</SourceCode>
+<CCode>V002</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>评估日期</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者出入院信息.当前系统日期[日期]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetATDInfo#FNAME:CurDate#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<DateFormat>yyyy年MM月dd日</DateFormat>
+<TimeFormat>HH:mm</TimeFormat>
+<BenchMarkTime>2020-08-12</BenchMarkTime>
+<PreSelect></PreSelect>
+<NextSelect></NextSelect>
+<IncludeDate>True</IncludeDate>
+<IncludeTime>False</IncludeTime>
+</MIDateTime>
+<MIMonoChoice>
+<Code>O0001</Code>
+<SourceCode>O0001</SourceCode>
+<CCode>V002</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>年龄</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType>CheckBox</ShowType>
+<Choices>
+<Choice Code="1" DisplayName="10-30岁" OriginalDisplayName="10-30岁"/>
+<Choice Code="2" DisplayName="31-40岁" OriginalDisplayName="31-40岁"/>
+<Choice Code="3" DisplayName="41-50岁" OriginalDisplayName="41-50岁"/>
+<Choice Code="4" DisplayName="51-60岁" OriginalDisplayName="51-60岁"/>
+<Choice Code="5" DisplayName="61-70岁" OriginalDisplayName="61-70岁"/>
+<Choice Code="6" DisplayName="70岁以上" OriginalDisplayName="70岁以上"/>
+</Choices>
+</MIMonoChoice>
+<MIMonoChoice>
+<Code>O0002</Code>
+<SourceCode>O0002</SourceCode>
+<CCode>V002</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>体重指数</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType>CheckBox</ShowType>
+<Choices>
+<Choice Code="1" DisplayName="低体重 ＜18.5" OriginalDisplayName="低体重 ＜18.5"/>
+<Choice Code="2" DisplayName="平均体重 18.5-22.9" OriginalDisplayName="平均体重 18.5-22.9"/>
+<Choice Code="3" DisplayName="超重 23.4-24.9" OriginalDisplayName="超重 23.4-24.9"/>
+<Choice Code="4" DisplayName="肥胖 25.0-29.9" OriginalDisplayName="肥胖 25.0-29.9"/>
+<Choice Code="5" DisplayName="过度肥胖 ≥30" OriginalDisplayName="过度肥胖 ≥30"/>
+</Choices>
+</MIMonoChoice>
+<MIMonoChoice>
+<Code>O0003</Code>
+<SourceCode>O0003</SourceCode>
+<CCode>V002</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>活动</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType>CheckBox</ShowType>
+<Choices>
+<Choice Code="1" DisplayName="自由活动" OriginalDisplayName="自由活动"/>
+<Choice Code="2" DisplayName="自行使用助行工具" OriginalDisplayName="自行使用助行工具"/>
+<Choice Code="3" DisplayName="需要他人协助" OriginalDisplayName="需要他人协助"/>
+<Choice Code="4" DisplayName="使用轮椅" OriginalDisplayName="使用轮椅"/>
+<Choice Code="5" DisplayName="绝对卧床" OriginalDisplayName="绝对卧床"/>
+</Choices>
+</MIMonoChoice>
+<MIMultiChoice>
+<Code>M0001</Code>
+<SourceCode>M0001</SourceCode>
+<CCode>V002</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>创伤风险</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType>CheckBox</ShowType>
+<Choices>
+<Choice Code="1" DisplayName="头部受伤" OriginalDisplayName="头部受伤"/>
+<Choice Code="2" DisplayName="胸部受伤" OriginalDisplayName="胸部受伤"/>
+<Choice Code="3" DisplayName="脊柱受伤" OriginalDisplayName="脊柱受伤"/>
+<Choice Code="4" DisplayName="盆骨受伤" OriginalDisplayName="盆骨受伤"/>
+<Choice Code="5" DisplayName="下肢受伤" OriginalDisplayName="下肢受伤"/>
+</Choices>
+</MIMultiChoice>
+<MIMultiChoice>
+<Code>M0002</Code>
+<SourceCode>M0002</SourceCode>
+<CCode>V002</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>特殊风险</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType>CheckBox</ShowType>
+<Choices>
+<Choice Code="1" DisplayName="20-35岁" OriginalDisplayName="20-35岁"/>
+<Choice Code="2" DisplayName="35岁以上" OriginalDisplayName="35岁以上"/>
+<Choice Code="3" DisplayName="激素治疗" OriginalDisplayName="激素治疗"/>
+<Choice Code="4" DisplayName="怀孕/产褥期" OriginalDisplayName="怀孕/产褥期"/>
+<Choice Code="5" DisplayName="血栓形成" OriginalDisplayName="血栓形成"/>
+</Choices>
+</MIMultiChoice>
+<MIMultiChoice>
+<Code>M0003</Code>
+<SourceCode>M0003</SourceCode>
+<CCode>V002</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>高危疾病</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType>CheckBox</ShowType>
+<Choices>
+<Choice Code="1" DisplayName="溃疡性结肠炎" OriginalDisplayName="溃疡性结肠炎"/>
+<Choice Code="2" DisplayName="红细胞增多症" OriginalDisplayName="红细胞增多症"/>
+<Choice Code="3" DisplayName="静脉曲张" OriginalDisplayName="静脉曲张"/>
+<Choice Code="4" DisplayName="慢性心脏病" OriginalDisplayName="慢性心脏病"/>
+<Choice Code="5" DisplayName="急性心肌梗死" OriginalDisplayName="急性心肌梗死"/>
+<Choice Code="6" DisplayName="恶性肿瘤" OriginalDisplayName="恶性肿瘤"/>
+<Choice Code="7" DisplayName="脑血管疾病" OriginalDisplayName="脑血管疾病"/>
+<Choice Code="8" DisplayName="静脉栓塞病史" OriginalDisplayName="静脉栓塞病史"/>
+</Choices>
+</MIMultiChoice>
+<MIMultiChoice>
+<Code>M0004</Code>
+<SourceCode>M0004</SourceCode>
+<CCode>V002</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>预防措施</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType>CheckBox</ShowType>
+<Choices>
+<Choice Code="1" DisplayName="分级弹力袜" OriginalDisplayName="分级弹力袜"/>
+<Choice Code="2" DisplayName="抗血栓袜" OriginalDisplayName="抗血栓袜"/>
+<Choice Code="3" DisplayName="下肢静脉泵" OriginalDisplayName="下肢静脉泵"/>
+<Choice Code="4" DisplayName="抬高下肢20°" OriginalDisplayName="抬高下肢20°"/>
+<Choice Code="5" DisplayName="每2h翻身,主动屈伸下肢" OriginalDisplayName="每2h翻身,主动屈伸下肢"/>
+<Choice Code="6" DisplayName="其他" OriginalDisplayName="其他"/>
+</Choices>
+</MIMultiChoice>
+<MIMonoChoice>
+<Code>O0004</Code>
+<SourceCode>O0004</SourceCode>
+<CCode>V002</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>外科手术</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType>CheckBox</ShowType>
+<Choices>
+<Choice Code="1" DisplayName="无" OriginalDisplayName="无"/>
+<Choice Code="11" DisplayName="小手术＜30min" OriginalDisplayName="小手术＜30min"/>
+<Choice Code="21" DisplayName="择期大手术" OriginalDisplayName="择期大手术"/>
+<Choice Code="31" DisplayName="急诊大手术" OriginalDisplayName="急诊大手术"/>
+<Choice Code="32" DisplayName="胸部手术" OriginalDisplayName="胸部手术"/>
+<Choice Code="33" DisplayName="腹部手术" OriginalDisplayName="腹部手术"/>
+<Choice Code="34" DisplayName="泌尿系手术" OriginalDisplayName="泌尿系手术"/>
+<Choice Code="35" DisplayName="神经系统手术" OriginalDisplayName="神经系统手术"/>
+<Choice Code="36" DisplayName="妇科手术" OriginalDisplayName="妇科手术"/>
+<Choice Code="41" DisplayName="骨科（腰部以下）手术" OriginalDisplayName="骨科（腰部以下）手术"/>
+</Choices>
+</MIMonoChoice>
+<MIMonoChoice>
+<Code>O0005</Code>
+<SourceCode>O0005</SourceCode>
+<CCode>V002</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>单选下拉</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType></ShowType>
+<Choices>
+<Choice Code="0" DisplayName="单选下拉" OriginalDisplayName="单选下拉"/>
+<Choice Code="1" DisplayName="单选拉" OriginalDisplayName="单选拉"/>
+<Choice Code="2" DisplayName="单选下" OriginalDisplayName="单选下"/>
+<Choice Code="3" DisplayName="单下" OriginalDisplayName="单下"/>
+</Choices>
+</MIMonoChoice>
+<MIMultiChoice>
+<Code>M0005</Code>
+<SourceCode>M0005</SourceCode>
+<CCode>V002</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>多选下拉</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType></ShowType>
+<Choices>
+<Choice Code="0" DisplayName="多选下拉" OriginalDisplayName="多选下拉"/>
+<Choice Code="1" DisplayName="多选拉" OriginalDisplayName="多选拉"/>
+<Choice Code="2" DisplayName="多选下" OriginalDisplayName="多选下"/>
+<Choice Code="3" DisplayName="多下" OriginalDisplayName="多下"/>
+</Choices>
+</MIMultiChoice>
+<MIConcept>
+<Code>V003</Code>
+<DisplayName></DisplayName>
+<Description></Description>
+<AllowInput>False</AllowInput>
+<FixedStructs>True</FixedStructs>
+<Attributes>
+<SignatureLevel>Check</SignatureLevel>
+<SignDisplayName>医师签名</SignDisplayName>
+</Attributes>
+<SubItems>
+<Attribute><KeyWord></KeyWord>
+<AbnormalColor></AbnormalColor>
+<TextPosition></TextPosition>
+<Major>False</Major>
+<RefElement><MIString>
+<Code>L0017</Code>
+<SourceCode>L0017</SourceCode>
+<CCode>V002</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>医师签名</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>Resident</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<SignerId>10209</SignerId>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+</RefElement>
+</Attribute>
+</SubItems>
+</MIConcept>
+</SubItems>
+</Composite>
+</Section>
+</Component>
+</MetaData>
+<Scripts>
+<Script ID="d2946b84-1b3b-4d60-9dc1-ecc7dccb3f76" DisplayName="" Name="S005_V002_D0001" Object="MIElement" Scope="Document" Lang="lua" Event="modified" >
+local cmd = luaGetEditorCommand(); 
+if cmd == nil then     
+        return; 
+end;  
+local objDocument = cmd:GetActiveDocument();  
+if objDocument == nil then       
+        return;
+end;
+local s001value=0;
+local s002value=0;
+local s003value=0;
+local s004value=0;
+local s005value=0;
+local s006value=0;
+local s007value=0;
+--s001
+local objs001 = objDocument:getElementByPath('S005_V002_O0001');  
+if objs001 == nil then       
+        return; 
+end;  
+local objs001Value = objs001:getInstanceData();  
+if  objs001Value == nil then      
+        return; 
+end;
+local s001value= objs001Value:getValueCode();
+--IFxModuleCenter.MsgBox('1结果', '['..s001value..']', IFxModuleCenter.MB_OK);
+--s002
+local objs002 = objDocument:getElementByPath('S005_V002_O0002');  
+if objs002 == nil then       
+        return; 
+end;  
+local objs002Value = objs002:getInstanceData();  
+if  objs002Value == nil then      
+        return; 
+end;
+local s002value= objs002Value:getValueCode();
+--IFxModuleCenter.MsgBox('2结果', '['..s002value..']', IFxModuleCenter.MB_OK);
+--s003
+local objs003 = objDocument:getElementByPath('S005_V002_O0003');  
+if objs003 == nil then       
+        return; 
+end;  
+local objs003Value = objs003:getInstanceData();  
+if  objs003Value == nil then      
+        return; 
+end;
+local s003value= objs003Value:getValueCode();
+--IFxModuleCenter.MsgBox('3结果', '['..s003value..']', IFxModuleCenter.MB_OK);
+--s004
+local objs004 = objDocument:getElementByPath('S005_V002_O0004');  
+if objs004 == nil then       
+        return; 
+end;  
+local objs004Value = objs004:getInstanceData();  
+if  objs004Value == nil then      
+        return; 
+end;
+local s004value= objs004Value:getValueCode();
+--IFxModuleCenter.MsgBox('4结果', '['..s004value..']', IFxModuleCenter.MB_OK);
+--s005
+local objs005 = objDocument:getElementByPath('S005_V002_O0005');  
+if objs005 == nil then       
+        return; 
+end;  
+local objs005Value = objs005:getInstanceData();  
+if  objs005Value == nil then      
+        return; 
+end;
+local s005value= objs005Value:getValueCode();
+--IFxModuleCenter.MsgBox('5结果', '['..s005value..']', IFxModuleCenter.MB_OK);
+--s006
+local objs006 = objDocument:getElementByPath('S005_V002_O0006');  
+if objs006 == nil then       
+        return; 
+end;  
+local objs006Value = objs006:getInstanceData();  
+if  objs006Value == nil then      
+        return; 
+end;
+local s006value= objs006Value:getValueCode();
+--IFxModuleCenter.MsgBox('6结果', '['..s006value..']', IFxModuleCenter.MB_OK);
+--s007
+local objs007 = objDocument:getElementByPath('S005_V002_O0007');  
+if objs007 == nil then       
+        return; 
+end;  
+local objs007Value = objs007:getInstanceData();  
+if  objs007Value == nil then      
+        return; 
+end;
+local s007value= objs007Value:getValueCode();
+--IFxModuleCenter.MsgBox('7结果', '['..s007value..']', IFxModuleCenter.MB_OK);
+local BMIscore=tonumber(s001value)+tonumber(s002value)+tonumber(s003value)+tonumber(s004value)+tonumber(s005value)+tonumber(s006value)+tonumber(s007value)
+IFxModuleCenter.MsgBox('总分', '['..BMIscore..']', IFxModuleCenter.MB_OK);
+cmd: SetElementDisplayName(tostring(BMIscore),'S005_V002_L0016','');
+</Script>
+<Script ID="fe64f296-3b4d-4074-8c6c-380aad0fb1f9" DisplayName="算分" Name="S005_V002_O0001" Object="MIElement" Scope="Document" Lang="lua" Event="modified" >
+GetScore();
+</Script>
+<Script ID="64e41f09-3421-4e0d-8751-4107ff9b755e" DisplayName="算分" Name="S005_V002_O0002" Object="MIElement" Scope="Document" Lang="lua" Event="modified" >
+GetScore();
+</Script>
+<Script ID="4b1604a6-aca8-4acb-b78f-e235b679c20b" DisplayName="算分" Name="S005_V002_O0003" Object="MIElement" Scope="Document" Lang="lua" Event="modified" >
+GetScore();
+</Script>
+<Script ID="e4198fa2-3a1a-4c49-bbc1-b845af627453" DisplayName="算分" Name="S005_V002_M0001" Object="MIElement" Scope="Document" Lang="lua" Event="modified" >
+GetScore();
+</Script>
+<Script ID="df55695a-e852-4ecd-bda2-abad0305b63e" DisplayName="算分" Name="S005_V002_M0002" Object="MIElement" Scope="Document" Lang="lua" Event="modified" >
+GetScore();
+</Script>
+<Script ID="f1a7a5d8-7911-43b8-a67c-9165f8d489c5" DisplayName="算分" Name="S005_V002_M0003" Object="MIElement" Scope="Document" Lang="lua" Event="modified" >
+GetScore();
+</Script>
+<Script ID="c68e28dd-728e-4696-895b-fe902576f657" DisplayName="算分" Name="S005_V002_O0004" Object="MIElement" Scope="Document" Lang="lua" Event="modified" >
+GetScore();
+</Script>
+<Script ID="46de1fe2-1040-493c-add6-0c18e25e2ff5" DisplayName="IsNotNum" Name="" Object="Document" Scope="Document" Lang="lua" Event="NONE" Register="True">
+function GetScore()
+local cmd = luaGetEditorCommand();  
+if cmd == nil then      
+	return;  
+end;   
+local objDocument = cmd:GetActiveDocument();   
+if objDocument == nil then        
+	return; 
+end;
+-- 初始化数据项
+-- 年龄项
+local ageItem=0;
+-- 体重指数项
+local weightItem=0;
+-- 活动项
+local moveItem=0;
+-- 外科手术项
+local operationItem=0;
+-- 创伤风险项
+local traumaItem=0;
+-- 特殊风险项
+local specialItem=0;
+-- 高危疾病项
+local illnessItem=0;
+-- 年龄项
+local obAge = objDocument:getElementByPath('S005_V002_O0001');   
+if obAge == nil then        
+   
+else   
+	local obAgeValue = obAge:getInstanceData();   
+	if  obAgeValue == nil then  
+            
+	else	
+		ageItem= obAgeValue:getValueCode()-1;
+	end;
+end;
+-- 体重项
+local obWeight = objDocument:getElementByPath('S005_V002_O0002');   
+if obWeight == nil then        
+       
+else   
+	local obWeightValue = obWeight:getInstanceData();   
+	if  obWeightValue == nil then     
+        
+	else	
+		weightItem= obWeightValue:getValueCode()-1;
+	end;
+end;
+--  活动项
+local obMove = objDocument:getElementByPath('S005_V002_O0003');   
+if obMove == nil then        
+    
+else   
+	local obMoveValue = obMove:getInstanceData();   
+	if  obMoveValue == nil then   
+ 
+	else	
+		moveItem= obMoveValue:getValueCode()-1;
+	end;
+end;
+-- 外科手术项
+local obOperation = objDocument:getElementByPath('S005_V002_O0004');   
+if obOperation == nil then        
+    
+else   
+	local obOperationValue = obOperation:getInstanceData();   
+	if  obOperationValue == nil then   
+ 
+	else	
+		local tempStr=obOperationValue:getValueCode();
+		if tempStr==&quot;1&quot; then
+			operationItem=0;
+		else
+			local tempNum=tonumber(tempStr)
+			operationItem=(tempNum-(tempNum%10))/10;
+		end;
+	end;
+end;
+-- 多选项的算分
+-- 创伤风险
+local trauma=&quot;&quot;;
+local obTrauma = objDocument:getElementByPath('S005_V002_M0001');   
+if obTrauma == nil then
+else   
+    local obTraumaValue = obTrauma:getInstanceData();   
+    if  obTraumaValue == nil then            
+    else
+        trauma= obTraumaValue:getData();
+		-- IFxModuleCenter.MsgBox('结果', '['..trauma..']', IFxModuleCenter.MB_OK);
+		if string.find(trauma,&quot;头部受伤&quot;) then
+		traumaItem=traumaItem+0
+		end;
+		if string.find(trauma,&quot;胸部受伤&quot;) then
+		traumaItem=traumaItem+1
+		end;
+		if string.find(trauma,&quot;脊柱受伤&quot;) then
+		traumaItem=traumaItem+2
+		end;
+		if string.find(trauma,&quot;盆骨受伤&quot;) then
+		traumaItem=traumaItem+3
+		end;
+		if string.find(trauma,&quot;下肢受伤&quot;) then
+		traumaItem=traumaItem+4
+		end;
+        -- IFxModuleCenter.MsgBox('结果', '['..traumaItem..']', IFxModuleCenter.MB_OK);
+		trauma=&quot;&quot;
+	end;
+end;
+-- 特殊风险项
+local special=&quot;&quot;;
+local obSpecial = objDocument:getElementByPath('S005_V002_M0002');   
+if obSpecial == nil then
+else   
+    local obSpecialValue = obSpecial:getInstanceData();   
+    if  obSpecialValue == nil then            
+    else
+        special= obSpecialValue:getData();
+		if string.find(special,&quot;20-35岁&quot;) then
+		specialItem=specialItem+0
+		end;
+		if string.find(special,&quot;35岁以上&quot;) then
+		specialItem=specialItem+1
+		end;
+		if string.find(special,&quot;激素治疗&quot;) then
+		specialItem=specialItem+2
+		end;
+		if string.find(special,&quot;怀孕/产褥期&quot;) then
+		specialItem=specialItem+3
+		end;
+		if string.find(special,&quot;血栓形成&quot;) then
+		specialItem=specialItem+4
+		end;
+		special=&quot;&quot;
+	end;
+end;
+-- 高危疾病项
+local illness=&quot;&quot;;
+local obIllness = objDocument:getElementByPath('S005_V002_M0003');   
+if obIllness == nil then
+else   
+    local obIllnessValue = obIllness:getInstanceData();   
+    if  obIllnessValue == nil then            
+    else
+        illness= obIllnessValue:getData();
+		if string.find(illness,&quot;溃疡性结肠炎&quot;) then
+		illnessItem=illnessItem+1
+		end;
+		if string.find(illness,&quot;红细胞增多症&quot;) then
+		illnessItem=illnessItem+2
+		end;
+		if string.find(illness,&quot;静脉曲张&quot;) then
+		illnessItem=illnessItem+3
+		end;
+		if string.find(illness,&quot;慢性心脏病&quot;) then
+		illnessItem=illnessItem+3
+		end;
+		if string.find(illness,&quot;急性心肌梗死&quot;) then
+		illnessItem=illnessItem+4
+		end;
+		if string.find(illness,&quot;恶性肿瘤&quot;) then
+		illnessItem=illnessItem+5
+		end;
+		if string.find(illness,&quot;脑血管疾病&quot;) then
+		illnessItem=illnessItem+6
+		end;
+		if string.find(illness,&quot;静脉栓塞病史&quot;) then
+		illnessItem=illnessItem+7
+		end;
+		illness=&quot;&quot;
+	end;
+end;
+local TotalScore=1*(tonumber(ageItem)+tonumber(weightItem)+tonumber(moveItem)+tonumber(operationItem)+tonumber(traumaItem)+tonumber(specialItem)+tonumber(illnessItem))
+--精确2位小数
+cmd: SetElementDisplayName(tostring(TotalScore),'S005_V002_L0016','');
+end;
+</Script>
+</Scripts>
+<Medias>
+</Medias>
+<NInstanceData InstanceID="230||1" HappenDateTime="2020-08-12 09:55:10" DateTimeFormat="yyyy-MM-dd HH:mm:ss" TimeStamp="1597226110">
+<ScatterData>
+<Component>
+<Section>
+<Code Code="Header" DisplayName="页眉"/>
+<Text></Text>
+<StyleText></StyleText>
+<Composite>
+<Code Code="V001" DisplayName="页眉" KBNodeID="" BindKBBaseID=""/>
+<Text></Text>
+<StyleText></StyleText>
+<SubItems>
+<MIString>
+<Code Code="L0001" SourceCode="L0001"  CCode="V001"  KBNodeID="" DisplayName="姓名"/>
+<Value>花花</Value>
+</MIString>
+<MIString>
+<Code Code="L0007" SourceCode="L0007"  CCode="V001"  KBNodeID="" DisplayName="病案号"/>
+<Value>100019</Value>
+</MIString>
+<MIString>
+<Code Code="L0011" SourceCode="L0011"  CCode="V001"  KBNodeID="" DisplayName="病区"/>
+<Value>内分泌科护理单元</Value>
+</MIString>
+<MIString>
+<Code Code="L0012" SourceCode="L0012"  CCode="V001"  KBNodeID="" DisplayName="床号"/>
+<Value>04</Value>
+</MIString>
+<MIString>
+<Code Code="L0010" SourceCode="L0010"  CCode="V001"  KBNodeID="" DisplayName="科室"/>
+<Value>内分泌科</Value>
+</MIString>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="Footer" DisplayName="页脚"/>
+<Text></Text>
+<StyleText></StyleText>
+</Section>
+<Section>
+<Code Code="S005" DisplayName="章节内容"/>
+<Text>诊断:选中删除增加选中多版本测试
+单选下拉   多选下拉
+
+年龄(岁)
+
+分值
+  体重指数(BMI)
+体重(kg)/身高(m)2
+
+分值
+
+活动
+
+分值
+
+0
+      
+0
+自由活动         
+0
+31-40岁 
+1
+ 
+1
+ 
+
+ 
+2
+     
+2
+     
+2
+ 
+3
+     
+3
+         
+3
+ 
+4
+      
+4
+         
+4
+  
+5
+
+
+评估指引
+创伤风险(术前评分项目)
+分值
+特殊风险
+分值
+分值范围 危险等级
+  
+0
+ 口服避孕药：
+
+≤6   无风险
+  
+1
+      
+0
+7-10  低风险
+  
+2
+   
+1
+10-14 中风险
+
+3
+   
+2
+≥15  高风险
+  
+4
+
+3
+评估时机
+ 
+
+   
+4
+①高风险人群入院24h、手术后患者即时完成；
+②≥15者根据活动内容的改变即时评估，(至少每三天一次)
+③＜14分者每周评估一次
+
+高危疾病
+
+分值
+外科手术
+(只选择一个合适的手术)
+
+分值
+    
+1
+无         
+0
+    
+2
+  
+1
+        
+3
+     
+2
+        
+3
+     
+3
+预防深静脉血栓的措施:
+     
+4
+       
+3
+  
+  
+  
+  
+  
+  
+      
+5
+       
+3
+              
+6
+     
+3
+            
+7
+   
+3
+
+
+       
+3
+
+4
+评估总分：
+0
+评估医生：医生01       评估日期：2020年08月12日</Text>
+<StyleText></StyleText>
+<Composite>
+<Code Code="V002" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+<Text>诊断:选中删除增加选中多版本测试
+单选下拉   多选下拉
+
+年龄(岁)
+
+分值
+  体重指数(BMI)
+体重(kg)/身高(m)2
+
+分值
+
+活动
+
+分值
+
+0
+      
+0
+自由活动         
+0
+31-40岁 
+1
+ 
+1
+ 
+
+ 
+2
+     
+2
+     
+2
+ 
+3
+     
+3
+         
+3
+ 
+4
+      
+4
+         
+4
+  
+5
+
+
+评估指引
+创伤风险(术前评分项目)
+分值
+特殊风险
+分值
+分值范围 危险等级
+  
+0
+ 口服避孕药：
+
+≤6   无风险
+  
+1
+      
+0
+7-10  低风险
+  
+2
+   
+1
+10-14 中风险
+
+3
+   
+2
+≥15  高风险
+  
+4
+
+3
+评估时机
+ 
+
+   
+4
+①高风险人群入院24h、手术后患者即时完成；
+②≥15者根据活动内容的改变即时评估，(至少每三天一次)
+③＜14分者每周评估一次
+
+高危疾病
+
+分值
+外科手术
+(只选择一个合适的手术)
+
+分值
+    
+1
+无         
+0
+    
+2
+  
+1
+        
+3
+     
+2
+        
+3
+     
+3
+预防深静脉血栓的措施:
+     
+4
+       
+3
+  
+  
+  
+  
+  
+  
+      
+5
+       
+3
+              
+6
+     
+3
+            
+7
+   
+3
+
+
+       
+3
+
+4
+评估总分：
+0
+评估医生：医生01       评估日期：2020年08月12日</Text>
+<StyleText></StyleText>
+<SubItems>
+<MILink>
+<Code Code="H0001" SourceCode="H0001"  CCode="V002"  KBNodeID="" DisplayName="入院诊断"/>
+<Value></Value>
+<Url>{"name":"diagnoseRowV8","type":"C008"}</Url>
+</MILink>
+<MIString>
+<Code Code="L0016" SourceCode="L0016"  CCode="V002"  KBNodeID="" DisplayName="总分"/>
+<Value>0</Value>
+</MIString>
+<MIDateTime>
+<Code Code="D0001" SourceCode="D0001"  CCode="V002"  KBNodeID="" DisplayName="评估日期"/>
+<Value>2020年08月12日</Value>
+<DateTimeFormat>yyyy年MM月dd日</DateTimeFormat>
+</MIDateTime>
+<MIConcept>
+<Code Code="V003" DisplayName=""/>
+<Text>医生01</Text>
+<StyleText></StyleText>
+<SubItems>
+<MIString>
+<Code Code="L0017" SourceCode="L0017"  CCode="V002"  KBNodeID="" DisplayName="医师签名"/>
+<Value>医生01</Value>
+</MIString>
+</SubItems>
+</MIConcept>
+<MIString>
+<Code Code="L0017"/>
+<Value>医生01</Value>
+</MIString>
+</SubItems>
+</Composite>
+</Section>
+</Component>
+</ScatterData>
+<abiword template="false" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:svg="http://www.w3.org/2000/svg" xid-max="1696" xmlns:dc="http://purl.org/dc/elements/1.1/" fileformat="1.1" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:awml="http://www.abisource.com/awml.dtd" xmlns="http://www.abisource.com/awml.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="2.8.6" xml:space="preserve" props="dom-dir:ltr; document-footnote-restart-section:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-endnote-initial:1; lang:zh-CN; document-endnote-restart-section:0; document-footnote-restart-page:0; document-footnote-type:numeric; document-footnote-initial:1; document-endnote-place-endsection:0">
+<metadata>
+<m key="dc.format">application/x-abiword</m>
+<m key="abiword.generator">AbiWord</m>
+</metadata>
+<revisions show="1" mark="1" show-level="0" auto="0">
+<r id="1" time-started="1597199280" version="0" revision-level="1" revision-key="10209">192.168.1.178(医生01)</r>
+<r id="2" time-started="1597742476" version="0" revision-level="1" revision-key="10209">192.168.1.177(医生01)</r>
+<r id="3" time-started="1597742500" version="0" revision-level="1" revision-key="10209">192.168.1.177(医生01)</r>
+</revisions>
+<styles>
+<s type="P" name="Normal" basedon="" followedby="Current Settings" props="font-family:宋体; margin-top:0pt; font-variant:normal; margin-left:0pt; text-indent:0in; widows:2; font-style:normal; font-weight:normal; text-decoration:none; color:000000; line-height:1.5; text-align:justify; margin-bottom:0pt; text-position:normal; margin-right:0pt; bgcolor:transparent; font-size:12pt; font-stretch:normal"/>
+<s type="C" name="Reference" props=""/>
+</styles>
+<pagesize pagetype="A4" orientation="portrait" width="210.000000" height="297.000000" units="mm" page-scale="1.000000"/>
+<writingpaper paperstyle="0" width="0" linestyle="3" linespace="20pt" color="#000000" vertalign="1" vertoffset="0"/>
+<section footer="1" header="0" xid="90" props="page-margin-footer:0.00cm; page-margin-header:0.00cm; page-margin-right:1.00cm; page-margin-left:1.00cm; page-margin-top:1.6549in; page-margin-bottom:1.00cm">
+<p xid="137" props="text-align:left; line-height:1.70"><bookmark usage="1" type="start" name="230||1^S005" xid="138"/><c props="bgcolor:e0ecff; et:9; font-weight:bold; display:none; code:230||1^S005">章节内容</c><bookmark usage="2" type="start" name="230||1^S005_V002" xid="807"/><c>诊断:</c><c props="bgcolor:c0c0c0; et:6; code:230||1^S005_V002_H0001">[入院诊断]</c><c revision="1">选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中选中删除增加选中</c><c revision="2">多版本测试</c></p>
+<p xid="1692" props="text-align:left; line-height:1.70"><c>单选下拉</c><c props="bgcolor:e0ecff; et:3; code:230||1^S005_V002_O0005">[单选下拉]</c><c>   多选下拉</c><c props="bgcolor:e0ecff; et:3; code:230||1^S005_V002_M0005">[多选下拉]</c></p>
+<table xid="198" props="table-column-props:5.00cm/1.12cm/5.25cm/1.00cm/4.87cm/1.62cm/; table-row-heights:1.37cm/0.75cm/0.75cm/0.87cm/0.75cm/0.75cm/0.75cm/0.75cm/0.75cm/0.75cm/0.75cm/0.75cm/0.75cm/0.75cm/1.50cm/0.75cm/0.75cm/0.75cm/0.87cm/0.87cm/0.87cm/0.87cm/0.87cm/0.87cm/0.75cm/; table-column-leftpos:0.00cm; list-tag:1">
+<cell xid="199" props="bot-attach:1; left-attach:0; right-attach:1; top-attach:0">
+<p xid="200" props="text-align:center; line-height:1.70; dom-dir:ltr"></p>
+<p xid="634" props="text-align:center; line-height:1.70; dom-dir:ltr"><c props="text-align:justify; line-height:1.70; font-weight:bold; dom-dir:ltr">年龄(岁)</c></p>
+</cell>
+<cell xid="202" props="bot-attach:1; left-attach:1; right-attach:2; top-attach:0">
+<p xid="203" props="text-align:center; line-height:1.70"></p>
+<p xid="635" props="text-align:center; line-height:1.70"><c>分值</c></p>
+</cell>
+<cell xid="205" props="bot-attach:1; left-attach:2; right-attach:3; top-attach:0">
+<p xid="206" props="text-align:center; line-height:1.70; dom-dir:ltr"><c props="text-align:justify; line-height:1.70; dom-dir:ltr">  </c><c props="text-align:justify; line-height:1.70; font-weight:bold; dom-dir:ltr">体重指数(BMI)</c></p>
+<p xid="632" props="text-align:center; font-weight:bold; dom-dir:ltr; line-height:1.70"><c props="text-align:justify; line-height:1.70; font-weight:bold; dom-dir:ltr">体重(kg)/身高(m)2</c></p>
+</cell>
+<cell xid="208" props="bot-attach:1; left-attach:3; right-attach:4; top-attach:0">
+<p xid="209" props="text-align:center; line-height:1.70"></p>
+<p xid="636" props="text-align:center; line-height:1.70"><c>分值</c></p>
+</cell>
+<cell xid="211" props="bot-attach:1; left-attach:4; right-attach:5; top-attach:0">
+<p xid="212" props="text-align:center; line-height:1.70"></p>
+<p xid="637" props="text-align:center; line-height:1.70"><c props="font-weight:bold">活动</c></p>
+</cell>
+<cell xid="214" props="bot-attach:1; left-attach:5; right-attach:6; top-attach:0">
+<p xid="215" props="text-align:center; line-height:1.70"></p>
+<p xid="638" props="text-align:center; line-height:1.70"><c>分值</c></p>
+</cell>
+<cell xid="217" props="bot-attach:2; left-attach:0; right-attach:1; top-attach:1">
+<p xid="218" props="text-align:center; line-height:1.70"></p>
+</cell>
+<cell xid="220" props="bot-attach:2; left-attach:1; right-attach:2; top-attach:1">
+<p xid="221" props="text-align:center; line-height:1.70"><c>0</c></p>
+</cell>
+<cell xid="223" props="bot-attach:2; left-attach:2; right-attach:3; top-attach:1">
+<p xid="224" props="text-align:center; line-height:1.70"><field param="ChoiceType:1; Code:1; Groupid:O0002; Path:S005_V002_O0002; Context:低体重 ＜18.5; Value:0" type="choice_field" revision="1" xid="1696" props="code:S005_V002_O0002; et:3"></field><field param="ChoiceType:1; Code:1; Groupid:O0002; Path:S005_V002_O0002; Context:低体重 ＜18.5; Value:1" type="choice_field" revision="-1" xid="1661" props="bgcolor:e0ecff; et:3; code:S005_V002_O0002"></field><c>      </c></p>
+</cell>
+<cell xid="226" props="bot-attach:2; left-attach:3; right-attach:4; top-attach:1">
+<p xid="227" props="text-align:center; line-height:1.70"><c>0</c></p>
+</cell>
+<cell xid="229" props="bot-attach:2; left-attach:4; right-attach:5; top-attach:1">
+<p xid="230" props="text-align:center; line-height:1.70"><field type="choice_field" param="ChoiceType:1; Code:1; Groupid:O0003; Path:S005_V002_O0003; Context:自由活动; Value:1" xid="1592" props="bgcolor:e0ecff; et:3; code:S005_V002_O0003"></field><c>         </c></p>
+</cell>
+<cell xid="232" props="bot-attach:2; left-attach:5; right-attach:6; top-attach:1">
+<p xid="233" props="text-align:center; line-height:1.70"><c>0</c></p>
+</cell>
+<cell xid="235" props="bot-attach:3; left-attach:0; right-attach:1; top-attach:2">
+<p xid="236" props="text-align:center; line-height:1.70"><field param="ChoiceType:1; Code:2;Groupid:O0001; Context:31-40岁; Path:S005_V002_O0001; Value:1" type="choice_field" revision="1" xid="1695" props="code:S005_V002_O0001; et:3"></field><field param="ChoiceType:1; Code:2;Groupid:O0001; Context:31-40岁; Value:0; Path:S005_V002_O0001" type="choice_field" revision="-1" xid="1691" props="bgcolor:e0ecff; et:3; code:S005_V002_O0001"></field><c> </c></p>
+</cell>
+<cell xid="238" props="bot-attach:3; left-attach:1; right-attach:2; top-attach:2">
+<p xid="239" props="text-align:center; line-height:1.70"><c>1</c></p>
+</cell>
+<cell xid="241" props="bot-attach:3; left-attach:2; right-attach:3; top-attach:2">
+<p xid="242" props="text-align:center; line-height:1.70"><field type="choice_field" param="ChoiceType:1; Context:平均体重 18.5-22.9;Code:2;Groupid:O0002; Value:0; Path:S005_V002_O0002" xid="1349" props="code:S005_V002_O0002; et:3"></field><c> </c></p>
+</cell>
+<cell xid="244" props="bot-attach:3; left-attach:3; right-attach:4; top-attach:2">
+<p xid="245" props="text-align:center; line-height:1.70"><c>1</c></p>
+</cell>
+<cell xid="247" props="bot-attach:3; left-attach:4; right-attach:5; top-attach:2">
+<p xid="248" props="text-align:center; line-height:1.70"><field type="choice_field" param="ChoiceType:1; Context:自行使用助行工具;Code:2;Groupid:O0003; Value:0; Path:S005_V002_O0003" xid="1353" props="code:S005_V002_O0003; et:3"></field><c> </c></p>
+</cell>
+<cell xid="250" props="bot-attach:3; left-attach:5; right-attach:6; top-attach:2">
+<p xid="251" props="text-align:center; line-height:1.70"><c revision="-1">1</c></p>
+</cell>
+<cell xid="253" props="bot-attach:4; left-attach:0; right-attach:1; top-attach:3">
+<p xid="254" props="text-align:center; line-height:1.70"><field param="ChoiceType:1; Code:3;Groupid:O0001; Path:S005_V002_O0001C3; Value:0; Context:41-50岁" type="choice_field" revision="-1" xid="1338" props="code:S005_V002_O0001C3; et:3"></field><c> </c></p>
+</cell>
+<cell xid="256" props="bot-attach:4; left-attach:1; right-attach:2; top-attach:3">
+<p xid="257" props="text-align:center; line-height:1.70"><c>2</c></p>
+</cell>
+<cell xid="259" props="bot-attach:4; left-attach:2; right-attach:3; top-attach:3">
+<p xid="260" props="text-align:center; line-height:1.70"><field type="choice_field" param="ChoiceType:1; Context:超重 23.4-24.9;Code:3;Groupid:O0002; Path:S005_V002_O0002C3; Value:0" xid="1062" props="code:S005_V002_O0002C3; et:3"></field><c>     </c></p>
+</cell>
+<cell xid="262" props="bot-attach:4; left-attach:3; right-attach:4; top-attach:3">
+<p xid="263" props="text-align:center; line-height:1.70"><c>2</c></p>
+</cell>
+<cell xid="265" props="bot-attach:4; left-attach:4; right-attach:5; top-attach:3">
+<p xid="266" props="text-align:center; line-height:1.70"><field type="choice_field" param="ChoiceType:1; Context:需要他人协助;Code:3;Groupid:O0003; Path:S005_V002_O0003C3; Value:0" xid="1070" props="code:S005_V002_O0003C3; et:3"></field><c>     </c></p>
+</cell>
+<cell xid="268" props="bot-attach:4; left-attach:5; right-attach:6; top-attach:3">
+<p xid="269" props="text-align:center; line-height:1.70"><c>2</c></p>
+</cell>
+<cell xid="271" props="bot-attach:5; left-attach:0; right-attach:1; top-attach:4">
+<p xid="272" props="text-align:center; line-height:1.70"><field type="choice_field" param="ChoiceType:1; Code:4;Groupid:O0001; Path:S005_V002_O0001C4; Value:0; Context:51-60岁" xid="1339" props="code:S005_V002_O0001C4; et:3"></field><c> </c></p>
+</cell>
+<cell xid="274" props="bot-attach:5; left-attach:1; right-attach:2; top-attach:4">
+<p xid="275" props="text-align:center; line-height:1.70"><c>3</c></p>
+</cell>
+<cell xid="277" props="bot-attach:5; left-attach:2; right-attach:3; top-attach:4">
+<p xid="278" props="text-align:center; line-height:1.70"><field type="choice_field" param="ChoiceType:1; Context:肥胖 25.0-29.9;Code:4;Groupid:O0002; Path:S005_V002_O0002C4; Value:0" xid="1063" props="code:S005_V002_O0002C4; et:3"></field><c>     </c></p>
+</cell>
+<cell xid="280" props="bot-attach:5; left-attach:3; right-attach:4; top-attach:4">
+<p xid="281" props="text-align:center; line-height:1.70"><c>3</c></p>
+</cell>
+<cell xid="283" props="bot-attach:5; left-attach:4; right-attach:5; top-attach:4">
+<p xid="284" props="text-align:center; line-height:1.70"><field type="choice_field" param="ChoiceType:1; Context:使用轮椅;Code:4;Groupid:O0003; Path:S005_V002_O0003C4; Value:0" xid="1072" props="code:S005_V002_O0003C4; et:3"></field><c>         </c></p>
+</cell>
+<cell xid="286" props="bot-attach:5; left-attach:5; right-attach:6; top-attach:4">
+<p xid="287" props="text-align:center; line-height:1.70"><c>3</c></p>
+</cell>
+<cell xid="289" props="bot-attach:6; left-attach:0; right-attach:1; top-attach:5">
+<p xid="290" props="text-align:center; line-height:1.70"><field type="choice_field" param="ChoiceType:1; Code:5;Groupid:O0001; Path:S005_V002_O0001C5; Value:0; Context:61-70岁" xid="1340" props="code:S005_V002_O0001C5; et:3"></field><c> </c></p>
+</cell>
+<cell xid="292" props="bot-attach:6; left-attach:1; right-attach:2; top-attach:5">
+<p xid="293" props="text-align:center; line-height:1.70"><c>4</c></p>
+</cell>
+<cell xid="295" props="bot-attach:6; left-attach:2; right-attach:3; top-attach:5">
+<p xid="296" props="text-align:center; line-height:1.70"><field type="choice_field" param="ChoiceType:1; Context:过度肥胖 ≥30;Code:5;Groupid:O0002; Path:S005_V002_O0002C5; Value:0" xid="1662" props="code:S005_V002_O0002C5; et:3"></field><c>      </c></p>
+</cell>
+<cell xid="298" props="bot-attach:6; left-attach:3; right-attach:4; top-attach:5">
+<p xid="299" props="text-align:center; line-height:1.70"><c>4</c></p>
+</cell>
+<cell xid="301" props="bot-attach:6; left-attach:4; right-attach:5; top-attach:5">
+<p xid="302" props="text-align:center; line-height:1.70"><field type="choice_field" param="ChoiceType:1; Context:绝对卧床;Code:5;Groupid:O0003; Path:S005_V002_O0003C5; Value:0" xid="1073" props="code:S005_V002_O0003C5; et:3"></field><c>         </c></p>
+</cell>
+<cell xid="304" props="bot-attach:6; left-attach:5; right-attach:6; top-attach:5">
+<p xid="305" props="text-align:center; line-height:1.70"><c>4</c></p>
+</cell>
+<cell xid="307" props="bot-attach:7; left-attach:0; right-attach:1; top-attach:6">
+<p xid="308" props="text-align:center; line-height:1.70"><c> </c><field type="choice_field" param="ChoiceType:1; Code:6;Groupid:O0001; Path:S005_V002_O0001C6; Value:0; Context:70岁以上" xid="1341" props="code:S005_V002_O0001C6; et:3"></field><c> </c></p>
+</cell>
+<cell xid="310" props="bot-attach:7; left-attach:1; right-attach:2; top-attach:6">
+<p xid="311" props="text-align:center; line-height:1.70"><c>5</c></p>
+</cell>
+<cell xid="313" props="bot-attach:7; left-attach:2; right-attach:3; top-attach:6">
+<p xid="314" props="text-align:left; line-height:1.70"></p>
+</cell>
+<cell xid="316" props="bot-attach:7; left-attach:3; right-attach:4; top-attach:6">
+<p xid="317" props="text-align:center; line-height:1.70"></p>
+</cell>
+<cell xid="319" props="bot-attach:7; left-attach:4; right-attach:6; top-attach:6">
+<p xid="320" props="text-align:center; line-height:1.70"><c props="font-weight:bold">评估指引</c></p>
+</cell>
+<cell xid="325" props="bot-attach:8; left-attach:0; right-attach:1; top-attach:7">
+<p xid="326" props="text-align:center; line-height:1.70; dom-dir:ltr"><c props="text-align:justify; line-height:1.70; font-weight:bold; dom-dir:ltr">创伤风险(术前评分项目)</c></p>
+</cell>
+<cell xid="328" props="bot-attach:8; left-attach:1; right-attach:2; top-attach:7">
+<p xid="329" props="text-align:center; line-height:1.70"><c>分值</c></p>
+</cell>
+<cell xid="331" props="bot-attach:8; left-attach:2; right-attach:3; top-attach:7">
+<p xid="332" props="text-align:center; line-height:1.70"><c props="font-weight:bold">特殊风险</c></p>
+</cell>
+<cell xid="334" props="bot-attach:8; left-attach:3; right-attach:4; top-attach:7">
+<p xid="335" props="text-align:center; line-height:1.70"><c>分值</c></p>
+</cell>
+<cell xid="337" props="bot-attach:8; left-attach:4; right-attach:6; top-attach:7">
+<p xid="338" props="text-align:center; line-height:1.70"><c>分值范围 危险等级</c></p>
+</cell>
+<cell xid="343" props="bot-attach:9; left-attach:0; right-attach:1; top-attach:8">
+<p xid="344" props="text-align:center; line-height:1.70"><c> </c><field type="choice_field" param="ChoiceType:2;Value:0; Code:1; Groupid:M0001; Path:S005_V002_M0001; Context:头部受伤" xid="1383" props="bgcolor:e0ecff; et:3; code:S005_V002_M0001"></field><c> </c></p>
+</cell>
+<cell xid="346" props="bot-attach:9; left-attach:1; right-attach:2; top-attach:8">
+<p xid="347" props="text-align:center; line-height:1.70"><c>0</c></p>
+</cell>
+<cell xid="349" props="bot-attach:9; left-attach:2; right-attach:3; top-attach:8">
+<p xid="350" props="text-align:center; line-height:1.70"><c> </c><c props="font-weight:bold">口服避孕药：</c></p>
+</cell>
+<cell xid="352" props="bot-attach:9; left-attach:3; right-attach:4; top-attach:8">
+<p xid="353" props="text-align:center; line-height:1.70"></p>
+</cell>
+<cell xid="355" props="bot-attach:9; left-attach:4; right-attach:6; top-attach:8">
+<p xid="356" props="text-align:center; line-height:1.70"><c>≤6   无风险</c></p>
+</cell>
+<cell xid="361" props="bot-attach:10; left-attach:0; right-attach:1; top-attach:9">
+<p xid="362" props="text-align:center; line-height:1.70"><c> </c><field type="choice_field" param="ChoiceType:2; Context:胸部受伤;Code:2;Groupid:M0001; Value:0; Path:S005_V002_M0001" xid="1421" props="code:S005_V002_M0001; et:3"></field><c> </c></p>
+</cell>
+<cell xid="364" props="bot-attach:10; left-attach:1; right-attach:2; top-attach:9">
+<p xid="365" props="text-align:center; line-height:1.70"><c>1</c></p>
+</cell>
+<cell xid="367" props="bot-attach:10; left-attach:2; right-attach:3; top-attach:9">
+<p xid="368" props="text-align:center; line-height:1.70"><c> </c><field type="choice_field" param="ChoiceType:2; Code:1; Groupid:M0002; Path:S005_V002_M0002; Context:20-35岁; Value:0" xid="1414" props="bgcolor:e0ecff; et:3; code:S005_V002_M0002"></field><c>     </c></p>
+</cell>
+<cell xid="370" props="bot-attach:10; left-attach:3; right-attach:4; top-attach:9">
+<p xid="371" props="text-align:center; line-height:1.70"><c>0</c></p>
+</cell>
+<cell xid="373" props="bot-attach:10; left-attach:4; right-attach:6; top-attach:9">
+<p xid="374" props="text-align:center; line-height:1.70"><c>7-10  低风险</c></p>
+</cell>
+<cell xid="379" props="bot-attach:11; left-attach:0; right-attach:1; top-attach:10">
+<p xid="380" props="text-align:center; line-height:1.70"><c> </c><field type="choice_field" param="ChoiceType:2; Context:脊柱受伤;Code:3;Groupid:M0001; Path:S005_V002_M0001C3; Value:0" xid="1420" props="code:S005_V002_M0001C3; et:3"></field><c> </c></p>
+</cell>
+<cell xid="382" props="bot-attach:11; left-attach:1; right-attach:2; top-attach:10">
+<p xid="383" props="text-align:center; line-height:1.70"><c>2</c></p>
+</cell>
+<cell xid="385" props="bot-attach:11; left-attach:2; right-attach:3; top-attach:10">
+<p xid="386" props="text-align:center; line-height:1.70"><field type="choice_field" param="ChoiceType:2;Value:0;Context:35岁以上;Code:2;Groupid:M0002; Path:S005_V002_M0002" xid="1400" props="code:S005_V002_M0002; et:3"></field><c>   </c></p>
+</cell>
+<cell xid="388" props="bot-attach:11; left-attach:3; right-attach:4; top-attach:10">
+<p xid="389" props="text-align:center; line-height:1.70"><c>1</c></p>
+</cell>
+<cell xid="391" props="bot-attach:11; left-attach:4; right-attach:6; top-attach:10">
+<p xid="392" props="text-align:center; line-height:1.70"><c>10-14 中风险</c></p>
+</cell>
+<cell xid="397" props="bot-attach:12; left-attach:0; right-attach:1; top-attach:11">
+<p xid="398" props="text-align:center; line-height:1.70"><field type="choice_field" param="ChoiceType:2;Value:0;Context:盆骨受伤;Code:4;Groupid:M0001; Path:S005_V002_M0001C4" xid="1386" props="code:S005_V002_M0001C4; et:3"></field></p>
+</cell>
+<cell xid="400" props="bot-attach:12; left-attach:1; right-attach:2; top-attach:11">
+<p xid="401" props="text-align:center; line-height:1.70"><c>3</c></p>
+</cell>
+<cell xid="403" props="bot-attach:12; left-attach:2; right-attach:3; top-attach:11">
+<p xid="404" props="text-align:center; line-height:1.70"><field type="choice_field" param="ChoiceType:2; Context:激素治疗;Code:3;Groupid:M0002; Path:S005_V002_M0002C3; Value:0" xid="1413" props="code:S005_V002_M0002C3; et:3"></field><c>   </c></p>
+</cell>
+<cell xid="406" props="bot-attach:12; left-attach:3; right-attach:4; top-attach:11">
+<p xid="407" props="text-align:center; line-height:1.70"><c>2</c></p>
+</cell>
+<cell xid="409" props="bot-attach:12; left-attach:4; right-attach:6; top-attach:11">
+<p xid="410" props="text-align:center; line-height:1.70"><c>≥15  高风险</c></p>
+</cell>
+<cell xid="415" props="bot-attach:13; left-attach:0; right-attach:1; top-attach:12">
+<p xid="416" props="text-align:center; line-height:1.70"><c> </c><field type="choice_field" param="ChoiceType:2; Context:下肢受伤;Code:5;Groupid:M0001; Path:S005_V002_M0001C5; Value:0" xid="1419" props="code:S005_V002_M0001C5; et:3"></field><c> </c></p>
+</cell>
+<cell xid="418" props="bot-attach:13; left-attach:1; right-attach:2; top-attach:12">
+<p xid="419" props="text-align:center; line-height:1.70"><c>4</c></p>
+</cell>
+<cell xid="421" props="bot-attach:13; left-attach:2; right-attach:3; top-attach:12">
+<p xid="422" props="text-align:center; line-height:1.70"><field type="choice_field" param="ChoiceType:2; Context:怀孕/产褥期;Code:4;Groupid:M0002; Path:S005_V002_M0002C4; Value:0" xid="1687" props="code:S005_V002_M0002C4; et:3"></field></p>
+</cell>
+<cell xid="424" props="bot-attach:13; left-attach:3; right-attach:4; top-attach:12">
+<p xid="425" props="text-align:center; line-height:1.70"><c>3</c></p>
+</cell>
+<cell xid="427" props="bot-attach:13; left-attach:4; right-attach:6; top-attach:12">
+<p xid="428" props="text-align:center; line-height:1.70"><c props="font-weight:bold">评估时机</c></p>
+</cell>
+<cell xid="433" props="bot-attach:14; left-attach:0; right-attach:1; top-attach:13">
+<p xid="434" props="text-align:center; line-height:1.70"><c> </c></p>
+</cell>
+<cell xid="436" props="bot-attach:14; left-attach:1; right-attach:2; top-attach:13">
+<p xid="437" props="text-align:center; line-height:1.70"></p>
+</cell>
+<cell xid="439" props="bot-attach:14; left-attach:2; right-attach:3; top-attach:13">
+<p xid="440" props="text-align:center; line-height:1.70"><field type="choice_field" param="ChoiceType:2; Context:血栓形成;Code:5;Groupid:M0002; Path:S005_V002_M0002C5; Value:0" xid="1415" props="code:S005_V002_M0002C5; et:3"></field><c>   </c></p>
+</cell>
+<cell xid="442" props="bot-attach:14; left-attach:3; right-attach:4; top-attach:13">
+<p xid="443" props="text-align:center; line-height:1.70"><c>4</c></p>
+</cell>
+<cell xid="445" props="bot-attach:18; left-attach:4; right-attach:6; top-attach:13">
+<p xid="446" props="text-align:justify; line-height:1.70; dom-dir:ltr"><c props="text-align:justify; line-height:1.70; dom-dir:ltr">①高风险人群入院24h、手术后患者即时完成；</c></p>
+<p xid="776" props="text-align:justify; line-height:1.70; dom-dir:ltr"><c props="text-align:justify; line-height:1.70; dom-dir:ltr">②≥15者根据活动内容的改变即时评估，(至少每三天一次)</c></p>
+<p xid="778" props="text-align:justify; line-height:1.70; dom-dir:ltr"><c props="text-align:justify; line-height:1.70; dom-dir:ltr">③＜14分者每周评估一次</c></p>
+</cell>
+<cell xid="451" props="bot-attach:15; left-attach:0; right-attach:1; top-attach:14">
+<p xid="452" props="text-align:center; line-height:1.70; dom-dir:ltr"></p>
+<p xid="772" props="text-align:center; line-height:1.70; dom-dir:ltr"><c props="text-align:justify; line-height:1.70; font-weight:bold; dom-dir:ltr">高危疾病</c></p>
+</cell>
+<cell xid="454" props="bot-attach:15; left-attach:1; right-attach:2; top-attach:14">
+<p xid="455" props="text-align:center; line-height:1.70"></p>
+<p xid="773" props="text-align:center; line-height:1.70"><c>分值</c></p>
+</cell>
+<cell xid="457" props="bot-attach:15; left-attach:2; right-attach:3; top-attach:14">
+<p xid="458" props="text-align:center; line-height:1.70; dom-dir:ltr"><c props="text-align:justify; line-height:1.70; font-weight:bold; dom-dir:ltr">外科手术</c></p>
+<p xid="991" props="text-align:center; line-height:1.70; dom-dir:ltr"><c props="text-align:justify; line-height:1.70; font-weight:bold; dom-dir:ltr">(只选择一个合适的手术)</c></p>
+</cell>
+<cell xid="460" props="bot-attach:15; left-attach:3; right-attach:4; top-attach:14">
+<p xid="461" props="text-align:center; line-height:1.70"></p>
+<p xid="774" props="text-align:center; line-height:1.70"><c>分值</c></p>
+</cell>
+<cell xid="1287" props="bot-attach:16; left-attach:0; right-attach:1; top-attach:15">
+<p xid="1288" props="text-align:center; line-height:1.70; dom-dir:ltr; font-weight:bold"><c> </c><field type="choice_field" param="ChoiceType:2; Context:溃疡性结肠炎;Code:1;Groupid:M0003; Value:0; Path:S005_V002_M0003" xid="1521" props="bgcolor:e0ecff; et:3; code:S005_V002_M0003; font-weight:normal"></field><c>   </c></p>
+</cell>
+<cell xid="1290" props="bot-attach:16; left-attach:1; right-attach:2; top-attach:15">
+<p xid="1291" props="text-align:center; line-height:1.70; dom-dir:ltr; font-weight:bold"><c props="font-weight:normal">1</c></p>
+</cell>
+<cell xid="1293" props="bot-attach:16; left-attach:2; right-attach:3; top-attach:15">
+<p xid="1294" props="text-align:center; line-height:1.70; dom-dir:ltr; font-weight:bold"><field type="choice_field" param="ChoiceType:1; Code:1; Groupid:O0004; Path:S005_V002_O0004; Context:无; Value:1" xid="1684" props="et:3; code:S005_V002_O0004; font-weight:normal"></field><c props="font-weight:normal">   </c><c>      </c></p>
+</cell>
+<cell xid="1296" props="bot-attach:16; left-attach:3; right-attach:4; top-attach:15">
+<p xid="1297" props="text-align:center; line-height:1.70; dom-dir:ltr; font-weight:bold"><c props="font-weight:normal">0</c></p>
+</cell>
+<cell xid="469" props="bot-attach:17; left-attach:0; right-attach:1; top-attach:16">
+<p xid="470" props="text-align:center; line-height:1.70"><c> </c><field type="choice_field" param="ChoiceType:2; Context:红细胞增多症;Code:2;Groupid:M0003; Path:S005_V002_M0003; Value:0" xid="1523" props="code:S005_V002_M0003; et:3"></field><c>   </c></p>
+</cell>
+<cell xid="472" props="bot-attach:17; left-attach:1; right-attach:2; top-attach:16">
+<p xid="473" props="text-align:center; line-height:1.70"><c>2</c></p>
+</cell>
+<cell xid="475" props="bot-attach:17; left-attach:2; right-attach:3; top-attach:16">
+<p xid="476" props="text-align:center; line-height:1.70"><field type="choice_field" param="ChoiceType:1;Value:0;Context:小手术＜30min;Code:11;Groupid:O0004; Path:S005_V002_O0004" xid="1666" props="code:S005_V002_O0004; et:3"></field><c>  </c></p>
+</cell>
+<cell xid="478" props="bot-attach:17; left-attach:3; right-attach:4; top-attach:16">
+<p xid="479" props="text-align:center; line-height:1.70"><c>1</c></p>
+</cell>
+<cell xid="487" props="bot-attach:18; left-attach:0; right-attach:1; top-attach:17">
+<p xid="488" props="text-align:center; line-height:1.70"><c> </c><field type="choice_field" param="ChoiceType:2; Context:静脉曲张;Code:3;Groupid:M0003; Path:S005_V002_M0003C3; Value:0" xid="1436" props="code:S005_V002_M0003C3; et:3"></field><c>       </c></p>
+</cell>
+<cell xid="490" props="bot-attach:18; left-attach:1; right-attach:2; top-attach:17">
+<p xid="491" props="text-align:center; line-height:1.70"><c>3</c></p>
+</cell>
+<cell xid="493" props="bot-attach:18; left-attach:2; right-attach:3; top-attach:17">
+<p xid="494" props="text-align:center; line-height:1.70"><field type="choice_field" param="ChoiceType:1; Context:择期大手术;Code:21;Groupid:O0004; Path:S005_V002_O0004C21; Value:0" xid="1679" props="code:S005_V002_O0004C21; et:3"></field><c>     </c></p>
+</cell>
+<cell xid="496" props="bot-attach:18; left-attach:3; right-attach:4; top-attach:17">
+<p xid="497" props="text-align:center; line-height:1.70"><c>2</c></p>
+</cell>
+<cell xid="505" props="bot-attach:19; left-attach:0; right-attach:1; top-attach:18">
+<p xid="506" props="text-align:center; line-height:1.70"><c>  </c><field type="choice_field" param="ChoiceType:2;Value:0;Context:慢性心脏病;Code:4;Groupid:M0003; Path:S005_V002_M0003C4" xid="1430" props="code:S005_V002_M0003C4; et:3"></field><c>      </c></p>
+</cell>
+<cell xid="508" props="bot-attach:19; left-attach:1; right-attach:2; top-attach:18">
+<p xid="509" props="text-align:center; line-height:1.70"><c>3</c></p>
+</cell>
+<cell xid="511" props="bot-attach:19; left-attach:2; right-attach:3; top-attach:18">
+<p xid="512" props="text-align:center; line-height:1.70"><field type="choice_field" param="ChoiceType:1; Context:急诊大手术;Code:31;Groupid:O0004; Path:S005_V002_O0004C31; Value:0" xid="1681" props="code:S005_V002_O0004C31; et:3"></field><c>     </c></p>
+</cell>
+<cell xid="514" props="bot-attach:19; left-attach:3; right-attach:4; top-attach:18">
+<p xid="515" props="text-align:center; line-height:1.70"><c>3</c></p>
+</cell>
+<cell xid="517" props="bot-attach:19; left-attach:4; right-attach:6; top-attach:18">
+<p xid="518" props="text-align:center; line-height:1.70; dom-dir:ltr"><c props="text-align:justify; line-height:1.70; font-weight:bold; dom-dir:ltr">预防深静脉血栓的措施:</c></p>
+</cell>
+<cell xid="523" props="bot-attach:20; left-attach:0; right-attach:1; top-attach:19">
+<p xid="524" props="text-align:justify; line-height:1.70"><c>     </c><field type="choice_field" param="ChoiceType:2;Value:0;Context:急性心肌梗死;Code:5;Groupid:M0003; Path:S005_V002_M0003C5" xid="1431" props="code:S005_V002_M0003C5; et:3"></field></p>
+</cell>
+<cell xid="526" props="bot-attach:20; left-attach:1; right-attach:2; top-attach:19">
+<p xid="527" props="text-align:center; line-height:1.70"><c>4</c></p>
+</cell>
+<cell xid="529" props="bot-attach:20; left-attach:2; right-attach:3; top-attach:19">
+<p xid="530" props="text-align:center; line-height:1.70"><field type="choice_field" param="ChoiceType:1;Value:0;Context:胸部手术;Code:32;Groupid:O0004; Path:S005_V002_O0004C32" xid="1669" props="code:S005_V002_O0004C32; et:3"></field><c>       </c></p>
+</cell>
+<cell xid="532" props="bot-attach:20; left-attach:3; right-attach:4; top-attach:19">
+<p xid="533" props="text-align:center; line-height:1.70"><c>3</c></p>
+</cell>
+<cell xid="809" props="bot-attach:24; left-attach:4; right-attach:6; top-attach:19">
+<p xid="810" props="text-align:justify; line-height:1.70"><c>  </c><field type="choice_field" param="ChoiceType:2; Code:1; Groupid:M0004; Path:S005_V002_M0004; Context:分级弹力袜; Value:0" xid="1573" props="code:S005_V002_M0004; et:3"></field></p>
+<p xid="1528" props="text-align:justify; line-height:1.70"><c>  </c><field type="choice_field" param="ChoiceType:2; Code:2;Groupid:M0004; Context:抗血栓袜; Value:0; Path:S005_V002_M0004" xid="1574" props="code:S005_V002_M0004; et:3"></field></p>
+<p xid="1532" props="text-align:justify; line-height:1.70"><c>  </c><field type="choice_field" param="ChoiceType:2; Code:3;Groupid:M0004; Path:S005_V002_M0004C3; Context:下肢静脉泵; Value:0" xid="1575" props="code:S005_V002_M0004C3; et:3"></field></p>
+<p xid="1536" props="text-align:justify; line-height:1.70"><c>  </c><field type="choice_field" param="ChoiceType:2; Code:4;Groupid:M0004; Path:S005_V002_M0004C4; Context:抬高下肢20°; Value:0" xid="1581" props="code:S005_V002_M0004C4; et:3"></field></p>
+<p xid="1540" props="text-align:justify; line-height:1.70"><c>  </c><field type="choice_field" param="ChoiceType:2; Code:5;Groupid:M0004; Path:S005_V002_M0004C5; Context:每2h翻身,主动屈伸下肢; Value:0" xid="1580" props="code:S005_V002_M0004C5; et:3"></field></p>
+<p xid="1544" props="text-align:justify; line-height:1.70"><c>  </c><field type="choice_field" param="ChoiceType:2; Code:6;Groupid:M0004; Path:S005_V002_M0004C6; Context:其他; Value:0" xid="1579" props="code:S005_V002_M0004C6; et:3"></field></p>
+</cell>
+<cell xid="541" props="bot-attach:21; left-attach:0; right-attach:1; top-attach:20">
+<p xid="542" props="text-align:center; line-height:1.70"><field type="choice_field" param="ChoiceType:2; Context:恶性肿瘤;Code:6;Groupid:M0003; Path:S005_V002_M0003C6; Value:0" xid="1441" props="code:S005_V002_M0003C6; et:3"></field><c>      </c></p>
+</cell>
+<cell xid="544" props="bot-attach:21; left-attach:1; right-attach:2; top-attach:20">
+<p xid="545" props="text-align:center; line-height:1.70"><c>5</c></p>
+</cell>
+<cell xid="547" props="bot-attach:21; left-attach:2; right-attach:3; top-attach:20">
+<p xid="548" props="text-align:center; line-height:1.70"><field type="choice_field" param="ChoiceType:1; Context:腹部手术;Code:33;Groupid:O0004; Path:S005_V002_O0004C33; Value:0" xid="1683" props="code:S005_V002_O0004C33; et:3"></field><c>       </c></p>
+</cell>
+<cell xid="550" props="bot-attach:21; left-attach:3; right-attach:4; top-attach:20">
+<p xid="551" props="text-align:center; line-height:1.70"><c>3</c></p>
+</cell>
+<cell xid="559" props="bot-attach:22; left-attach:0; right-attach:1; top-attach:21">
+<p xid="560" props="text-align:center; line-height:1.70"><c>     </c><field type="choice_field" param="ChoiceType:2; Context:脑血管疾病;Code:7;Groupid:M0003; Path:S005_V002_M0003C7; Value:0" xid="1443" props="bgcolor:e0ecff; et:3; code:S005_V002_M0003C7"></field><c>         </c></p>
+</cell>
+<cell xid="562" props="bot-attach:22; left-attach:1; right-attach:2; top-attach:21">
+<p xid="563" props="text-align:center; line-height:1.70"><c>6</c></p>
+</cell>
+<cell xid="565" props="bot-attach:22; left-attach:2; right-attach:3; top-attach:21">
+<p xid="566" props="text-align:center; line-height:1.70"><field type="choice_field" param="ChoiceType:1; Context:泌尿系手术;Code:34;Groupid:O0004; Path:S005_V002_O0004C34; Value:0" xid="1685" props="code:S005_V002_O0004C34; et:3"></field><c>     </c></p>
+</cell>
+<cell xid="568" props="bot-attach:22; left-attach:3; right-attach:4; top-attach:21">
+<p xid="569" props="text-align:center; line-height:1.70"><c>3</c></p>
+</cell>
+<cell xid="577" props="bot-attach:23; left-attach:0; right-attach:1; top-attach:22">
+<p xid="578" props="text-align:center; line-height:1.70"><c>     </c><field type="choice_field" param="ChoiceType:2; Context:静脉栓塞病史;Code:8;Groupid:M0003; Path:S005_V002_M0003C8; Value:0" xid="1445" props="code:S005_V002_M0003C8; et:3"></field><c>       </c></p>
+</cell>
+<cell xid="580" props="bot-attach:23; left-attach:1; right-attach:2; top-attach:22">
+<p xid="581" props="text-align:center; line-height:1.70"><c>7</c></p>
+</cell>
+<cell xid="583" props="bot-attach:23; left-attach:2; right-attach:3; top-attach:22">
+<p xid="584" props="text-align:center; line-height:1.70"><field type="choice_field" param="ChoiceType:1;Value:0;Context:神经系统手术;Code:35;Groupid:O0004; Path:S005_V002_O0004C35" xid="1672" props="code:S005_V002_O0004C35; et:3"></field><c>   </c></p>
+</cell>
+<cell xid="586" props="bot-attach:23; left-attach:3; right-attach:4; top-attach:22">
+<p xid="587" props="text-align:center; line-height:1.70"><c>3</c></p>
+</cell>
+<cell xid="595" props="bot-attach:25; left-attach:0; right-attach:1; top-attach:23">
+<p xid="596" props="text-align:center; line-height:1.70"></p>
+</cell>
+<cell xid="598" props="bot-attach:25; left-attach:1; right-attach:2; top-attach:23">
+<p xid="599" props="text-align:center; line-height:1.70"></p>
+</cell>
+<cell xid="1613" props="bot-attach:24; left-attach:2; right-attach:3; top-attach:23">
+<p xid="1614" props="text-align:center; line-height:6pt"><field type="choice_field" param="ChoiceType:1; Context:妇科手术;Code:36;Groupid:O0004; Path:S005_V002_O0004C36; Value:0" xid="1676" props="code:S005_V002_O0004C36; et:3"></field><c>       </c></p>
+</cell>
+<cell xid="604" props="bot-attach:24; left-attach:3; right-attach:4; top-attach:23">
+<p xid="605" props="text-align:center; line-height:1.70"><c>3</c></p>
+</cell>
+<cell xid="1610" props="bot-attach:25; left-attach:2; right-attach:3; top-attach:24">
+<p xid="1611" props="text-align:center"><field type="choice_field" param="ChoiceType:1;Value:0;Context:骨科（腰部以下）手术;Code:41;Groupid:O0004; Path:S005_V002_O0004C41" xid="1674" props="code:S005_V002_O0004C41; et:3"></field></p>
+</cell>
+<cell xid="1656" props="bot-attach:25; left-attach:3; right-attach:4; top-attach:24">
+<p xid="1657" props="text-align:center"><c>4</c></p>
+</cell>
+<cell xid="625" props="bot-attach:25; left-attach:4; right-attach:5; top-attach:24">
+<p xid="626" props="text-align:center; line-height:1.70"><c props="font-weight:bold; color:Red">评估总分：</c></p>
+</cell>
+<cell xid="628" props="bot-attach:25; left-attach:5; right-attach:6; top-attach:24">
+<p xid="629" props="text-align:center; line-height:1.70"><c props="bgcolor:c0c0c0; et:1; code:230||1^S005_V002_L0016">0</c></p>
+</cell>
+</table>
+<p xid="197" props="text-align:right; line-height:1.70; margin-left:4.00cm"><c>评估医生：</c><bookmark usage="4" type="start" name="230||1^S005_V002_V003" xid="1693"/><c props="bgcolor:c0c0c0; et:1; code:230||1^S005_V002_V003_L0017">医生01</c><bookmark usage="4" type="end" name="230||1^S005_V002_V003" xid="1694"/><c>       评估日期：</c><c props="code:230||1^S005_V002_D0001; et:5">2020年08月12日</c><bookmark usage="2" type="end" name="230||1^S005_V002" xid="808"/><c>  </c><bookmark usage="1" type="end" name="230||1^S005" xid="139"/></p>
+</section>
+<section id="1" listid="0" parentid="0" type="footer" xid="49">
+<p xid="50" props="text-align:center; line-height:1pt"><bookmark usage="1" type="start" name="Footer" xid="53"/><bookmark usage="2" type="start" name="Footer_V002" xid="51"/><bookmark usage="2" type="end" name="Footer_V002" xid="52"/></p>
+<table xid="57" props="list-tag:1">
+<cell xid="58" props="bg-style:1; left-color:000000; bot-style:0; bot-thickness:1.0pt; right-attach:1; left-thickness:1.0pt; right-thickness:1.0pt; right-color:000000; bot-color:000000; left-attach:0; top-color:000000; top-style:1; right-style:0; left-style:0; top-thickness:1.0pt; bot-attach:1; top-attach:0">
+<p style="Normal" xid="59" props="text-align:center"><c>第(</c><field type="page_number" xid="65"></field><c>)页</c></p>
+</cell>
+</table>
+<p xid="56" props="text-align:center; line-height:1pt"><bookmark usage="1" type="end" name="Footer" xid="54"/></p>
+</section>
+<section id="0" listid="0" parentid="0" type="header" xid="1">
+<p xid="2" props="text-align:left"><bookmark usage="1" type="start" name="Header" xid="5"/><bookmark usage="2" type="start" name="Header_V001" xid="67"/><c> </c></p>
+<table xid="8" props="table-row-heights:1.12cm/1.12cm/0.75cm/; list-tag:1; bg-style:1; left-color:000000; bot-style:0; bot-thickness:1.0pt; table-column-props:3.25cm/4.00cm/4.37cm/3.25cm/4.12cm/; right-color:000000; top-color:000000; top-style:0; bot-color:000000; right-style:0; left-style:0">
+<cell xid="9" props="bot-attach:1; top-color:000000; top-attach:0; right-attach:5; left-attach:0">
+<p style="Normal" xid="10" props="text-align:center; tabstops:13.36cm/L0"><c props="font-weight:bold; font-size:20pt">南京市高淳人民医院</c></p>
+</cell>
+<cell xid="18" props="bot-attach:2; top-color:000000; top-attach:1; right-attach:5; left-attach:0">
+<p style="Normal" xid="19" props="text-align:center; tabstops:0.00cm/L0,17.48cm/L0; dom-dir:ltr; margin-right:-0.12cm"><c style="Normal" props="text-align:justify; font-size:20pt; font-weight:bold; dom-dir:ltr; tabstops:0.00cm/L0,17.48cm/L0; margin-right:-0.12cm">Autar深静脉血栓形成风险评估表</c></p>
+</cell>
+<cell xid="27" props="bot-style:1; bot-thickness:1.0pt; right-attach:1; bg-style:1; top-color:000000; top-attach:2; left-attach:0; left-style:0; bot-attach:3; bot-color:000000; right-style:0; top-style:0">
+<p style="Normal" xid="28"><c>姓名：</c><c props="code:Header_V001_L0001; et:1">花花</c></p>
+</cell>
+<cell xid="30" props="bot-style:1; bot-thickness:1.0pt; right-attach:2; bg-style:1; top-color:000000; top-attach:2; left-attach:1; left-style:0; bot-attach:3; bot-color:000000; right-style:0; top-style:0">
+<p style="Normal" xid="31" props="tabstops:14.74cm/L0,1.37cm/L0,6.74cm/L0; margin-right:0.00cm"><c>科室：</c><c props="code:Header_V001_L0010; et:1">内分泌科</c></p>
+</cell>
+<cell xid="92" props="bot-style:1; bot-thickness:1.0pt; right-attach:3; bg-style:1; top-color:000000; top-attach:2; left-attach:2; left-style:0; bot-attach:3; bot-color:000000; right-style:0; top-style:0">
+<p xid="93" props="margin-right:0.00cm"><c>病区：</c><c props="code:Header_V001_L0011; et:1">内分泌科护理单元</c></p>
+</cell>
+<cell xid="98" props="bot-style:1; bot-thickness:1.0pt; right-attach:4; bg-style:1; top-color:000000; top-attach:2; left-attach:3; left-style:0; bot-attach:3; bot-color:000000; right-style:0; top-style:0">
+<p xid="99"><c>床号：</c><c props="code:Header_V001_L0012; et:1">04</c></p>
+</cell>
+<cell xid="33" props="bot-style:1; bot-thickness:1.0pt; right-attach:5; bg-style:1; top-color:000000; top-attach:2; left-attach:4; left-style:0; bot-attach:3; bot-color:000000; right-style:0; top-style:0">
+<p style="Normal" xid="34" props="text-indent:0.00cm; tabstops:12.11cm/L0,11.24cm/L0,11.36cm/L0,11.61cm/L0; margin-left:0.00cm"><c>病案号：</c><c props="code:Header_V001_L0007; et:1">100019</c><bookmark usage="2" type="end" name="Header_V001" xid="68"/></p>
+</cell>
+</table>
+<p xid="7" props="text-align:left; line-height:1pt"><bookmark usage="1" type="end" name="Header" xid="6"/></p>
+</section>
+</abiword>
+</NInstanceData>
+</StructuredBody>
+</Document>

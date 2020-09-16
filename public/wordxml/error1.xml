@@ -1,0 +1,597 @@
+WORD
+<?xml version="1.0" encoding="UTF-8"?>
+<Document>
+  <Code Code="EMR100002" DisplayName="EMR100002 日常病程记录"/>
+  <TemplateGUID>a146ff51-bb2f-4c0f-b2ff-74fd63c69410</TemplateGUID>
+  <TemplateType>Multiple</TemplateType>
+  <TemplateProperty Code="Domain01" DisplayName="EMR100002 日常病程记录"/>
+  <Title Code="EMR100002" DisplayName="日常病程记录" NewDisplayName="日常病程记录">
+    <TitleItems>
+      <TitleItem Code="EMR100002" DisplayName="日常病程记录"/>
+    </TitleItems>
+  </Title>
+  <StructuredBody>
+    <MetaData Version="1" Editor="iEditor" Lang="zh-CN">
+      <Component>
+        <Section>
+          <Code Code="Header" DisplayName="页眉" Instances="" BindKBBaseID="" BindKBName=""/>
+          <Composite Virtual="True">
+            <Code Code="V001" DisplayName="页眉" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+            <SubItems>
+              <MIString>
+                <Code>L0009</Code>
+                <SourceCode>L0009</SourceCode>
+                <CCode>V001</CCode>
+                <KBNodeID></KBNodeID>
+                <DisplayName>医院名称</DisplayName>
+                <Description></Description>
+                <InvalidValue></InvalidValue>
+                <BindType>DataBase</BindType>
+                <BindCode>[HIS]用户自定义信息.医院名称[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetCustomInfo#FNAME:HospitalName#VALUETYPE:</BindCode>
+                <ValidateMsg></ValidateMsg>
+                <ConfidentialityCode>N</ConfidentialityCode>
+                <TabIndex>0</TabIndex>
+                <Synch>False</Synch>
+                <AllowNull>True</AllowNull>
+                <ReadOnly>False</ReadOnly>
+                <FixedStructs>True</FixedStructs>
+                <Visible>True</Visible>
+                <RegExp></RegExp>
+                <MaxLength>-1</MaxLength>
+                <DynamicField>False</DynamicField>
+                <SignatureLevel>NONE</SignatureLevel>
+                <ShowSignerDescription>False</ShowSignerDescription>
+                <Separator></Separator>
+                <SimBindKBBaseID></SimBindKBBaseID>
+                <SimBindKBName></SimBindKBName>
+                <QrCode>False</QrCode>
+                <HeaderImageCode></HeaderImageCode>
+                <FingerImageCode></FingerImageCode>
+              </MIString>
+              <MIString>
+                <Code>L0004</Code>
+                <SourceCode>L0004</SourceCode>
+                <CCode>V001</CCode>
+                <KBNodeID></KBNodeID>
+                <DisplayName>科室</DisplayName>
+                <Description></Description>
+                <InvalidValue></InvalidValue>
+                <BindType>DataBase</BindType>
+                <BindCode>[HIS]患者出入院信息.当前科室字符[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetATDInfo#FNAME:CurDeptDesc#VALUETYPE:</BindCode>
+                <ValidateMsg></ValidateMsg>
+                <ConfidentialityCode>N</ConfidentialityCode>
+                <TabIndex>0</TabIndex>
+                <Synch>False</Synch>
+                <AllowNull>True</AllowNull>
+                <ReadOnly>False</ReadOnly>
+                <FixedStructs>True</FixedStructs>
+                <Visible>True</Visible>
+                <RegExp></RegExp>
+                <MaxLength>-1</MaxLength>
+                <DynamicField>True</DynamicField>
+                <SignatureLevel>NONE</SignatureLevel>
+                <ShowSignerDescription>False</ShowSignerDescription>
+                <Separator></Separator>
+                <SimBindKBBaseID></SimBindKBBaseID>
+                <SimBindKBName></SimBindKBName>
+                <QrCode>False</QrCode>
+                <HeaderImageCode></HeaderImageCode>
+                <FingerImageCode></FingerImageCode>
+              </MIString>
+              <MIString>
+                <Code>L0001</Code>
+                <SourceCode>L0001</SourceCode>
+                <CCode>V001</CCode>
+                <KBNodeID></KBNodeID>
+                <DisplayName>姓名</DisplayName>
+                <Description></Description>
+                <InvalidValue></InvalidValue>
+                <BindType>DataBase</BindType>
+                <BindCode>[HIS]患者基本信息.患者姓名[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetPatientInfo#FNAME:Name#VALUETYPE:</BindCode>
+                <ValidateMsg></ValidateMsg>
+                <ConfidentialityCode>V</ConfidentialityCode>
+                <TabIndex>7</TabIndex>
+                <Synch>True</Synch>
+                <AllowNull>False</AllowNull>
+                <ReadOnly>True</ReadOnly>
+                <FixedStructs>True</FixedStructs>
+                <Visible>True</Visible>
+                <RegExp></RegExp>
+                <MaxLength>-1</MaxLength>
+                <DynamicField>False</DynamicField>
+                <SignatureLevel>NONE</SignatureLevel>
+                <ShowSignerDescription>False</ShowSignerDescription>
+                <Separator></Separator>
+                <SimBindKBBaseID></SimBindKBBaseID>
+                <SimBindKBName></SimBindKBName>
+                <QrCode>False</QrCode>
+                <HeaderImageCode></HeaderImageCode>
+                <FingerImageCode></FingerImageCode>
+              </MIString>
+              <MIString>
+                <Code>L0007</Code>
+                <SourceCode>L0007</SourceCode>
+                <CCode>V001</CCode>
+                <KBNodeID></KBNodeID>
+                <DisplayName>病案号</DisplayName>
+                <Description></Description>
+                <InvalidValue></InvalidValue>
+                <BindType>DataBase</BindType>
+                <BindCode>[HIS]患者基本信息.住院病案号[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetPatientInfo#FNAME:IPRecordNo#VALUETYPE:</BindCode>
+                <ValidateMsg></ValidateMsg>
+                <ConfidentialityCode>V</ConfidentialityCode>
+                <TabIndex>0</TabIndex>
+                <Synch>True</Synch>
+                <AllowNull>False</AllowNull>
+                <ReadOnly>True</ReadOnly>
+                <FixedStructs>True</FixedStructs>
+                <Visible>True</Visible>
+                <RegExp></RegExp>
+                <MaxLength>-1</MaxLength>
+                <DynamicField>False</DynamicField>
+                <SignatureLevel>NONE</SignatureLevel>
+                <ShowSignerDescription>False</ShowSignerDescription>
+                <Separator></Separator>
+                <SimBindKBBaseID></SimBindKBBaseID>
+                <SimBindKBName></SimBindKBName>
+                <QrCode>False</QrCode>
+                <HeaderImageCode></HeaderImageCode>
+                <FingerImageCode></FingerImageCode>
+              </MIString>
+            </SubItems>
+          </Composite>
+        </Section>
+        <Section>
+          <Code Code="Footer" DisplayName="页脚" Instances="" BindKBBaseID="" BindKBName=""/>
+        </Section>
+        <Section>
+          <Code Code="S001" DisplayName="查房内容" Instances="0..1" BindKBBaseID="153" BindKBName="查房内容"/>
+        </Section>
+        <Section>
+          <Code Code="S002" DisplayName="医师签名：" Instances="0..1" BindKBBaseID="" BindKBName=""/>
+          <Composite Virtual="True">
+            <Code Code="V003" DisplayName="" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+            <SubItems>
+              <MIConcept>
+                <Code>V004</Code>
+                <DisplayName></DisplayName>
+                <Description></Description>
+                <AllowInput>False</AllowInput>
+                <FixedStructs>True</FixedStructs>
+                <Attributes>
+                  <SignatureLevel>Check</SignatureLevel>
+                  <SignDisplayName>三级医师审核</SignDisplayName>
+                </Attributes>
+                <SubItems>
+                  <Attribute>
+                    <KeyWord></KeyWord>
+                    <AbnormalColor></AbnormalColor>
+                    <TextPosition></TextPosition>
+                    <Major>False</Major>
+                    <RefElement>
+                      <MIString>
+                        <Code>L0001</Code>
+                        <SourceCode>L0001</SourceCode>
+                        <CCode>V003</CCode>
+                        <KBNodeID></KBNodeID>
+                        <DisplayName>三级医师审核</DisplayName>
+                        <Description></Description>
+                        <InvalidValue></InvalidValue>
+                        <BindType></BindType>
+                        <BindCode></BindCode>
+                        <ValidateMsg></ValidateMsg>
+                        <ConfidentialityCode>V</ConfidentialityCode>
+                        <TabIndex>0</TabIndex>
+                        <Synch>True</Synch>
+                        <AllowNull>False</AllowNull>
+                        <ReadOnly>False</ReadOnly>
+                        <FixedStructs>True</FixedStructs>
+                        <Visible>True</Visible>
+                        <RegExp></RegExp>
+                        <MaxLength>-1</MaxLength>
+                        <DynamicField>False</DynamicField>
+                        <SignatureLevel>Resident</SignatureLevel>
+                        <ShowSignerDescription>False</ShowSignerDescription>
+                        <Separator></Separator>
+                        <SimBindKBBaseID></SimBindKBBaseID>
+                        <SimBindKBName></SimBindKBName>
+                        <QrCode>False</QrCode>
+                        <SignerId>10376</SignerId>
+                        <HeaderImageCode></HeaderImageCode>
+                        <FingerImageCode></FingerImageCode>
+                      </MIString>
+                    </RefElement>
+                  </Attribute>
+                </SubItems>
+              </MIConcept>
+            </SubItems>
+          </Composite>
+        </Section>
+      </Component>
+    </MetaData>
+    <Scripts></Scripts>
+    <Medias></Medias>
+    <NInstanceData InstanceID="217||4" HappenDateTime="2019-04-12 07:43" DateTimeFormat="yyyy-MM-dd HH:mm" TimeStamp="1555054999">
+      <ScatterData>
+        <Component>
+          <Section>
+            <Code Code="Header" DisplayName="页眉"/>
+            <Text></Text>
+            <StyleText></StyleText>
+            <Composite>
+              <Code Code="V001" DisplayName="页眉" KBNodeID="" BindKBBaseID=""/>
+              <Text></Text>
+              <StyleText></StyleText>
+              <SubItems>
+                <MIString>
+                  <Code Code="L0009" SourceCode="L0009"  CCode="V001"  KBNodeID="" DisplayName="医院名称"/>
+                  <Value>东华标准版数字化医院[总院]</Value>
+                </MIString>
+                <MIString>
+                  <Code Code="L0004" SourceCode="L0004"  CCode="V001"  KBNodeID="" DisplayName="科室"/>
+                  <Value>内分泌科</Value>
+                </MIString>
+                <MIString>
+                  <Code Code="L0001" SourceCode="L0001"  CCode="V001"  KBNodeID="" DisplayName="姓名"/>
+                  <Value>杨亭</Value>
+                </MIString>
+                <MIString>
+                  <Code Code="L0007" SourceCode="L0007"  CCode="V001"  KBNodeID="" DisplayName="病案号"/>
+                  <Value>100144</Value>
+                </MIString>
+              </SubItems>
+            </Composite>
+          </Section>
+          <Section>
+            <Code Code="Footer" DisplayName="页脚"/>
+            <Text></Text>
+            <StyleText></StyleText>
+          </Section>
+          <Section>
+            <Code Code="S001" DisplayName="查房内容"/>
+            <Text>今晨查看病人，患者自诉无头晕，夜间睡眠可，夜尿0次/夜。体格检查：一般情况可，心肺腹（-），双下肢不肿。
+  血压：左上肢卧位：      143/89 mmHg，心率76次/分
+        右上肢卧位：      153/95 mmHg，心率78次/分
+        右上肢立位：0min  150/91 mmHg，心率89次/分
+                    1min  160/101 mmHg，心率96次/分
+                    3min  151/105 mmHg，心率94次/分
+辅助检查：全血细胞分析:WBC 6.64×109/L,PLT 180×109/L,RBC 4.82×1012/L,HGB 156g/L；尿常规+沉渣:BACT 42.3/μL,PRO 0.3g/L；粪便常规+潜血:(-)；凝血（-）；血沉:11mm/h；输血8项:(-) ；糖化血红蛋白:HbA1c 7.4%；肝肾功血脂：ALT 28U/L,AST 27U/L,Alb 47g/L,TP 72g/L,GGT 35U/L,ALP 72U/L,Cr(E) 104μmol/L,Urea 7.33mmol/L,LD 282U/L,CK 240U/L,hsCRP 2.41mg/L,FFA 399μmol/L,GA% 15.1%,HCY 14.7μmol/L,Glu 5.2mmol/L,UA 394 μmol/L,K 3.3 mmol/L,P 1.09mmol/L,Ca 2.24mmol/L,Cl 105mmol/L,TC 6.08mmol/L,TG 1.83mmol/L,HDL-C 1.15mmol/L,LDL-C 4.18mmol/L;ACR 234mg/g Cr；8hUAE 280.0μg/min。查eGFR=69.32ML/(min*1.73m2)。
+影像学检查：胸部正侧位：未见明显异常。肝胆胰脾超声：肝剑下、肋下及边，肝实质回声增强，分布欠均，提示脂肪肝，余（-）。双肾、输尿管、膀胱、前列腺超声：前列腺3.1×4.6×2.2cm，回声尚均，排尿后膀胱空虚，提示前列腺增大，余（-）。颈动脉、椎动脉彩色多普勒超声：右侧颈总动脉内中膜厚0.07cm，分叉处见数个低回声，较大者0.9×0.19cm，左侧颈总动脉内中膜厚0.07cm，分叉处见低回声，0.5×0.18cm，提示双侧颈动脉粥样硬化伴多发斑块形成。肾动脉彩色多普勒超声：未见明显异常。下肢动脉彩色多普勒超声：双下肢动脉内中膜不平整，壁上见散在斑块样回声，右侧较大者位于股总动脉，为中低回声，厚约0.28cm；左侧较大者位于股总动脉，为中高回声，厚约0.21cm，提示双下肢动脉多发斑块形成。
+     李伟副教授代主治医师、全婷婷代主治医生查房：结合相关检查结果，患者糖尿病肾病已达IV期，CKD分期2期，降糖方面：目前二甲双胍仍为无禁忌证的2型糖尿病患者的一线用药，糖尿病肾病eGFR&lt;45ml/(min*1.73m2)时禁用，该患者肾功能方面尚无二甲双胍使用禁忌，而且体型偏胖，可予格华止0.5g，3次/日口服，由于吡格列酮和胰岛素联用有体重增加风险，建议停用，监测血糖提示餐后血糖偏高，可将胰岛素优泌林70/30调整为优泌乐50，剂量减为早18u，晚18u，拜唐苹原剂量不变，监测血糖，据血糖水平调整胰岛素剂量；降压方面：糖尿病患者降压药首选ARB或ACEI，患者血压偏高，可在厄贝沙坦的基础上加小剂量利尿剂氢氯噻嗪控制血压，据血压水平调节剂量；另外，患者血脂偏高，尤其低密度脂蛋白胆固醇高，同时并发多发动脉粥样硬化，有使用他汀类降血脂保护血管指征，但该类药物有罕见但严重的横纹肌溶解症的不良反应，该患者肌酶偏高，暂不使用，建议完善肌酶谱，包括心肌酶、甲功以明确；超声提示无残余尿，也无明显卧立位血压、心率改变及进食早饱、打嗝，暂不考虑糖尿病自主神经病变，但有手指端麻木，提示已经出现糖尿病周围神经病变可能，建议予甲钴胺片、维生素B1营养神经治疗，完善肌电图检查以明确；另外患者血钾偏低，建议给予补达秀0.5次/日口服，监测血钾、血糖、血压，观察病情变化。
+    以上建议已经遵嘱执行。</Text>
+            <StyleText></StyleText>
+          </Section>
+          <Section>
+            <Code Code="S002" DisplayName="医师签名："/>
+            <Text>陆玉梅</Text>
+            <StyleText></StyleText>
+            <Composite>
+              <Code Code="V003" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+              <Text>陆玉梅</Text>
+              <StyleText></StyleText>
+              <SubItems>
+                <MIConcept>
+                  <Code Code="V004" DisplayName=""/>
+                  <Text>陆玉梅</Text>
+                  <StyleText></StyleText>
+                  <SubItems>
+                    <MIString>
+                      <Code Code="L0001" SourceCode="L0001"  CCode="V003"  KBNodeID="" DisplayName="三级医师审核"/>
+                      <Value>陆玉梅</Value>
+                    </MIString>
+                  </SubItems>
+                </MIConcept>
+                <MIString>
+                  <Code Code="L0001"/>
+                  <Value>陆玉梅</Value>
+                </MIString>
+              </SubItems>
+            </Composite>
+          </Section>
+        </Component>
+      </ScatterData>
+      <abiword template="false" version="2.8.6"
+        xmlns:svg="http://www.w3.org/2000/svg" xid-max="89"
+        xmlns:dc="http://purl.org/dc/elements/1.1/" fileformat="1.1"
+        xmlns:fo="http://www.w3.org/1999/XSL/Format"
+        xmlns:math="http://www.w3.org/1998/Math/MathML"
+        xmlns:awml="http://www.abisource.com/awml.dtd"
+        xmlns="http://www.abisource.com/awml.dtd"
+        xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" props="table-row-heights:0.5cm/; dom-dir:ltr; bot-style:0; document-footnote-initial:1; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-footnote-restart-section:0; lang:zh-CN; table-column-props:14cm/; document-endnote-initial:1; document-endnote-restart-section:0; document-footnote-type:numeric; left-style:0; document-footnote-restart-page:0; table-column-leftpos:0.200000cm; right-style:0; top-style:0; document-endnote-place-endsection:0">
+        <revisions show="0" mark="0" show-level="268435455" auto="0">
+          <r id="1" time-started="1555029721" version="0" revision-level="1" revision-key="10376">10.10.141.16(陆玉梅)</r>
+          <r id="2" time-started="1555138835" version="0" revision-level="1" revision-key="10376">10.10.141.9(陆玉梅)</r>
+          <r id="3" time-started="1555401634" version="0" revision-level="1" revision-key="10376">10.10.141.16(陆玉梅)</r>
+          <r id="4" time-started="1555462398" version="0" revision-level="3" revision-key="10209">10.10.141.16(医生01)</r>
+          <r id="5" time-started="1594194320" version="0" revision-level="3" revision-key="10209">(医生01)</r>
+        </revisions>
+        <styles>
+          <s type="P" name="Normal" basedon="" followedby="Current Settings" props="font-family:宋体; margin-top:0pt; font-variant:normal; margin-left:0pt; text-indent:0in; widows:2; font-style:normal; font-weight:normal; text-decoration:none; color:000000; line-height:1.5; text-align:justify; margin-bottom:0pt; text-position:normal; margin-right:0pt; bgcolor:transparent; font-size:12pt; font-stretch:normal"/>
+          <s type="P" name="Normal Table" props=""/>
+          <s type="C" name="Default Paragraph Font" props=""/>
+        </styles>
+        <pagesize pagetype="A4" orientation="portrait" width="210.000000" height="297.000000" units="mm" symmetric-margin="1" page-scale="1.000000"/>
+        <section footer="1" header="0" xid="98" props="page-margin-footer:0.00cm; page-margin-header:0.00cm; page-margin-right:2.54cm; page-margin-left:2.54cm; page-margin-top:3.76cm; page-margin-bottom:2.54cm">
+          <p xid="151" props="text-align:left; line-height:1.70">
+            <bookmark usage="3" type="start" name="217||4^EMR100002" xid="152"/>
+            <c props="bgcolor:e0ecff; code:217||4^GuideDate; et:5; font-weight:bold; font-size:12pt">2019-04-12 07:43</c>
+            <bookmark usage="3" type="end" name="217||4^EMR100002" xid="153"/>
+          </p>
+          <p xid="154" props="text-align:left; line-height:1.5">
+            <bookmark usage="1" type="start" name="217||4^S001" xid="155"/>
+            <c props="display:none; code:217||4^S001; et:9; font-weight:normal">查房内容</c>
+            <c>今晨查看病人，患者自诉无头晕，夜间睡眠可，夜尿0次/夜。体格检查：一般情况可，心肺腹</c>
+            <c props="dir-override:ltr">（</c>
+            <c>-</c>
+            <c props="dir-override:ltr">）</c>
+            <c>，双下肢不肿</c>
+            <c props="dir-override:ltr">。</c>
+          </p>
+          <p xid="156" props="line-height:1.5">
+            <c>  血压：左上肢卧位：</c>
+            <c props="dir-override:ltr"></c>
+            <c>143/89</c>
+            <c props="dir-override:ltr"></c>
+            <c>mmHg，心率76次/分</c>
+          </p>
+          <p xid="157" props="line-height:1.5">
+            <c props="dir-override:ltr"></c>
+            <c>右上肢卧位：</c>
+            <c props="dir-override:ltr"></c>
+            <c>153/95</c>
+            <c props="dir-override:ltr"></c>
+            <c>mmHg，心率78次/分</c>
+          </p>
+          <p xid="158" props="line-height:1.5">
+            <c props="dir-override:ltr"></c>
+            <c>右上肢立位：0min</c>
+            <c props="dir-override:ltr"></c>
+            <c>150/91</c>
+            <c props="dir-override:ltr"></c>
+            <c>mmHg，心率89次/分</c>
+          </p>
+          <p xid="159" props="line-height:1.5">
+            <c props="dir-override:ltr"></c>
+            <c>1min</c>
+            <c props="dir-override:ltr"></c>
+            <c>160/101</c>
+            <c props="dir-override:ltr"></c>
+            <c>mmHg，心率96次/分</c>
+          </p>
+          <p xid="160" props="line-height:1.5">
+            <c props="dir-override:ltr"></c>
+            <c>3min</c>
+            <c props="dir-override:ltr"></c>
+            <c>151/105</c>
+            <c props="dir-override:ltr"></c>
+            <c>mmHg，心率94次/分</c>
+          </p>
+          <p xid="161" props="line-height:1.5">
+            <c>辅助检查：全血细胞分析:WBC</c>
+            <c props="dir-override:ltr"></c>
+            <c>6.64</c>
+            <c props="dir-override:ltr">×</c>
+            <c>109/L,PLT</c>
+            <c props="dir-override:ltr"></c>
+            <c>180</c>
+            <c props="dir-override:ltr">×</c>
+            <c>109/L,RBC</c>
+            <c props="dir-override:ltr"></c>
+            <c>4.82</c>
+            <c props="dir-override:ltr">×</c>
+            <c>1012/L,HGB</c>
+            <c props="dir-override:ltr"></c>
+            <c>156g/L；尿常规+沉渣:BACT</c>
+            <c props="dir-override:ltr"></c>
+            <c>42.3/μL,PRO</c>
+            <c props="dir-override:ltr"></c>
+            <c>0.3g/L；粪便常规+潜血:</c>
+            <c props="dir-override:ltr">(</c>
+            <c>-</c>
+            <c props="dir-override:ltr">)；</c>
+            <c>凝血</c>
+            <c props="dir-override:ltr">（</c>
+            <c>-</c>
+            <c props="dir-override:ltr">）；</c>
+            <c>血沉:11mm/h；输血8项:</c>
+            <c props="dir-override:ltr">(</c>
+            <c>-</c>
+            <c props="dir-override:ltr">) ；</c>
+            <c>糖化血红蛋白:HbA1c</c>
+            <c props="dir-override:ltr"></c>
+            <c>7.4%</c>
+            <c props="dir-override:ltr">；</c>
+            <c>肝肾功血脂：ALT</c>
+            <c props="dir-override:ltr"></c>
+            <c>28U/L,AST</c>
+            <c props="dir-override:ltr"></c>
+            <c>27U/L,Alb</c>
+            <c props="dir-override:ltr"></c>
+            <c>47g/L,TP</c>
+            <c props="dir-override:ltr"></c>
+            <c>72g/L,GGT</c>
+            <c props="dir-override:ltr"></c>
+            <c>35U/L,ALP</c>
+            <c props="dir-override:ltr"></c>
+            <c>72U/L,Cr(E</c>
+            <c props="dir-override:ltr">) </c>
+            <c>104μmol/L,Urea</c>
+            <c props="dir-override:ltr"></c>
+            <c>7.33mmol/L,LD</c>
+            <c props="dir-override:ltr"></c>
+            <c>282U/L,CK</c>
+            <c props="dir-override:ltr"></c>
+            <c>240U/L,hsCRP</c>
+            <c props="dir-override:ltr"></c>
+            <c>2.41mg/L,FFA</c>
+            <c props="dir-override:ltr"></c>
+            <c>399μmol/L,GA%</c>
+            <c props="dir-override:ltr"></c>
+            <c>15.1%,HCY</c>
+            <c props="dir-override:ltr"></c>
+            <c>14.7μmol/L,Glu</c>
+            <c props="dir-override:ltr"></c>
+            <c>5.2mmol/L,UA</c>
+            <c props="dir-override:ltr"></c>
+            <c>394</c>
+            <c props="dir-override:ltr"></c>
+            <c>μmol/L,K</c>
+            <c props="dir-override:ltr"></c>
+            <c>3.3</c>
+            <c props="dir-override:ltr"></c>
+            <c>mmol/L,P</c>
+            <c props="dir-override:ltr"></c>
+            <c>1.09mmol/L,Ca</c>
+            <c props="dir-override:ltr"></c>
+            <c>2.24mmol/L,Cl</c>
+            <c props="dir-override:ltr"></c>
+            <c>105mmol/L,TC</c>
+            <c props="dir-override:ltr"></c>
+            <c>6.08mmol/L,TG</c>
+            <c props="dir-override:ltr"></c>
+            <c>1.83mmol/L,HDL-C</c>
+            <c props="dir-override:ltr"></c>
+            <c>1.15mmol/L,LDL-C</c>
+            <c props="dir-override:ltr"></c>
+            <c>4.18mmol/L;ACR</c>
+            <c props="dir-override:ltr"></c>
+            <c>234mg/g Cr</c>
+            <c props="dir-override:ltr">；</c>
+            <c>8hUAE</c>
+            <c props="dir-override:ltr"></c>
+            <c>280.0μg/min。查eGFR</c>
+            <c props="dir-override:ltr">=</c>
+            <c>69.32ML/</c>
+            <c props="dir-override:ltr">(</c>
+            <c>min</c>
+            <c props="dir-override:ltr">*</c>
+            <c>1.73m2</c>
+            <c props="dir-override:ltr">)。</c>
+          </p>
+          <p xid="162" props="line-height:1.5">
+            <c>影像学检查：胸部正侧位：未见明显异常。肝胆胰脾超声：肝剑下、肋下及边，肝实质回声增强，分布欠均，提示脂肪肝，余</c>
+            <c props="dir-override:ltr">（</c>
+            <c>-</c>
+            <c props="dir-override:ltr">）。</c>
+            <c>双肾、输尿管、膀胱、前列腺超声：前列腺3.1</c>
+            <c props="dir-override:ltr">×</c>
+            <c>4.6</c>
+            <c props="dir-override:ltr">×</c>
+            <c>2.2cm，回声尚均，排尿后膀胱空虚，提示前列腺增大，余</c>
+            <c props="dir-override:ltr">（</c>
+            <c>-</c>
+            <c props="dir-override:ltr">）。</c>
+            <c>颈动脉、椎动脉彩色多普勒超声：右侧颈总动脉内中膜厚0.07cm，分叉处见数个低回声，较大者0.9</c>
+            <c props="dir-override:ltr">×</c>
+            <c>0.19cm，左侧颈总动脉内中膜厚0.07cm，分叉处见低回声，0.5</c>
+            <c props="dir-override:ltr">×</c>
+            <c>0.18cm，提示双侧颈动脉粥样硬化伴多发斑块形成。肾动脉彩色多普勒超声：未见明显异常。下肢动脉彩色多普勒超声：双下肢动脉内中膜不平整，壁上见散在斑块样回声，右侧较大者位于股总动脉，为中低回声，厚约0.28cm；左侧较大者位于股总动脉，为中高回声，厚约0.21cm，提示双下肢动脉多发斑块形成</c>
+            <c props="dir-override:ltr">。</c>
+          </p>
+          <p xid="163" props="line-height:1.5">
+            <c>     李伟副教授代主治医师、
+              
+              
+              
+              
+              
+              
+              <br/>全婷婷代主治医生查房：结合相关检查结果，患者糖尿病肾病已达IV期，CKD分期2期，降糖方面：目前二甲双胍仍为无禁忌证的2型糖尿病患者的一线用药，糖尿病肾病eGFR
+            
+            
+            
+            
+            
+            
+            </c>
+            <c props="dir-override:ltr">&lt;</c>
+            <c>45ml/</c>
+            <c props="dir-override:ltr">(</c>
+            <c>min</c>
+            <c props="dir-override:ltr">*</c>
+            <c>1.73m2</c>
+            <c props="dir-override:ltr">)</c>
+            <c>时禁用，该患者肾功能方面尚无二甲双胍使用禁忌，而且体型偏胖，可予格华止0.5g，3次/日口服，由于吡格列酮和胰岛素联用有体重增加风险，建议停用，监测血糖提示餐后血糖偏高，可将胰岛素优泌林70/30调整为优泌乐50，剂量减为早18u，晚18u，拜唐苹原剂量不变，监测血糖，据血糖水平调整胰岛素剂量；降压方面：糖尿病患者降压药首选ARB或ACEI，患者血压偏高，可在厄贝沙坦的基础上加小剂量利尿剂氢氯噻嗪控制血压，据血压水平调节剂量；另外，患者血脂偏高，尤其低密度脂蛋白胆固醇高，同时并发多发动脉粥样硬化，有使用他汀类降血脂保护血管指征，但该类药物有罕见但严重的横纹肌溶解症的不良反应，该患者肌酶偏高，暂不使用，建议完善肌酶谱，包括心肌酶、甲功以明确；超声提示无残余尿，也无明显卧立位血压、心率改变及进食早饱、打嗝，暂不考虑糖尿病自主神经病变，但有手指端麻木，提示已经出现糖尿病周围神经病变可能，建议予甲钴胺片、维生素B1营养神经治疗，完善肌电图检查以明确；另外患者血钾偏低，建议给予补达秀0.5次/日口服，监测血钾、血糖、血压，观察病情变化</c>
+            <c props="dir-override:ltr">。</c>
+          </p>
+          <p xid="164" props="line-height:1.5">
+            <c>    以上建议已经遵嘱执行</c>
+            <c props="dir-override:ltr">。</c>
+            <c props="display:inline"></c>
+            <bookmark usage="1" type="end" name="217||4^S001" xid="165"/>
+          </p>
+          <p xid="166" props="text-align:right; line-height:1.70">
+            <bookmark usage="1" type="start" name="217||4^S002" xid="167"/>
+            <c props="et:9; code:217||4^S002; display:inline; font-weight:bold">医师签名：</c>
+            <bookmark usage="2" type="start" name="217||4^S002_V003" xid="168"/>
+            <bookmark usage="4" type="start" name="217||4^S002_V003_V004" xid="169"/>
+            <c props="bgcolor:c0c0c0; et:1; code:217||4^S002_V003_V004_L0001; display:inline">陆玉梅</c>
+            <bookmark usage="4" type="end" name="217||4^S002_V003_V004" xid="170"/>
+            <bookmark usage="2" type="end" name="217||4^S002_V003" xid="171"/>
+            <bookmark usage="1" type="end" name="217||4^S002" xid="172"/>
+          </p>
+        </section>
+        <section id="1" listid="0" parentid="0" type="footer" xid="49">
+          <p xid="50" props="text-align:center; line-height:1pt">
+            <bookmark usage="1" type="start" name="Footer" xid="53"/>
+            <bookmark usage="2" type="start" name="Footer_V002" xid="51"/>
+            <bookmark usage="2" type="end" name="Footer_V002" xid="52"/>
+          </p>
+          <table xid="57" props="list-tag:1">
+            <cell xid="58" props="bg-style:1; left-color:000000; bot-style:0; bot-thickness:1.0pt; right-attach:1; left-thickness:1.0pt; right-thickness:1.0pt; right-color:000000; bot-color:000000; left-attach:0; top-color:000000; top-style:1; right-style:0; left-style:0; top-thickness:1.0pt; bot-attach:1; top-attach:0">
+              <p style="Normal" xid="59" props="text-align:center">
+                <c>第(</c>
+                <field type="page_number" xid="65"></field>
+                <c>)页</c>
+              </p>
+            </cell>
+          </table>
+          <p xid="56" props="text-align:center; line-height:1pt">
+            <bookmark usage="1" type="end" name="Footer" xid="54"/>
+          </p>
+        </section>
+        <section id="0" listid="0" parentid="0" type="header" xid="1">
+          <p xid="2" props="text-align:left">
+            <bookmark usage="2" type="start" name="Header_V001" xid="67"/>
+            <bookmark usage="1" type="start" name="Header" xid="5"/>
+            <c></c>
+          </p>
+          <table xid="8" props="table-row-heights:1.12cm/1.12cm/0.75cm/; list-tag:1; bg-style:1; left-color:000000; bot-style:0; table-column-props:5.37cm/7.87cm/4.00cm/; right-color:000000; top-color:000000; left-style:0; bot-color:000000; right-style:0; top-style:0">
+            <cell xid="9" props="bot-attach:1; left-attach:0; right-attach:3; top-attach:0">
+              <p style="Normal" xid="10" props="text-align:center">
+                <c props="font-weight:bold; et:1; code:Header_V001_L0009; font-size:20pt">东华标准版数字化医院[总院]</c>
+              </p>
+            </cell>
+            <cell xid="18" props="bot-attach:2; left-attach:0; right-attach:3; top-attach:1">
+              <p style="Normal" xid="19" props="text-align:center; tabstops:0.00cm/L0,17.48cm/L0; margin-right:-0.12cm">
+                <c props="font-weight:bold; font-size:20pt">病程记录</c>
+              </p>
+            </cell>
+            <cell xid="27" props="bg-style:1; bot-style:1; bot-thickness:1.0pt; right-attach:1; left-thickness:1.0pt; right-thickness:1.0pt; top-color:000000; bot-color:000000; left-attach:0; top-style:0; right-style:0; left-style:0; top-thickness:1.0pt; bot-attach:3; top-attach:2">
+              <p style="Normal" xid="28">
+                <c>姓名：</c>
+                <field type="dynamic_field" param="姓名" xid="43" props="bgcolor:c0c0c0; et:1; code:Header_V001_L0001"></field>
+              </p>
+            </cell>
+            <cell xid="30" props="bg-style:1; bot-style:1; bot-thickness:1.0pt; right-attach:2; left-thickness:1.0pt; right-thickness:1.0pt; top-color:000000; bot-color:000000; left-attach:1; top-style:0; right-style:0; left-style:0; top-thickness:1.0pt; bot-attach:3; top-attach:2">
+              <p style="Normal" xid="31" props="tabstops:14.74cm/L0,1.37cm/L0,6.74cm/L0; margin-right:0.00cm">
+                <c>科室：</c>
+                <field type="dynamic_field" param="科室" xid="66" props="bgcolor:c0c0c0; et:1; code:Header_V001_L0004"></field>
+              </p>
+            </cell>
+            <cell xid="33" props="bg-style:1; bot-style:1; bot-thickness:1.0pt; right-attach:3; left-thickness:1.0pt; right-thickness:1.0pt; top-color:000000; bot-color:000000; left-attach:2; top-style:0; right-style:0; left-style:0; top-thickness:1.0pt; bot-attach:3; top-attach:2">
+              <p style="Normal" xid="34" props="text-indent:0.00cm; tabstops:12.11cm/L0,11.24cm/L0,11.36cm/L0,11.61cm/L0; margin-left:0.00cm">
+                <c>病案号：</c>
+                <field type="dynamic_field" param="病案号" xid="46" props="bgcolor:c0c0c0; et:1; code:Header_V001_L0007"></field>
+                <bookmark usage="2" type="end" name="Header_V001" xid="68"/>
+              </p>
+            </cell>
+          </table>
+          <p xid="7" props="text-align:left; line-height:1pt">
+            <bookmark usage="1" type="end" name="Header" xid="6"/>
+          </p>
+        </section>
+      </abiword>
+    </NInstanceData>
+  </StructuredBody>
+</Document>

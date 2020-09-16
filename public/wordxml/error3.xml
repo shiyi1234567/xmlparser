@@ -1,0 +1,2670 @@
+WORD<?xml version="1.0" encoding="UTF-8"?><Document><Code Code="EMR090001" DisplayName="EMR090001 入院记录"/><TemplateGUID>831650e5-21ce-4ddc-bb62-092fe3d92517</TemplateGUID><TemplateType>Single</TemplateType><TemplateProperty Code="Domain01" DisplayName="住院病历"/><Title Code="" DisplayName="入院记录" NewDisplayName="入院记录"><TitleItems></TitleItems></Title><Macros><Macro/></Macros><StructuredBody><MetaData Version="1" Editor="iEditor" Lang="zh-CN">
+<Component>
+<Section>
+<Code Code="Header" DisplayName="页眉" Instances="" BindKBBaseID="" BindKBName="" ReadOnly="False"/>
+<Composite Virtual="True">
+<Code Code="V001" DisplayName="页眉" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+<SubItems>
+<MIString>
+<Code>L0001</Code>
+<SourceCode>L0001</SourceCode>
+<CCode>V001</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>医院名称</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]用户自定义信息.医院名称[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetCustomInfo#FNAME:HospitalName#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+<MIString>
+<Code>L0002</Code>
+<SourceCode>L0002</SourceCode>
+<CCode>V001</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>姓名</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者基本信息.患者姓名[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetPatientInfo#FNAME:Name#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>True</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+<MIString>
+<Code>L0003</Code>
+<SourceCode>L0003</SourceCode>
+<CCode>V001</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>病案号</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者基本信息.住院病案号[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetPatientInfo#FNAME:IPRecordNo#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>True</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>True</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+<MIString>
+<Code>L0004</Code>
+<SourceCode>L0004</SourceCode>
+<CCode>V001</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>当前科室</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者出入院信息.当前科室字符[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetATDInfo#FNAME:CurDeptDesc#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+<MIString>
+<Code>L0135</Code>
+<SourceCode>L0135</SourceCode>
+<CCode>V001</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>性别</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者基本信息.患者性别[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetPatientInfo#FNAME:GenderDesc#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>True</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+<MIString>
+<Code>L0136</Code>
+<SourceCode>L0136</SourceCode>
+<CCode>V001</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>年龄</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者基本信息.患者年龄[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetPatientInfo#FNAME:Age#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>True</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="Footer" DisplayName="页脚" Instances="" BindKBBaseID="" BindKBName="" ReadOnly="False"/>
+</Section>
+<Section>
+<Code Code="S001" DisplayName="患者基本信息" Instances="0..1" BindKBBaseID="" BindKBName="" ReadOnly="False"/>
+<Composite Virtual="True">
+<Code Code="V005" DisplayName="" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+<SubItems>
+<MIString>
+<Code>L0001</Code>
+<SourceCode>L0001</SourceCode>
+<CCode>V005</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>姓名</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者基本信息.患者姓名[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetPatientInfo#FNAME:Name#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>V</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>True</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>False</AllowNull>
+<ReadOnly>True</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+<MIDictionary>
+<Code>I0002</Code>
+<SourceCode>I0002</SourceCode>
+<CCode>V005</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>性别</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者基本信息.患者性别[字典]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetPatientInfo#FNAME:GenderDict#VALUETYPE:Dict</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>True</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>False</AllowNull>
+<ReadOnly>True</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<DictionaryType>STDDIC</DictionaryType>
+<CodeSystem>S06</CodeSystem>
+<CodeSystemName>S06-[HIS]性别字典</CodeSystemName>
+<CustDicClassName></CustDicClassName>
+<DisplayType>Desc</DisplayType>
+<Separator>|</Separator>
+<LinkCode></LinkCode>
+<LinkDisplayType>Code</LinkDisplayType>
+<LinkMethod></LinkMethod>
+<AllowCodeNull>True</AllowCodeNull>
+<AllowValueNull>True</AllowValueNull>
+<AssociateItem></AssociateItem>
+<AssociateItemOutputType></AssociateItemOutputType>
+<MaxLength>0</MaxLength>
+</MIDictionary>
+<MIString>
+<Code>L0003</Code>
+<SourceCode>L0003</SourceCode>
+<CCode>V005</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>年龄</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者基本信息.患者年龄[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetPatientInfo#FNAME:Age#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>V</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>True</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>False</AllowNull>
+<ReadOnly>True</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+<MIDictionary>
+<Code>I0005</Code>
+<SourceCode>I0005</SourceCode>
+<CCode>V005</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>婚姻状况</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者基本信息.婚姻[字典]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetPatientInfo#FNAME:MarriageDict#VALUETYPE:Dict</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>V</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>True</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>False</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<DictionaryType>STDDIC</DictionaryType>
+<CodeSystem>S14</CodeSystem>
+<CodeSystemName>S14-[HIS]婚姻字典</CodeSystemName>
+<CustDicClassName></CustDicClassName>
+<DisplayType>Desc</DisplayType>
+<Separator></Separator>
+<LinkCode></LinkCode>
+<LinkDisplayType>Code</LinkDisplayType>
+<LinkMethod></LinkMethod>
+<AllowCodeNull>True</AllowCodeNull>
+<AllowValueNull>True</AllowValueNull>
+<AssociateItem></AssociateItem>
+<AssociateItemOutputType></AssociateItemOutputType>
+<MaxLength>0</MaxLength>
+</MIDictionary>
+<MIDateTime>
+<Code>D0008</Code>
+<SourceCode>D0008</SourceCode>
+<CCode>V005</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>入院时间</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者出入院信息.入院分床日期时间[日期]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetATDInfo#FNAME:AdmDateTimeInBed#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>V</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>True</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>False</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<DateFormat>yyyy-MM-dd</DateFormat>
+<TimeFormat>HH:mm</TimeFormat>
+<BenchMarkTime>2020-07-08 08:51</BenchMarkTime>
+<PreSelect></PreSelect>
+<NextSelect></NextSelect>
+<IncludeDate>True</IncludeDate>
+<IncludeTime>False</IncludeTime>
+</MIDateTime>
+<MIDateTime>
+<Code>D0009</Code>
+<SourceCode>D0009</SourceCode>
+<CCode>V005</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>记录时间</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者出入院信息.当前日期时间[日期]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetATDInfo#FNAME:CurDateTime#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>V</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>True</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>False</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<DateFormat>yyyy-MM-dd</DateFormat>
+<TimeFormat>HH:mm</TimeFormat>
+<BenchMarkTime>2020-07-08 10:08</BenchMarkTime>
+<PreSelect></PreSelect>
+<NextSelect></NextSelect>
+<IncludeDate>True</IncludeDate>
+<IncludeTime>True</IncludeTime>
+</MIDateTime>
+<MIMonoChoice>
+<Code>O0011</Code>
+<SourceCode>O0011</SourceCode>
+<CCode>V005</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>可靠性</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>True</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>False</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType></ShowType>
+<Choices>
+<Choice Code="1" DisplayName="可靠" OriginalDisplayName="可靠"/>
+<Choice Code="2" DisplayName="基本可靠" OriginalDisplayName="基本可靠"/>
+<Choice Code="3" DisplayName="无法获得" OriginalDisplayName="无法获得"/>
+<Choice Code="4" DisplayName="不完全可靠" OriginalDisplayName="不完全可靠"/>
+<Choice Code="5" DisplayName="仅供参考" OriginalDisplayName="仅供参考"/>
+</Choices>
+</MIMonoChoice>
+<MIMultiChoice>
+<Code>M0001</Code>
+<SourceCode>M0001</SourceCode>
+<CCode>V005</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>患者家属或本人</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType></ShowType>
+<Choices>
+<Choice Code="0" DisplayName="患者家属" OriginalDisplayName="患者家属"/>
+<Choice Code="1" DisplayName="患者本人" OriginalDisplayName="患者本人"/>
+</Choices>
+</MIMultiChoice>
+<MIString>
+<Code>L0137</Code>
+<SourceCode>L0137</SourceCode>
+<CCode>V005</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>出生地</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者基本信息.现住址[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetPatientInfo#FNAME:CurAddress#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+<MIDictionary>
+<Code>I0012</Code>
+<SourceCode>I0012</SourceCode>
+<CCode>V005</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>民族</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者基本信息.民族[字典]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetPatientInfo#FNAME:NationDict#VALUETYPE:Dict</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<DictionaryType>STDDIC</DictionaryType>
+<CodeSystem>S04</CodeSystem>
+<CodeSystemName>S04-[HIS]民族字典</CodeSystemName>
+<CustDicClassName></CustDicClassName>
+<DisplayType>Desc</DisplayType>
+<Separator>|</Separator>
+<LinkCode></LinkCode>
+<LinkDisplayType>Code</LinkDisplayType>
+<LinkMethod></LinkMethod>
+<AllowCodeNull>True</AllowCodeNull>
+<AllowValueNull>True</AllowValueNull>
+<AssociateItem></AssociateItem>
+<AssociateItemOutputType></AssociateItemOutputType>
+<MaxLength>0</MaxLength>
+</MIDictionary>
+<MIDictionary>
+<Code>I0013</Code>
+<SourceCode>I0013</SourceCode>
+<CCode>V005</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>职业</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者基本信息.职业[字典]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetPatientInfo#FNAME:OccupationDict#VALUETYPE:Dict</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<DictionaryType>STDDIC</DictionaryType>
+<CodeSystem>S08</CodeSystem>
+<CodeSystemName>S08-[HIS]职业字典</CodeSystemName>
+<CustDicClassName></CustDicClassName>
+<DisplayType>Desc</DisplayType>
+<Separator>|</Separator>
+<LinkCode></LinkCode>
+<LinkDisplayType>Code</LinkDisplayType>
+<LinkMethod></LinkMethod>
+<AllowCodeNull>True</AllowCodeNull>
+<AllowValueNull>True</AllowValueNull>
+<AssociateItem></AssociateItem>
+<AssociateItemOutputType></AssociateItemOutputType>
+<MaxLength>0</MaxLength>
+</MIDictionary>
+<MIString>
+<Code>L0138</Code>
+<SourceCode>L0138</SourceCode>
+<CCode>V005</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>工作单位</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者基本信息.单位地址[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetPatientInfo#FNAME:WorkAddress#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S002" DisplayName="主  诉：" Instances="0..1" BindKBBaseID="348" BindKBName="主诉" ReadOnly="False"/>
+</Section>
+<Section>
+<Code Code="S003" DisplayName="现病史：" Instances="0..1" BindKBBaseID="349" BindKBName="现病史" ReadOnly="False"/>
+</Section>
+<Section>
+<Code Code="S004" DisplayName="既往史：" Instances="0..1" BindKBBaseID="350" BindKBName="既往史" ReadOnly="False"/>
+</Section>
+<Section>
+<Code Code="S005" DisplayName="个人史：" Instances="0..1" BindKBBaseID="360" BindKBName="个人史" ReadOnly="False"/>
+</Section>
+<Section>
+<Code Code="S006" DisplayName="婚育史:" Instances="0..1" BindKBBaseID="92" BindKBName="婚育史、月经史" ReadOnly="False"/>
+<Composite Virtual="True">
+<Code Code="V032" DisplayName="" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+<SubItems>
+<MIDictionary>
+<Code>I0022</Code>
+<SourceCode>I0022</SourceCode>
+<CCode>V032</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>婚姻状况</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者基本信息.婚姻[字典]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetPatientInfo#FNAME:MarriageDict#VALUETYPE:Dict</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<DictionaryType>STDDIC</DictionaryType>
+<CodeSystem>S14</CodeSystem>
+<CodeSystemName>S14-[HIS]婚姻字典</CodeSystemName>
+<CustDicClassName></CustDicClassName>
+<DisplayType>Desc</DisplayType>
+<Separator>|</Separator>
+<LinkCode></LinkCode>
+<LinkDisplayType>Code</LinkDisplayType>
+<LinkMethod></LinkMethod>
+<AllowCodeNull>True</AllowCodeNull>
+<AllowValueNull>True</AllowValueNull>
+<AssociateItem></AssociateItem>
+<AssociateItemOutputType>Code</AssociateItemOutputType>
+<MaxLength>0</MaxLength>
+</MIDictionary>
+<MIMonoChoice>
+<Code>O0045</Code>
+<SourceCode>O0045</SourceCode>
+<CCode>V032</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>健康</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType></ShowType>
+<Choices>
+<Choice Code="0" DisplayName="健康" OriginalDisplayName="健康"/>
+<Choice Code="1" DisplayName="不健康" OriginalDisplayName="不健康"/>
+</Choices>
+</MIMonoChoice>
+<MIMonoChoice>
+<Code>O0046</Code>
+<SourceCode>O0046</SourceCode>
+<CCode>V032</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>有无子女</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType></ShowType>
+<Choices>
+<Choice Code="0" DisplayName="无" OriginalDisplayName="无"/>
+<Choice Code="1" DisplayName="有" OriginalDisplayName="有"/>
+</Choices>
+</MIMonoChoice>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S018" DisplayName="月经史：" Instances="0..1" BindKBBaseID="363" BindKBName="月经史" ReadOnly="False"/>
+<Composite Virtual="True">
+<Code Code="V039" DisplayName="" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+<SubItems>
+<MIDateTime>
+<Code>D0010</Code>
+<SourceCode>D0010</SourceCode>
+<CCode>V039</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>末次月经</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<DateFormat>yyyy年MM月dd日</DateFormat>
+<TimeFormat>HH:mm</TimeFormat>
+<BenchMarkTime></BenchMarkTime>
+<PreSelect></PreSelect>
+<NextSelect></NextSelect>
+<IncludeDate>True</IncludeDate>
+<IncludeTime>False</IncludeTime>
+</MIDateTime>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S010" DisplayName="家族史：" Instances="0..1" BindKBBaseID="365" BindKBName="家族史" ReadOnly="False"/>
+</Section>
+<Section>
+<Code Code="S011" DisplayName="体格检查" Instances="0..1" BindKBBaseID="366" BindKBName="体格检查" ReadOnly="False"/>
+<Composite Virtual="True">
+<Code Code="V006" DisplayName="" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+<SubItems>
+<MIConcept>
+<Code>MCC0011</Code>
+<DisplayName>体温</DisplayName>
+<Description>体温</Description>
+<AllowInput>True</AllowInput>
+<FixedStructs>True</FixedStructs>
+<Attributes>
+<SignatureLevel></SignatureLevel>
+<SignDisplayName></SignDisplayName>
+</Attributes>
+<SubItems>
+<Attribute><KeyWord></KeyWord>
+<AbnormalColor></AbnormalColor>
+<TextPosition>normal</TextPosition>
+<Major>False</Major>
+<RefElement><MINumber>
+<Code>N9154</Code>
+<SourceCode>N9154</SourceCode>
+<CCode>MCC0011</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>体温</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]生命体征.首次体温#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetFirstPatCTInfo#FNAME:Firsttemperature#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<MinVal></MinVal>
+<MaxVal></MaxVal>
+<HasMinVal>False</HasMinVal>
+<HasMaxVal>False</HasMaxVal>
+<IncludeMin>False</IncludeMin>
+<IncludeMax>False</IncludeMax>
+<DecimalPlace>1</DecimalPlace>
+</MINumber>
+</RefElement>
+</Attribute>
+</SubItems>
+</MIConcept>
+<MIConcept>
+<Code>MCC0012</Code>
+<DisplayName>脉搏</DisplayName>
+<Description>脉搏</Description>
+<AllowInput>True</AllowInput>
+<FixedStructs>True</FixedStructs>
+<Attributes>
+<SignatureLevel></SignatureLevel>
+<SignDisplayName></SignDisplayName>
+</Attributes>
+<SubItems>
+<Attribute><KeyWord></KeyWord>
+<AbnormalColor></AbnormalColor>
+<TextPosition>normal</TextPosition>
+<Major>False</Major>
+<RefElement><MINumber>
+<Code>N9155</Code>
+<SourceCode>N9155</SourceCode>
+<CCode>MCC0012</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>脉搏</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]生命体征.首次脉搏#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetFirstPatCTInfo#FNAME:Firstpulse#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<MinVal></MinVal>
+<MaxVal></MaxVal>
+<HasMinVal>False</HasMinVal>
+<HasMaxVal>False</HasMaxVal>
+<IncludeMin>False</IncludeMin>
+<IncludeMax>False</IncludeMax>
+<DecimalPlace>0</DecimalPlace>
+</MINumber>
+</RefElement>
+</Attribute>
+</SubItems>
+</MIConcept>
+<MIConcept>
+<Code>MCC0013</Code>
+<DisplayName>呼吸</DisplayName>
+<Description>呼吸</Description>
+<AllowInput>True</AllowInput>
+<FixedStructs>True</FixedStructs>
+<Attributes>
+<SignatureLevel></SignatureLevel>
+<SignDisplayName></SignDisplayName>
+</Attributes>
+<SubItems>
+<Attribute><KeyWord></KeyWord>
+<AbnormalColor></AbnormalColor>
+<TextPosition>normal</TextPosition>
+<Major>False</Major>
+<RefElement><MINumber>
+<Code>N9156</Code>
+<SourceCode>N9156</SourceCode>
+<CCode>MCC0013</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>呼吸</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]生命体征.首次呼吸#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetFirstPatCTInfo#FNAME:Firstbreath#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<MinVal></MinVal>
+<MaxVal></MaxVal>
+<HasMinVal>False</HasMinVal>
+<HasMaxVal>False</HasMaxVal>
+<IncludeMin>False</IncludeMin>
+<IncludeMax>False</IncludeMax>
+<DecimalPlace>0</DecimalPlace>
+</MINumber>
+</RefElement>
+</Attribute>
+</SubItems>
+</MIConcept>
+<MIConcept>
+<Code>MCC0014</Code>
+<DisplayName>血压</DisplayName>
+<Description>血压</Description>
+<AllowInput>True</AllowInput>
+<FixedStructs>True</FixedStructs>
+<Attributes>
+<SignatureLevel></SignatureLevel>
+<SignDisplayName></SignDisplayName>
+</Attributes>
+<SubItems>
+<Attribute><KeyWord></KeyWord>
+<AbnormalColor></AbnormalColor>
+<TextPosition>normal</TextPosition>
+<Major>False</Major>
+<RefElement><MINumber>
+<Code>N9157</Code>
+<SourceCode>N9157</SourceCode>
+<CCode>MCC0014</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>收缩压</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]生命体征.首次收缩压#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetFirstPatCTInfo#FNAME:FirstsysPressure#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<MinVal></MinVal>
+<MaxVal></MaxVal>
+<HasMinVal>False</HasMinVal>
+<HasMaxVal>False</HasMaxVal>
+<IncludeMin>False</IncludeMin>
+<IncludeMax>False</IncludeMax>
+<DecimalPlace>0</DecimalPlace>
+</MINumber>
+</RefElement>
+</Attribute>
+<Attribute><KeyWord></KeyWord>
+<AbnormalColor></AbnormalColor>
+<TextPosition>normal</TextPosition>
+<Major>False</Major>
+<RefElement><MINumber>
+<Code>N9158</Code>
+<SourceCode>N9158</SourceCode>
+<CCode>MCC0014</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>舒张压</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]生命体征.首次舒张压#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetFirstPatCTInfo#FNAME:FirstdiaPressure#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<MinVal></MinVal>
+<MaxVal></MaxVal>
+<HasMinVal>False</HasMinVal>
+<HasMaxVal>False</HasMaxVal>
+<IncludeMin>False</IncludeMin>
+<IncludeMax>False</IncludeMax>
+<DecimalPlace>0</DecimalPlace>
+</MINumber>
+</RefElement>
+</Attribute>
+</SubItems>
+</MIConcept>
+<MIMonoChoice>
+<Code>O0019</Code>
+<SourceCode>O0019</SourceCode>
+<CCode>V006</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>发育</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType></ShowType>
+<Choices>
+<Choice Code="0" DisplayName="正常" OriginalDisplayName="正常"/>
+<Choice Code="1" DisplayName="异常" OriginalDisplayName="异常"/>
+</Choices>
+</MIMonoChoice>
+<MIString>
+<Code>L0031</Code>
+<SourceCode>L0031</SourceCode>
+<CCode>V006</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>有无皮下出血</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+<MIMonoChoice>
+<Code>O0022</Code>
+<SourceCode>O0022</SourceCode>
+<CCode>V006</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>有无</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType></ShowType>
+<Choices>
+<Choice Code="0" DisplayName="有" OriginalDisplayName="有"/>
+<Choice Code="1" DisplayName="无" OriginalDisplayName="无"/>
+</Choices>
+</MIMonoChoice>
+<MIMonoChoice>
+<Code>O0023</Code>
+<SourceCode>O0023</SourceCode>
+<CCode>V006</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>有无</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType></ShowType>
+<Choices>
+<Choice Code="0" DisplayName="有" OriginalDisplayName="有"/>
+<Choice Code="1" DisplayName="无" OriginalDisplayName="无"/>
+</Choices>
+</MIMonoChoice>
+<MIMonoChoice>
+<Code>O9184</Code>
+<SourceCode>O9184</SourceCode>
+<CCode>V006</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>湿润</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType></ShowType>
+<Choices>
+<Choice Code="0" DisplayName="湿润" OriginalDisplayName="湿润"/>
+<Choice Code="1" DisplayName="干燥" OriginalDisplayName="干燥"/>
+<Choice Code="2" DisplayName="多汗" OriginalDisplayName="多汗"/>
+<Choice Code="3" DisplayName="盗汗" OriginalDisplayName="盗汗"/>
+<Choice Code="4" DisplayName="冷汗" OriginalDisplayName="冷汗"/>
+</Choices>
+</MIMonoChoice>
+<MIMonoChoice>
+<Code>O9186</Code>
+<SourceCode>O9186</SourceCode>
+<CCode>V006</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>富有弹性</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType></ShowType>
+<Choices>
+<Choice Code="0" DisplayName="富有弹性" OriginalDisplayName="富有弹性"/>
+<Choice Code="1" DisplayName="皮肤组织逐渐松弛，弹性减弱" OriginalDisplayName="皮肤组织逐渐松弛，弹性减弱"/>
+<Choice Code="2" DisplayName="皮肤组织萎缩，皮下脂肪减少，弹性减退" OriginalDisplayName="皮肤组织萎缩，皮下脂肪减少，弹性减退"/>
+</Choices>
+</MIMonoChoice>
+</SubItems>
+</Composite>
+<Composite Virtual="True">
+<Code Code="V022" DisplayName="" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+<SubItems>
+<MIMonoChoice>
+<Code>O0036</Code>
+<SourceCode>O0036</SourceCode>
+<CCode>V022</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>有无</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType></ShowType>
+<Choices>
+<Choice Code="0" DisplayName="有" OriginalDisplayName="有"/>
+<Choice Code="1" DisplayName="无" OriginalDisplayName="无"/>
+</Choices>
+</MIMonoChoice>
+<MIString>
+<Code>L0084</Code>
+<SourceCode>L0084</SourceCode>
+<CCode>V022</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>颈动脉情况</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+<MIString>
+<Code>L0101</Code>
+<SourceCode>L0101</SourceCode>
+<CCode>V022</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>呼吸运动情况</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+<MIString>
+<Code>L0103</Code>
+<SourceCode>L0103</SourceCode>
+<CCode>V022</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>肋间隙情况</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+<MIMonoChoice>
+<Code>O0040</Code>
+<SourceCode>O0040</SourceCode>
+<CCode>V022</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>营养</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType></ShowType>
+<Choices>
+<Choice Code="0" DisplayName="良好" OriginalDisplayName="良好"/>
+<Choice Code="1" DisplayName="中等" OriginalDisplayName="中等"/>
+<Choice Code="2" DisplayName="不良" OriginalDisplayName="不良"/>
+</Choices>
+</MIMonoChoice>
+<MIMonoChoice>
+<Code>O0041</Code>
+<SourceCode>O0041</SourceCode>
+<CCode>V022</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>体位</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType></ShowType>
+<Choices>
+<Choice Code="0" DisplayName="自主" OriginalDisplayName="自主"/>
+<Choice Code="1" DisplayName="被动" OriginalDisplayName="被动"/>
+<Choice Code="2" DisplayName="强迫" OriginalDisplayName="强迫"/>
+</Choices>
+</MIMonoChoice>
+<MIConcept>
+<Code>MCC0036</Code>
+<DisplayName>面容与表情</DisplayName>
+<Description>面容与表情</Description>
+<AllowInput>True</AllowInput>
+<FixedStructs>False</FixedStructs>
+<Attributes>
+<SignatureLevel></SignatureLevel>
+<SignDisplayName></SignDisplayName>
+</Attributes>
+<SubItems>
+<Attribute><KeyWord></KeyWord>
+<AbnormalColor></AbnormalColor>
+<TextPosition>normal</TextPosition>
+<Major>False</Major>
+<RefElement><MIMonoChoice>
+<Code>O9177</Code>
+<SourceCode>O9177</SourceCode>
+<CCode>MCC0036</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>面容与表情</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>True</AllowEdit>
+<ShowType></ShowType>
+<Choices>
+<Choice Code="0" DisplayName="急性病容" OriginalDisplayName="急性病容"/>
+<Choice Code="1" DisplayName="慢性病容" OriginalDisplayName="慢性病容"/>
+<Choice Code="2" DisplayName="贫血面容" OriginalDisplayName="贫血面容"/>
+<Choice Code="3" DisplayName="肝病面容" OriginalDisplayName="肝病面容"/>
+<Choice Code="4" DisplayName="肾病面容" OriginalDisplayName="肾病面容"/>
+<Choice Code="5" DisplayName="甲状腺功能亢进面容" OriginalDisplayName="甲状腺功能亢进面容"/>
+<Choice Code="6" DisplayName="黏液性水肿面容" OriginalDisplayName="黏液性水肿面容"/>
+<Choice Code="7" DisplayName="二尖瓣面容" OriginalDisplayName="二尖瓣面容"/>
+<Choice Code="8" DisplayName="肢端肥大症面容" OriginalDisplayName="肢端肥大症面容"/>
+<Choice Code="9" DisplayName="伤寒面容" OriginalDisplayName="伤寒面容"/>
+<Choice Code="10" DisplayName="苦笑面容" OriginalDisplayName="苦笑面容"/>
+<Choice Code="11" DisplayName="满月面容" OriginalDisplayName="满月面容"/>
+<Choice Code="12" DisplayName="面具面容" OriginalDisplayName="面具面容"/>
+<Choice Code="13" DisplayName="面容无病容，表情自如" OriginalDisplayName="面容无病容，表情自如"/>
+</Choices>
+</MIMonoChoice>
+</RefElement>
+</Attribute>
+</SubItems>
+</MIConcept>
+<MIString>
+<Code>L0140</Code>
+<SourceCode>L0140</SourceCode>
+<CCode>V022</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>身高</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]生命体征.首次身高#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetFirstPatCTInfo#FNAME:Firstheight#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+<MIString>
+<Code>L0141</Code>
+<SourceCode>L0141</SourceCode>
+<CCode>V022</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>体重</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]生命体征.首次体重#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetFirstPatCTInfo#FNAME:Firstweight#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+<MIString>
+<Code>L0148</Code>
+<SourceCode>L0148</SourceCode>
+<CCode>V022</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>心率</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]生命体征.脉搏#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetSMTZInfo#FNAME:MAIBO#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S012" DisplayName="专科情况：" Instances="0..1" BindKBBaseID="372" BindKBName="专科情况" ReadOnly="False"/>
+</Section>
+<Section>
+<Code Code="S013" DisplayName="辅助检查：" Instances="0..1" BindKBBaseID="373" BindKBName="辅助检查" ReadOnly="False"/>
+</Section>
+<Section>
+<Code Code="S021" DisplayName=" " Instances="0..1" BindKBBaseID="" BindKBName="" ReadOnly="False"/>
+</Section>
+<Section>
+<Code Code="S022" DisplayName=" " Instances="0..1" BindKBBaseID="" BindKBName="" ReadOnly="False"/>
+<Composite Virtual="True">
+<Code Code="V036" DisplayName="" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+<SubItems>
+<MIMonoChoice>
+<Code>O0042</Code>
+<SourceCode>O0042</SourceCode>
+<CCode>V036</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>诊断类型1:</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType></ShowType>
+<Choices>
+<Choice Code="0" DisplayName="初步诊断:" OriginalDisplayName="初步诊断:"/>
+<Choice Code="1" DisplayName="补充诊断：" OriginalDisplayName="补充诊断："/>
+<Choice Code="2" DisplayName="修正诊断：" OriginalDisplayName="修正诊断："/>
+<Choice Code="3" DisplayName="确定诊断：" OriginalDisplayName="确定诊断："/>
+<Choice Code="4" DisplayName="出院诊断：" OriginalDisplayName="出院诊断："/>
+</Choices>
+</MIMonoChoice>
+<MIDictionary>
+<Code>I0023</Code>
+<SourceCode>I0023</SourceCode>
+<CCode>V036</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>诊断1:</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<DictionaryType>STDDIC</DictionaryType>
+<CodeSystem>S12</CodeSystem>
+<CodeSystemName>S12-[HIS]ICD10疾病字典</CodeSystemName>
+<CustDicClassName></CustDicClassName>
+<DisplayType>Desc</DisplayType>
+<Separator>|</Separator>
+<LinkCode></LinkCode>
+<LinkDisplayType>Code</LinkDisplayType>
+<LinkMethod></LinkMethod>
+<AllowCodeNull>True</AllowCodeNull>
+<AllowValueNull>True</AllowValueNull>
+<AssociateItem></AssociateItem>
+<AssociateItemOutputType></AssociateItemOutputType>
+<MaxLength>0</MaxLength>
+</MIDictionary>
+<MIConcept>
+<Code>V040</Code>
+<DisplayName></DisplayName>
+<Description></Description>
+<AllowInput>False</AllowInput>
+<FixedStructs>True</FixedStructs>
+<Attributes>
+<SignatureLevel>Check</SignatureLevel>
+<SignDisplayName>三级医师审核</SignDisplayName>
+</Attributes>
+<SubItems>
+<Attribute><KeyWord></KeyWord>
+<AbnormalColor></AbnormalColor>
+<TextPosition></TextPosition>
+<Major>False</Major>
+<RefElement><MIString>
+<Code>L0149</Code>
+<SourceCode>L0149</SourceCode>
+<CCode>V036</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>三级医师审核</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>Attending</SignatureLevel>
+<ShowSignerDescription>True</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<SignerId>630</SignerId>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+</RefElement>
+</Attribute>
+</SubItems>
+</MIConcept>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S023" DisplayName=" " Instances="0..1" BindKBBaseID="" BindKBName="" ReadOnly="False"/>
+<Composite Virtual="True">
+<Code Code="V037" DisplayName="" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+<SubItems>
+<MIMonoChoice>
+<Code>O0043</Code>
+<SourceCode>O0043</SourceCode>
+<CCode>V037</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>诊断类型2:</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType></ShowType>
+<Choices>
+<Choice Code="0" DisplayName="初步诊断:" OriginalDisplayName="初步诊断:"/>
+<Choice Code="1" DisplayName="补充诊断：" OriginalDisplayName="补充诊断："/>
+<Choice Code="2" DisplayName="修正诊断：" OriginalDisplayName="修正诊断："/>
+<Choice Code="3" DisplayName="确定诊断：" OriginalDisplayName="确定诊断："/>
+<Choice Code="4" DisplayName="出院诊断：" OriginalDisplayName="出院诊断："/>
+</Choices>
+</MIMonoChoice>
+<MIDictionary>
+<Code>I0024</Code>
+<SourceCode>I0024</SourceCode>
+<CCode>V037</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>诊断2:</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<DictionaryType>STDDIC</DictionaryType>
+<CodeSystem>S12</CodeSystem>
+<CodeSystemName>S12-[HIS]ICD10疾病字典</CodeSystemName>
+<CustDicClassName></CustDicClassName>
+<DisplayType>Desc</DisplayType>
+<Separator>|</Separator>
+<LinkCode></LinkCode>
+<LinkDisplayType>Code</LinkDisplayType>
+<LinkMethod></LinkMethod>
+<AllowCodeNull>True</AllowCodeNull>
+<AllowValueNull>True</AllowValueNull>
+<AssociateItem></AssociateItem>
+<AssociateItemOutputType></AssociateItemOutputType>
+<MaxLength>0</MaxLength>
+</MIDictionary>
+<MIString>
+<Code>L0150</Code>
+<SourceCode>L0150</SourceCode>
+<CCode>V037</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>三级医师审核</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>Check</SignatureLevel>
+<ShowSignerDescription>True</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S024" DisplayName=" " Instances="0..1" BindKBBaseID="" BindKBName="" ReadOnly="False"/>
+<Composite Virtual="True">
+<Code Code="V038" DisplayName="" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+<SubItems>
+<MIMonoChoice>
+<Code>O0044</Code>
+<SourceCode>O0044</SourceCode>
+<CCode>V038</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>诊断类型3:</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType></ShowType>
+<Choices>
+<Choice Code="0" DisplayName="初步诊断:" OriginalDisplayName="初步诊断:"/>
+<Choice Code="1" DisplayName="补充诊断：" OriginalDisplayName="补充诊断："/>
+<Choice Code="2" DisplayName="修正诊断：" OriginalDisplayName="修正诊断："/>
+<Choice Code="3" DisplayName="确定诊断：" OriginalDisplayName="确定诊断："/>
+<Choice Code="4" DisplayName="出院诊断：" OriginalDisplayName="出院诊断："/>
+</Choices>
+</MIMonoChoice>
+<MIDictionary>
+<Code>I0025</Code>
+<SourceCode>I0025</SourceCode>
+<CCode>V038</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>诊断3:</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<DictionaryType>STDDIC</DictionaryType>
+<CodeSystem>S12</CodeSystem>
+<CodeSystemName>S12-[HIS]ICD10疾病字典</CodeSystemName>
+<CustDicClassName></CustDicClassName>
+<DisplayType>Desc</DisplayType>
+<Separator>|</Separator>
+<LinkCode></LinkCode>
+<LinkDisplayType>Code</LinkDisplayType>
+<LinkMethod></LinkMethod>
+<AllowCodeNull>True</AllowCodeNull>
+<AllowValueNull>True</AllowValueNull>
+<AssociateItem></AssociateItem>
+<AssociateItemOutputType></AssociateItemOutputType>
+<MaxLength>0</MaxLength>
+</MIDictionary>
+<MIString>
+<Code>L0151</Code>
+<SourceCode>L0151</SourceCode>
+<CCode>V038</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>三级医师审核</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>Check</SignatureLevel>
+<ShowSignerDescription>True</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+</SubItems>
+</Composite>
+</Section>
+</Component>
+</MetaData><Scripts>
+<Script ID="6cfd8050-e246-48f3-ad8f-be1e223a84d2" DisplayName="" Name="" Object="Document" Scope="Document" Lang="lua" Event="create" >
+local cmd = luaGetEditorCommand();  
+ if cmd == nil then      
+  return;  
+ end;   
+local objDocument = cmd:GetActiveDocument();   
+ if objDocument == nil then        
+  return; 
+ end;  
+			local objSex = objDocument:getElementByPath('Header_V001_L0135');  
+			if objSex == nil then       
+				return;  
+			end;    
+			local objSexValue = objSex:getInstanceData();  
+			if  objSexValue == nil then      
+				return;  
+			end;   
+			local objSexValue = objSexValue:getData();  
+			if  (objSexValue == '男') then      
+				cmd:SetSectionVisible(false, 'S018', '');  
+			end;
+</Script>
+<Script ID="3427c1ca-93fe-4051-97de-699871653ccc" DisplayName="" Name="" Object="Document" Scope="Document" Lang="lua" Event="printing" >
+local cmd = luaGetEditorCommand();  
+ if cmd == nil then      
+  return;  
+ end;   
+				cmd:SetSectionVisible(true, 'S022', '');
+</Script>
+<Script ID="bb83ae01-d014-40a4-95ec-ebe7cd26125b" DisplayName="" Name="" Object="Document" Scope="Document" Lang="lua" Event="printed" >
+local cmd = luaGetEditorCommand();  
+ if cmd == nil then      
+  return;  
+ end;   
+				cmd:SetSectionVisible(true, 'S022', '');
+</Script>
+</Scripts><Medias>
+</Medias><InitialData>
+<Component>
+<Section>
+<Code Code="S001" DisplayName="患者基本信息"/>
+<Composite>
+<Code Code="V005" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+<SubItems>
+<MIDictionary>
+<Code Code="I0012" SourceCode="I0012"  CCode="V005"  KBNodeID="" DisplayName="民族"/>
+<Value><Choice Code="" DisplayName="汉族"/></Value>
+<Separator>|</Separator>
+</MIDictionary>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S011" DisplayName="体格检查"/>
+<Composite>
+<Code Code="V006" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+<SubItems>
+<MIString>
+<Code Code="L0031" SourceCode="L0031"  CCode="V006"  KBNodeID="" DisplayName="有无皮下出血"/>
+<Value>无皮下出血</Value>
+</MIString>
+<MIMonoChoice>
+<Code Code="O9184" SourceCode="O9184"  CCode="V006"  KBNodeID="" DisplayName="湿润"/>
+<Value><Choice Code="0" DisplayName="湿润"/></Value>
+<Separator>、</Separator>
+</MIMonoChoice>
+<MIMonoChoice>
+<Code Code="O9186" SourceCode="O9186"  CCode="V006"  KBNodeID="" DisplayName="富有弹性"/>
+<Value><Choice Code="0" DisplayName="富有弹性"/></Value>
+<Separator>、</Separator>
+</MIMonoChoice>
+</SubItems>
+</Composite>
+<Composite>
+<Code Code="V022" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+<SubItems>
+<MIString>
+<Code Code="L0084" SourceCode="L0084"  CCode="V022"  KBNodeID="" DisplayName="颈动脉情况"/>
+<Value>颈动脉搏动无异常</Value>
+</MIString>
+<MIString>
+<Code Code="L0101" SourceCode="L0101"  CCode="V022"  KBNodeID="" DisplayName="呼吸运动情况"/>
+<Value>呼吸自如，节律规整</Value>
+</MIString>
+<MIString>
+<Code Code="L0103" SourceCode="L0103"  CCode="V022"  KBNodeID="" DisplayName="肋间隙情况"/>
+<Value>肋间隙未触及明显异常</Value>
+</MIString>
+</SubItems>
+</Composite>
+</Section>
+</Component>
+</InitialData><NInstanceData InstanceID="46279||1" HappenDateTime="2020-07-08 10:08:01" DateTimeFormat="yyyy-MM-dd HH:mm:ss" TimeStamp="1594202881">
+<ScatterData>
+<Component>
+<Section>
+<Code Code="Header" DisplayName="页眉"/>
+<Text></Text>
+<StyleText></StyleText>
+<Composite>
+<Code Code="V001" DisplayName="页眉" KBNodeID="" BindKBBaseID=""/>
+<Text></Text>
+<StyleText></StyleText>
+<SubItems>
+<MIString>
+<Code Code="L0001" SourceCode="L0001"  CCode="V001"  KBNodeID="" DisplayName="医院名称"/>
+<Value>临夏县人民医院</Value>
+</MIString>
+<MIString>
+<Code Code="L0002" SourceCode="L0002"  CCode="V001"  KBNodeID="" DisplayName="姓名"/>
+<Value>马东拉</Value>
+</MIString>
+<MIString>
+<Code Code="L0003" SourceCode="L0003"  CCode="V001"  KBNodeID="" DisplayName="病案号"/>
+<Value>2020101693</Value>
+</MIString>
+<MIString>
+<Code Code="L0004" SourceCode="L0004"  CCode="V001"  KBNodeID="" DisplayName="当前科室"/>
+<Value>心内科</Value>
+</MIString>
+<MIString>
+<Code Code="L0135" SourceCode="L0135"  CCode="V001"  KBNodeID="" DisplayName="性别"/>
+<Value>男</Value>
+</MIString>
+<MIString>
+<Code Code="L0136" SourceCode="L0136"  CCode="V001"  KBNodeID="" DisplayName="年龄"/>
+<Value>66岁</Value>
+</MIString>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="Footer" DisplayName="页脚"/>
+<Text></Text>
+<StyleText></StyleText>
+</Section>
+<Section>
+<Code Code="S001" DisplayName="患者基本信息"/>
+<Text>姓名：
+马东拉
+入院时间：
+2020-07-08
+性别：
+男
+记录时间：
+2020-07-08 10:08
+年龄：
+66岁
+病史陈述者：
+患者本人
+婚姻：
+已婚
+可靠性：
+可靠
+出生地：
+甘肃省临夏县马集镇多木寺村五社16号
+职业：
+农民
+民族：
+回族
+工作单位：
+无</Text>
+<StyleText></StyleText>
+<Composite>
+<Code Code="V005" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+<Text>马东拉
+入院时间：
+2020-07-08
+性别：
+男
+记录时间：
+2020-07-08 10:08
+年龄：
+66岁
+病史陈述者：
+患者本人
+婚姻：
+已婚
+可靠性：
+可靠
+出生地：
+甘肃省临夏县马集镇多木寺村五社16号
+职业：
+农民
+民族：
+回族
+工作单位：
+无</Text>
+<StyleText></StyleText>
+<SubItems>
+<MIString>
+<Code Code="L0001" SourceCode="L0001"  CCode="V005"  KBNodeID="" DisplayName="姓名"/>
+<Value>马东拉</Value>
+</MIString>
+<MIDictionary>
+<Code Code="I0002" SourceCode="I0002"  CCode="V005"  KBNodeID="" DisplayName="性别"/>
+<Value><Choice Code="1" DisplayName="男" RowId="1"/></Value>
+<Separator>|</Separator>
+</MIDictionary>
+<MIString>
+<Code Code="L0003" SourceCode="L0003"  CCode="V005"  KBNodeID="" DisplayName="年龄"/>
+<Value>66岁</Value>
+</MIString>
+<MIDictionary>
+<Code Code="I0005" SourceCode="I0005"  CCode="V005"  KBNodeID="" DisplayName="婚姻状况"/>
+<Value><Choice Code="20" DisplayName="已婚" RowId="22"/></Value>
+<Separator></Separator>
+</MIDictionary>
+<MIDateTime>
+<Code Code="D0008" SourceCode="D0008"  CCode="V005"  KBNodeID="" DisplayName="入院时间"/>
+<Value>2020-07-08</Value>
+<DateTimeFormat>yyyy-MM-dd</DateTimeFormat>
+</MIDateTime>
+<MIDateTime>
+<Code Code="D0009" SourceCode="D0009"  CCode="V005"  KBNodeID="" DisplayName="记录时间"/>
+<Value>2020-07-08 10:08</Value>
+<DateTimeFormat>yyyy-MM-dd HH:mm</DateTimeFormat>
+</MIDateTime>
+<MIMonoChoice>
+<Code Code="O0011" SourceCode="O0011"  CCode="V005"  KBNodeID="" DisplayName="可靠性"/>
+<Value><Choice Code="1" DisplayName="可靠"/></Value>
+<Separator>、</Separator>
+</MIMonoChoice>
+<MIMultiChoice>
+<Code Code="M0001" SourceCode="M0001"  CCode="V005"  KBNodeID="" DisplayName="患者家属或本人"/>
+<Value><Choice Code="1" DisplayName="患者本人"/>
+</Value>
+<Separator>、</Separator>
+</MIMultiChoice>
+<MIString>
+<Code Code="L0137" SourceCode="L0137"  CCode="V005"  KBNodeID="" DisplayName="出生地"/>
+<Value>甘肃省临夏县马集镇多木寺村五社16号</Value>
+</MIString>
+<MIDictionary>
+<Code Code="I0012" SourceCode="I0012"  CCode="V005"  KBNodeID="" DisplayName="民族"/>
+<Value><Choice Code="03" DisplayName="回族" RowId="3"/></Value>
+<Separator>|</Separator>
+</MIDictionary>
+<MIDictionary>
+<Code Code="I0013" SourceCode="I0013"  CCode="V005"  KBNodeID="" DisplayName="职业"/>
+<Value><Choice Code="27" DisplayName="农民" RowId="321"/></Value>
+<Separator>|</Separator>
+</MIDictionary>
+<MIString>
+<Code Code="L0138" SourceCode="L0138"  CCode="V005"  KBNodeID="" DisplayName="工作单位"/>
+<Value>无</Value>
+</MIString>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S002" DisplayName="主  诉："/>
+<Text>口渴、多饮、多尿8年余，加重头痛、头晕1周。</Text>
+<StyleText></StyleText>
+</Section>
+<Section>
+<Code Code="S003" DisplayName="现病史："/>
+<Text>患者自述8年前无明显诱因的出现口渴、多饮、多尿症状，伴疲乏无力，体重减轻。在私人诊所多次测血糖（具体血糖值不详）均高于正常值，诊断为“2型糖尿病”，给予“二甲双胍，消渴丸”口服，症状减轻，未引起足够重视，未作进一步检查治疗。于入院2年前口干、多饮症状加重，并出现头痛、头昏、记忆力减退，四肢麻木、冰凉，在我科住院治疗，诊断为“1.2型糖尿病伴多个并发症2.原发性高血压 3级 极高危”。患者口干、多饮，头晕症状减轻，血糖、血压平稳后带药出院。在家服药治疗，二甲双胍缓释片 0.5mg 口服 2次/日，阿卡波糖 50mg 3/日，甘精胰岛素10u皮下注射每晚1次，硝苯地平缓释片 10mg 1/日，未监测血糖、血压。入院1周前着凉后患者自感乏力、口渴症状加重，伴视物模糊、尿泡沫增多、四肢麻木疼痛、胸闷、心悸，活动后气短。但无晕厥，抽搐，肢体偏瘫等症状。前来我科住院治疗。门诊以“1.2型糖尿病伴多个并发症2.原发性高血压 3级 极高危”收住入院。</Text>
+<StyleText></StyleText>
+</Section>
+<Section>
+<Code Code="S004" DisplayName="既往史："/>
+<Text>既往体健，否认有手术外伤史，否认有肝炎结核病史，否认有传染病接触史，预防接种史不详。否认药物过敏史。否认输血史。</Text>
+<StyleText></StyleText>
+</Section>
+<Section>
+<Code Code="S005" DisplayName="个人史："/>
+<Text>出生地及长期居留地：生长于原籍，无疫区居住生活史；生活习惯：无吸烟饮酒史，药物嗜好:无；工业毒物、粉尘、放射性物质接触史：无；冶游史：无。</Text>
+<StyleText></StyleText>
+</Section>
+<Section>
+<Code Code="S006" DisplayName="婚育史:"/>
+<Text>婚姻状况:已婚；配偶健康状况：健康；有无子女：有1子1女。</Text>
+<StyleText></StyleText>
+<Composite>
+<Code Code="V032" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+<Text>已婚；配偶健康状况：健康；有无子女：有</Text>
+<StyleText></StyleText>
+<SubItems>
+<MIDictionary>
+<Code Code="I0022" SourceCode="I0022"  CCode="V032"  KBNodeID="" DisplayName="婚姻状况"/>
+<Value><Choice Code="20" DisplayName="已婚" RowId="22"/></Value>
+<Separator>|</Separator>
+</MIDictionary>
+<MIMonoChoice>
+<Code Code="O0045" SourceCode="O0045"  CCode="V032"  KBNodeID="" DisplayName="健康"/>
+<Value><Choice Code="0" DisplayName="健康"/></Value>
+<Separator>、</Separator>
+</MIMonoChoice>
+<MIMonoChoice>
+<Code Code="O0046" SourceCode="O0046"  CCode="V032"  KBNodeID="" DisplayName="有无子女"/>
+<Value><Choice Code="1" DisplayName="有"/></Value>
+<Separator>、</Separator>
+</MIMonoChoice>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S018" DisplayName="月经史："/>
+<Text></Text>
+<StyleText></StyleText>
+<Composite>
+<Code Code="V039" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+<Text></Text>
+<StyleText></StyleText>
+<SubItems>
+<MIDateTime>
+<Code Code="D0010" SourceCode="D0010"  CCode="V039"  KBNodeID="" DisplayName="末次月经"/>
+<Value></Value>
+<DateTimeFormat>yyyy年MM月dd日</DateTimeFormat>
+</MIDateTime>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S010" DisplayName="家族史："/>
+<Text>否认家族中有相关遗传病史。</Text>
+<StyleText></StyleText>
+</Section>
+<Section>
+<Code Code="S011" DisplayName="体格检查"/>
+<Text>T:37.3℃  P:67次/分  R:20次/分  Bp:180/100mmHg  身高：170cm  体重：70kg
+一般情况：发育：正常，营养：良好，体位：自主，面容无病容，表情自如，神志清楚，查体配合，步态正常。
+皮肤黏膜：全身皮肤及黏膜色泽正常，无皮疹。无皮下出血。毛发状况：无异常，皮肤干燥，弹性皮肤组织萎缩，皮下脂肪减少，弹性减退，水肿：无，无肝掌，无蜘蛛痣淋巴结：全身浅表淋巴结未触及明显肿大。
+头面部：无巩膜黄染，瞳孔对光反射灵敏，口唇红润，无咽部充血，无扁桃体充血、肿大。
+颈部：无抵抗感。颈动脉搏动无异常，双侧颈静脉未见异常充盈，肝颈静脉回流征：阴性，气管居中，甲状腺查体未见明显异常。
+胸部: 胸廓对称起伏，呼吸自如，节律规整，肋间隙未触及明显异常，胸壁未见明显异常。
+肺: 叩诊音：清音，听诊啰音：无，啰音部位：无。    
+心:心前区未见明显凸起及凹陷，心界左下扩大，心率67次/分，心音正常，心律不齐，未闻及心脏病理性杂音及心包摩擦音。        
+腹部: 外形平坦，软，瘢痕：无，压痛及反跳痛：无，肿物：无。肝、脾肋下未触及。 肠鸣音4次/分。
+肛门直肠:未查。
+外生殖器:未查
+脊柱四肢: 畸形：无。关节活动受限：无，病理反射：无。
+其他重要阳性体征：双下肢水肿（+）。</Text>
+<StyleText></StyleText>
+<Composite>
+<Code Code="V006" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+<Text>体格检查
+T:37.3℃  P:67次/分  R:20次/分  Bp:180/100mmHg  身高：170cm  体重：70kg
+一般情况：发育：正常，营养：良好，体位：自主，面容无病容，表情自如，神志清楚，查体配合，步态正常。
+皮肤黏膜：全身皮肤及黏膜色泽正常，无皮疹。无皮下出血。毛发状况：无异常，皮肤干燥，弹性皮肤组织萎缩，皮下脂肪减少，弹性减退，水肿：无，无肝掌，无</Text>
+<StyleText></StyleText>
+<SubItems>
+<MIConcept>
+<Code Code="MCC0011" DisplayName="体温"/>
+<Text>37.3℃</Text>
+<StyleText></StyleText>
+<SubItems>
+<MINumber>
+<Code Code="N9154" SourceCode="N9154"  CCode="MCC0011"  KBNodeID="" DisplayName="体温"/>
+<Value>37.3</Value>
+</MINumber>
+</SubItems>
+</MIConcept>
+<MIConcept>
+<Code Code="MCC0012" DisplayName="脉搏"/>
+<Text>67次/分</Text>
+<StyleText></StyleText>
+<SubItems>
+<MINumber>
+<Code Code="N9155" SourceCode="N9155"  CCode="MCC0012"  KBNodeID="" DisplayName="脉搏"/>
+<Value>67</Value>
+</MINumber>
+</SubItems>
+</MIConcept>
+<MIConcept>
+<Code Code="MCC0013" DisplayName="呼吸"/>
+<Text>20次/分</Text>
+<StyleText></StyleText>
+<SubItems>
+<MINumber>
+<Code Code="N9156" SourceCode="N9156"  CCode="MCC0013"  KBNodeID="" DisplayName="呼吸"/>
+<Value>20</Value>
+</MINumber>
+</SubItems>
+</MIConcept>
+<MIConcept>
+<Code Code="MCC0014" DisplayName="血压"/>
+<Text>180/100mmHg</Text>
+<StyleText></StyleText>
+<SubItems>
+<MINumber>
+<Code Code="N9157" SourceCode="N9157"  CCode="MCC0014"  KBNodeID="" DisplayName="收缩压"/>
+<Value>180</Value>
+</MINumber>
+<MINumber>
+<Code Code="N9158" SourceCode="N9158"  CCode="MCC0014"  KBNodeID="" DisplayName="舒张压"/>
+<Value>100</Value>
+</MINumber>
+</SubItems>
+</MIConcept>
+<MIMonoChoice>
+<Code Code="O0019" SourceCode="O0019"  CCode="V006"  KBNodeID="" DisplayName="发育"/>
+<Value><Choice Code="0" DisplayName="正常"/></Value>
+<Separator>、</Separator>
+</MIMonoChoice>
+<MIString>
+<Code Code="L0031" SourceCode="L0031"  CCode="V006"  KBNodeID="" DisplayName="有无皮下出血"/>
+<Value>无皮下出血</Value>
+</MIString>
+<MIMonoChoice>
+<Code Code="O0022" SourceCode="O0022"  CCode="V006"  KBNodeID="" DisplayName="有无"/>
+<Value><Choice Code="1" DisplayName="无"/></Value>
+<Separator>、</Separator>
+</MIMonoChoice>
+<MIMonoChoice>
+<Code Code="O0023" SourceCode="O0023"  CCode="V006"  KBNodeID="" DisplayName="有无"/>
+<Value><Choice Code="1" DisplayName="无"/></Value>
+<Separator>、</Separator>
+</MIMonoChoice>
+<MIMonoChoice>
+<Code Code="O9184" SourceCode="O9184"  CCode="V006"  KBNodeID="" DisplayName="湿润"/>
+<Value><Choice Code="1" DisplayName="干燥"/></Value>
+<Separator>、</Separator>
+</MIMonoChoice>
+<MIMonoChoice>
+<Code Code="O9186" SourceCode="O9186"  CCode="V006"  KBNodeID="" DisplayName="富有弹性"/>
+<Value><Choice Code="2" DisplayName="皮肤组织萎缩，皮下脂肪减少，弹性减退"/></Value>
+<Separator>、</Separator>
+</MIMonoChoice>
+</SubItems>
+</Composite>
+<Composite>
+<Code Code="V022" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+<Text>170cm  体重：70kg
+一般情况：发育：正常，营养：良好，体位：自主，面容无病容，表情自如，神志清楚，查体配合，步态正常。
+皮肤黏膜：全身皮肤及黏膜色泽正常，无皮疹。无皮下出血。毛发状况：无异常，皮肤干燥，弹性皮肤组织萎缩，皮下脂肪减少，弹性减退，水肿：无，无肝掌，无蜘蛛痣淋巴结：全身浅表淋巴结未触及明显肿大。
+头面部：无巩膜黄染，瞳孔对光反射灵敏，口唇红润，无咽部充血，无扁桃体充血、肿大。
+颈部：无抵抗感。颈动脉搏动无异常，双侧颈静脉未见异常充盈，肝颈静脉回流征：阴性，气管居中，甲状腺查体未见明显异常。
+胸部: 胸廓对称起伏，呼吸自如，节律规整，肋间隙未触及明显异常，胸壁未见明显异常。
+肺: 叩诊音：清音，听诊啰音：无，啰音部位：无。    
+心:心前区未见明显凸起及凹陷，心界左下扩大，心率67</Text>
+<StyleText></StyleText>
+<SubItems>
+<MIMonoChoice>
+<Code Code="O0036" SourceCode="O0036"  CCode="V022"  KBNodeID="" DisplayName="有无"/>
+<Value><Choice Code="1" DisplayName="无"/></Value>
+<Separator>、</Separator>
+</MIMonoChoice>
+<MIString>
+<Code Code="L0084" SourceCode="L0084"  CCode="V022"  KBNodeID="" DisplayName="颈动脉情况"/>
+<Value>颈动脉搏动无异常</Value>
+</MIString>
+<MIString>
+<Code Code="L0101" SourceCode="L0101"  CCode="V022"  KBNodeID="" DisplayName="呼吸运动情况"/>
+<Value>呼吸自如，节律规整</Value>
+</MIString>
+<MIString>
+<Code Code="L0103" SourceCode="L0103"  CCode="V022"  KBNodeID="" DisplayName="肋间隙情况"/>
+<Value>肋间隙未触及明显异常</Value>
+</MIString>
+<MIMonoChoice>
+<Code Code="O0040" SourceCode="O0040"  CCode="V022"  KBNodeID="" DisplayName="营养"/>
+<Value><Choice Code="0" DisplayName="良好"/></Value>
+<Separator>、</Separator>
+</MIMonoChoice>
+<MIMonoChoice>
+<Code Code="O0041" SourceCode="O0041"  CCode="V022"  KBNodeID="" DisplayName="体位"/>
+<Value><Choice Code="0" DisplayName="自主"/></Value>
+<Separator>、</Separator>
+</MIMonoChoice>
+<MIConcept>
+<Code Code="MCC0036" DisplayName="面容与表情"/>
+<Text>面容无病容，表情自如，神</Text>
+<StyleText></StyleText>
+<SubItems>
+<MIMonoChoice>
+<Code Code="O9177" SourceCode="O9177"  CCode="MCC0036"  KBNodeID="" DisplayName="面容与表情"/>
+<Value><Choice Code="13" DisplayName="面容无病容，表情自如"/></Value>
+<Separator>、</Separator>
+</MIMonoChoice>
+</SubItems>
+</MIConcept>
+<MIString>
+<Code Code="L0140" SourceCode="L0140"  CCode="V022"  KBNodeID="" DisplayName="身高"/>
+<Value>170</Value>
+</MIString>
+<MIString>
+<Code Code="L0141" SourceCode="L0141"  CCode="V022"  KBNodeID="" DisplayName="体重"/>
+<Value>70</Value>
+</MIString>
+<MIString>
+<Code Code="L0148" SourceCode="L0148"  CCode="V022"  KBNodeID="" DisplayName="心率"/>
+<Value>67</Value>
+</MIString>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S012" DisplayName="专科情况："/>
+<Text>口渴、多饮、多尿8年余，加重头痛、头晕1周。体格检查：T:37.3℃  P:67次/分  R:20次/分  Bp:180/100mmHg  身高：170cm  体重：70kg，神志清楚，心界左下扩大，心率67次/分，心音正常，心律不齐，双下肢水肿（+）。</Text>
+<StyleText></StyleText>
+</Section>
+<Section>
+<Code Code="S013" DisplayName="辅助检查："/>
+<Text>2020-07-08 空腹血糖11.3mmol/L。
+2020-07-08 心电图：窦性心律 心电轴不偏 异常心电图 频发室性早搏V1-V3导联r波递增不良。2020-07-08 头颅CT:1.脑实质内未见明显异常，2.右侧上颌窦炎，必要时MR检查。</Text>
+<StyleText></StyleText>
+</Section>
+<Section>
+<Code Code="S021" DisplayName=" "/>
+<Text></Text>
+<StyleText></StyleText>
+</Section>
+<Section>
+<Code Code="S022" DisplayName=" "/>
+<Text>初步诊断: 
+1.2型糖尿病 
+     并糖尿病性视网膜病变
+                                                并糖尿病性周围血管病变
+                                                并糖尿病性周围神经病
+                                           2.原发性高血压 3级 极高危
+                                           3.高血压性心脏病
+主治医师：马成祥</Text>
+<StyleText></StyleText>
+<Composite>
+<Code Code="V036" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+<Text>初步诊断: 
+1.2型糖尿病 
+     并糖尿病性视网膜病变
+                                                并糖尿病性周围血管病变
+                                                并糖尿病性周围神经病
+                                           2.原发性高血压 3级 极高危
+                                           3.高血压性心脏病
+主治医师：马成祥</Text>
+<StyleText></StyleText>
+<SubItems>
+<MIMonoChoice>
+<Code Code="O0042" SourceCode="O0042"  CCode="V036"  KBNodeID="" DisplayName="诊断类型1:"/>
+<Value><Choice Code="0" DisplayName="初步诊断:"/></Value>
+<Separator>、</Separator>
+</MIMonoChoice>
+<MIDictionary>
+<Code Code="I0023" SourceCode="I0023"  CCode="V036"  KBNodeID="" DisplayName="诊断1:"/>
+<Value><Choice Code="E11.900" DisplayName="2型糖尿病" RowId="4213"/></Value>
+<Separator>|</Separator>
+</MIDictionary>
+<MIConcept>
+<Code Code="V040" DisplayName=""/>
+<Text>主治医师：马成祥</Text>
+<StyleText></StyleText>
+<SubItems>
+<MIString>
+<Code Code="L0149" SourceCode="L0149"  CCode="V036"  KBNodeID="" DisplayName="三级医师审核"/>
+<Value>马成祥</Value>
+</MIString>
+</SubItems>
+</MIConcept>
+<MIString>
+<Code Code="L0149"/>
+<Value>主治医师：马成祥</Value>
+</MIString>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S023" DisplayName=" "/>
+<Text></Text>
+<StyleText></StyleText>
+<Composite>
+<Code Code="V037" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+<Text></Text>
+<StyleText></StyleText>
+<SubItems>
+<MIDictionary>
+<Code Code="I0024" SourceCode="I0024"  CCode="V037"  KBNodeID="" DisplayName="诊断2:"/>
+<Value></Value>
+<Separator>|</Separator>
+</MIDictionary>
+<MIString>
+<Code Code="L0150" SourceCode="L0150"  CCode="V037"  KBNodeID="" DisplayName="三级医师审核"/>
+<Value></Value>
+</MIString>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S024" DisplayName=" "/>
+<Text></Text>
+<StyleText></StyleText>
+<Composite>
+<Code Code="V038" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+<Text></Text>
+<StyleText></StyleText>
+<SubItems>
+<MIDictionary>
+<Code Code="I0025" SourceCode="I0025"  CCode="V038"  KBNodeID="" DisplayName="诊断3:"/>
+<Value></Value>
+<Separator>|</Separator>
+</MIDictionary>
+<MIString>
+<Code Code="L0151" SourceCode="L0151"  CCode="V038"  KBNodeID="" DisplayName="三级医师审核"/>
+<Value></Value>
+</MIString>
+</SubItems>
+</Composite>
+</Section>
+</Component>
+</ScatterData>
+<abiword template="false" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:math="http://www.w3.org/1998/Math/MathML" xid-max="900" xmlns:dc="http://purl.org/dc/elements/1.1/" fileformat="1.1" xmlns:svg="http://www.w3.org/2000/svg" xmlns:awml="http://www.abisource.com/awml.dtd" xmlns="http://www.abisource.com/awml.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="2.8.6" xml:space="preserve" props="dom-dir:ltr; document-footnote-restart-section:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-endnote-initial:1; lang:zh-CN; document-endnote-restart-section:0; document-footnote-restart-page:0; document-footnote-type:numeric; document-footnote-initial:1; document-endnote-place-endsection:0">
+<metadata>
+<m key="dc.format">application/x-abiword</m>
+<m key="abiword.generator">AbiWord</m>
+</metadata>
+<history version="1" edit-time="4222" last-saved="1516844575" uid="f1010aa4-016e-11e8-8ce0-9dc642a70e45">
+<version id="1" started="1516844575" uid="10933390-0171-11e8-8ce0-9dc642a70e45" auto="0" top-xid="879"/>
+</history>
+<revisions show="0" mark="1" show-level="268435455" auto="0">
+<r id="1" time-started="1594176323" version="0" revision-level="2" revision-key="630">192.168.0.34(马成祥)</r>
+<r id="2" time-started="1594176344" version="0" revision-level="2" revision-key="630">192.168.0.34(马成祥)</r>
+<r id="3" time-started="1594176384" version="0" revision-level="2" revision-key="630">192.168.0.34(马成祥)</r>
+</revisions>
+<styles>
+<s type="P" name="Normal Table" props=""/>
+<s type="C" name="Default Paragraph Font" props=""/>
+<s type="C" name="Reference" props=""/>
+</styles>
+<pagesize pagetype="A4" orientation="portrait" width="210.000000" height="297.000000" units="mm" symmetric-margin="1" page-scale="1.000000"/>
+<section footer="1" header="0" xid="246" props="page-margin-footer:0.00cm; page-margin-header:0.00cm; page-margin-right:1.20cm; page-margin-left:1.20cm; page-margin-top:1.5313in; page-margin-bottom:2.54cm">
+<p xid="67" props="text-align:left; line-height:2pt"><bookmark usage="1" type="start" name="46279||1^S001" xid="68"/><c props="display:none; code:46279||1^S001; et:9; font-weight:normal">患者基本信息</c></p>
+<table xid="105" props="table-column-leftpos:0.00cm; list-tag:1; bot-style:0; table-row-heights:0.87cm/0.87cm/0.75cm/0.75cm/0.75cm/0.75cm/; table-column-props:2.00cm/6.87cm/3.25cm/6.49cm/; top-style:0; right-style:0; bg-style:1; left-style:0">
+<cell xid="106" props="bot-attach:1; left-attach:0; right-attach:1; top-attach:0">
+<p xid="107" props="text-align:left"><c props="font-weight:bold">姓名：</c></p>
+</cell>
+<cell xid="109" props="bg-style:1; left-color:000000; bot-style:1; right-attach:2; right-color:000000; top-color:000000; top-attach:0; left-attach:1; left-style:0; bot-attach:1; bot-color:000000; right-style:0; top-style:0">
+<p xid="110" props="text-align:left"><bookmark usage="2" type="start" name="46279||1^S001_V005" xid="672"/><c props="et:1; code:46279||1^S001_V005_L0001; font-weight:bold">马东拉</c></p>
+</cell>
+<cell xid="112" props="bot-attach:1; left-attach:2; right-attach:3; top-attach:0">
+<p xid="113" props="text-align:left; text-indent:0.00cm; margin-left:0.00cm"><c props="font-weight:bold">入院时间：</c></p>
+</cell>
+<cell xid="115" props="left-attach:3; right-attach:4; bot-style:1; bot-attach:1; top-attach:0; right-style:0; left-style:0; bg-style:1; top-style:0">
+<p xid="116" props="text-align:left"><c props="et:5; code:46279||1^S001_V005_D0008; font-weight:bold">2020-07-08</c></p>
+</cell>
+<cell xid="118" props="bot-attach:2; left-attach:0; right-attach:1; top-attach:1">
+<p xid="119" props="text-align:left"><c props="font-weight:bold">性别：</c></p>
+</cell>
+<cell xid="121" props="left-attach:1; right-attach:2; bot-style:1; bot-attach:2; top-attach:1; right-style:0; left-style:0; bg-style:1; top-style:0">
+<p xid="122" props="text-align:left"><c props="et:4; code:46279||1^S001_V005_I0002; font-weight:bold">男</c></p>
+</cell>
+<cell xid="124" props="bot-attach:2; left-attach:2; right-attach:3; top-attach:1">
+<p xid="125" props="text-align:left"><c props="font-weight:bold">记录时间：</c></p>
+</cell>
+<cell xid="127" props="left-attach:3; right-attach:4; bot-style:1; bot-attach:2; top-attach:1; right-style:0; left-style:0; bg-style:1; top-style:0">
+<p xid="128" props="text-align:left"><c props="et:5; code:46279||1^S001_V005_D0009; font-weight:bold">2020-07-08 10:08</c></p>
+</cell>
+<cell xid="130" props="bot-attach:3; left-attach:0; right-attach:1; top-attach:2">
+<p xid="131" props="text-align:left"><c props="font-weight:bold">年龄：</c></p>
+</cell>
+<cell xid="133" props="left-attach:1; right-attach:2; bot-style:1; bot-attach:3; top-attach:2; right-style:0; left-style:0; bg-style:1; top-style:0">
+<p xid="134" props="text-align:left"><c props="et:1; code:46279||1^S001_V005_L0003; font-weight:bold">66岁</c></p>
+</cell>
+<cell xid="136" props="bot-attach:3; left-attach:2; right-attach:3; top-attach:2">
+<p xid="137" props="text-align:left"><c props="font-weight:bold">病史陈述者：</c></p>
+</cell>
+<cell xid="139" props="left-attach:3; right-attach:4; bot-style:1; bot-attach:3; top-attach:2; right-style:0; left-style:0; bg-style:1; top-style:0">
+<p xid="140" props="text-align:left"><c props="bgcolor:e0ecff; et:3; font-weight:bold; code:46279||1^S001_V005_M0001">患者本人</c></p>
+</cell>
+<cell xid="142" props="bot-attach:4; left-attach:0; right-attach:1; top-attach:3">
+<p xid="143" props="text-align:left"><c props="font-weight:bold">婚姻：</c></p>
+</cell>
+<cell xid="145" props="left-attach:1; right-attach:2; bot-style:1; bot-attach:4; top-attach:3; right-style:0; left-style:0; bg-style:1; top-style:0">
+<p xid="146" props="text-align:left"><c props="bgcolor:e0ecff; et:4; font-weight:bold; code:46279||1^S001_V005_I0005">已婚</c></p>
+</cell>
+<cell xid="148" props="bot-attach:4; left-attach:2; right-attach:3; top-attach:3">
+<p xid="149" props="text-align:left"><c props="font-weight:bold">可靠性：</c></p>
+</cell>
+<cell xid="151" props="left-attach:3; right-attach:4; bot-style:1; bot-attach:4; top-attach:3; right-style:0; left-style:0; bg-style:1; top-style:0">
+<p xid="152" props="text-align:left; margin-right:0.00cm"><c props="bgcolor:#0000ff; et:3; font-weight:bold; code:46279||1^S001_V005_O0011">可靠</c></p>
+</cell>
+<cell xid="644" props="bot-attach:5; left-attach:0; right-attach:1; top-attach:4">
+<p xid="645" props="text-align:left"><c props="font-weight:bold">出生地：</c></p>
+</cell>
+<cell xid="647" props="bg-style:1; left-color:000000; bot-style:1; right-attach:2; right-color:000000; top-color:000000; bot-color:000000; left-attach:1; top-style:0; right-style:0; left-style:0; bot-attach:5; top-attach:4">
+<p xid="648" props="text-align:left"><c props="et:1; code:46279||1^S001_V005_L0137; font-weight:bold">甘肃省临夏县马集镇多木寺村五社16号</c></p>
+</cell>
+<cell xid="650" props="bot-attach:5; left-attach:2; right-attach:3; top-attach:4">
+<p xid="651" props="text-align:left"><c props="font-weight:bold">职业：</c></p>
+</cell>
+<cell xid="653" props="left-attach:3; right-attach:4; bot-style:1; bot-attach:5; top-attach:4; right-style:0; top-style:0; bg-style:1; left-style:0">
+<p xid="654" props="text-align:left"><c props="bgcolor:e0ecff; et:4; font-weight:bold; code:46279||1^S001_V005_I0013">农民</c></p>
+</cell>
+<cell xid="656" props="bot-attach:6; left-attach:0; right-attach:1; top-attach:5">
+<p xid="657" props="text-align:left"><c props="font-weight:bold">民族：</c></p>
+</cell>
+<cell xid="659" props="left-attach:1; right-attach:2; bot-style:1; bot-attach:6; top-attach:5; right-style:0; top-style:0; bg-style:1; left-style:0">
+<p xid="660" props="text-align:left"><c props="et:4; code:46279||1^S001_V005_I0012; font-weight:bold">回族</c></p>
+</cell>
+<cell xid="662" props="bot-attach:6; left-attach:2; right-attach:3; top-attach:5">
+<p xid="663" props="text-align:left"><c props="font-weight:bold">工作单位：</c></p>
+</cell>
+<cell xid="665" props="left-attach:3; right-attach:4; bot-style:1; bot-attach:6; top-attach:5; right-style:0; top-style:0; bg-style:1; left-style:0">
+<p xid="666" props="text-align:left"><c props="bgcolor:e0ecff; et:1; font-weight:bold; code:46279||1^S001_V005_L0138">无</c><bookmark usage="2" type="end" name="46279||1^S001_V005" xid="673"/></p>
+</cell>
+</table>
+<p xid="104" props="text-align:left; line-height:2pt"><bookmark usage="1" type="end" name="46279||1^S001" xid="69"/></p>
+<p xid="70" props="text-align:left; line-height:1.70"><bookmark usage="1" type="start" name="46279||1^S002" xid="71"/><c props="bgcolor:e0ecff; et:9; code:46279||1^S002; display:inline; font-weight:bold">主  诉：</c><c>口渴、多饮、多尿8年余，加重头痛、头晕1周。</c><bookmark usage="1" type="end" name="46279||1^S002" xid="72"/></p>
+<p xid="73" props="text-align:left; line-height:1.5"><bookmark usage="1" type="start" name="46279||1^S003" xid="74"/><c props="bgcolor:e0ecff; et:9; code:46279||1^S003; display:inline; font-weight:bold">现病史：</c><c>患者自述8年前无明显诱因的出现口渴、多饮、多尿症状，伴疲乏无力，体重减轻。在私人诊所多次测血糖（具体血糖值不详）均高于正常值，诊断为“2型糖尿病”，给予“二甲双胍，消渴丸”口服，症状减轻，未引起足够重视，未作进一步检查治疗。于入院2年前口干、多饮症状加重，并出现头痛、头昏、记忆力减退，四肢麻木、冰凉，在我科住院治疗，诊断为“1.2型糖尿病伴多个并发症2.原发性高血压 3级 极高危”。患者口干、多饮，头晕症状减轻，血糖、血压平稳后带药出院。在家服药治疗，二甲双胍缓释片 0.5mg 口服 2次/日，阿卡波糖 50mg 3/日，甘精胰岛素10u皮下注射每晚1次，硝苯地平缓释片 10mg 1/日，未监测血糖、血压。入院1周前着凉后患者自感乏力、口渴症状加重，伴视物模糊、尿泡沫增多、四肢麻木疼痛、胸闷、心悸，活动后气短。但无晕厥，抽搐，肢体偏瘫等症状。前来我科住院治疗。门诊以“1.2型糖尿病伴多个并发症2.原发性高血压 3级 极高危”收住入院。</c><bookmark usage="1" type="end" name="46279||1^S003" xid="75"/></p>
+<p xid="76" props="text-align:left; line-height:1.70"><bookmark usage="1" type="start" name="46279||1^S004" xid="77"/><c props="bgcolor:e0ecff; et:9; code:46279||1^S004; display:inline; font-weight:bold">既往史：</c><c props="display:inline; font-size:12pt; font-family:宋体">既往体健，否认有手术外伤史，否认有肝炎结核病史，否认有传染病接触史，预防接种史不详。否认药物过敏史。否认输血史。</c><bookmark usage="1" type="end" name="46279||1^S004" xid="78"/></p>
+<p xid="79" props="text-align:left; line-height:1.70"><bookmark usage="1" type="start" name="46279||1^S005" xid="80"/><c props="et:9; font-size:12pt; display:inline; bgcolor:e0ecff; font-weight:bold; code:46279||1^S005; font-family:宋体">个人史：</c><c props="display:inline; font-size:12pt; font-family:宋体">出生地及</c><bookmark usage="2" type="start" name="S005_V015" xid="289"/><c props="display:inline; font-size:12pt; font-family:宋体">长期居留地：生长于原籍，无疫区居住生活史；</c><c props="font-family:宋体; font-size:12pt">生活习惯：无吸烟饮酒史，药物嗜好:无；工业毒物、粉尘、放射性物</c><c props="font-size:12pt">质接触史：无；冶游史：无</c><bookmark usage="2" type="end" name="S005_V015" xid="290"/><c props="font-size:12pt">。 </c><bookmark usage="1" type="end" name="46279||1^S005" xid="81"/></p>
+<p xid="82" props="text-align:left; line-height:1.70"><bookmark usage="1" type="start" name="46279||1^S006" xid="83"/><c props="et:9; code:46279||1^S006; display:inline; font-weight:bold">婚育史:</c><c props="display:inline"> 婚姻状况:</c><bookmark usage="2" type="start" name="46279||1^S006_V032" xid="876"/><c props="bgcolor:#cbe2cb; et:4; code:46279||1^S006_V032_I0022; display:inline">已婚</c><c props="display:inline">；</c><c props="">配偶健康状况：</c><c props="bgcolor:e0ecff; et:3; code:46279||1^S006_V032_O0045">健康</c><c props="">；有无子女：</c><c props="bgcolor:e0ecff; et:3; code:46279||1^S006_V032_O0046">有</c><bookmark usage="2" type="end" name="46279||1^S006_V032" xid="877"/><c>1子1女。</c><bookmark usage="1" type="end" name="46279||1^S006" xid="84"/></p>
+<p xid="319" props="text-align:justify; display:none; line-height:1.70; dom-dir:ltr"><bookmark usage="1" type="start" name="46279||1^S018" xid="320"/><c props="bgcolor:e0ecff; et:9; font-weight:bold; display:none; code:46279||1^S018">月经史：</c><c props="display:none">患者平素月经规律，15，3-4/28-30，</c><bookmark usage="2" type="start" name="46279||1^S018_V039" xid="878"/><c props="bgcolor:#cbe2cb; et:5; display:none; code:46279||1^S018_V039_D0010">[末次月经]</c><bookmark usage="2" type="end" name="46279||1^S018_V039" xid="879"/><c props="display:none">。月经量中，色暗红，偶有痛经、血块史，无异常阴道流血史。</c><bookmark usage="1" type="end" name="46279||1^S018" xid="321"/></p>
+<p xid="85" props="text-align:left; line-height:1.70"><bookmark usage="1" type="start" name="46279||1^S010" xid="86"/><c props="bgcolor:e0ecff; et:9; code:46279||1^S010; display:inline; font-weight:bold">家族史：</c><c props="">否认家族中有相关遗传病史。</c><bookmark usage="1" type="end" name="46279||1^S010" xid="87"/></p>
+<p xid="88" props="text-align:center; line-height:1.70"><bookmark usage="1" type="start" name="46279||1^S011" xid="89"/><bookmark usage="2" type="start" name="46279||1^S011_V006" xid="880"/><c props="bgcolor:e0ecff; font-size:14pt; et:9; font-weight:bold; display:inline; code:46279||1^S011">体格检查</c></p>
+<p xid="687" props="text-align:left; line-height:1.70"><c props="display:inline; font-size:14pt">T:</c><bookmark usage="4" type="start" name="46279||1^S011_V006_MCC0011" xid="230"/><c props="et:2; font-size:12; color:Black; font-weight:normal; code:46279||1^S011_V006_MCC0011_N9154; font-style:normal; font-family:宋体">37.3</c><c props="font-size:12; font-weight:normal; font-family:宋体; color:Black; font-style:normal">℃</c><bookmark usage="4" type="end" name="46279||1^S011_V006_MCC0011" xid="231"/><c usage="4" props=""> </c><c props=""> </c><c props="display:inline; font-size:14pt">P:</c><bookmark usage="4" type="start" name="46279||1^S011_V006_MCC0012" xid="234"/><c props="et:2; font-size:12; color:Black; font-weight:normal; code:46279||1^S011_V006_MCC0012_N9155; font-style:normal; font-family:宋体">67</c><c props="font-size:12; font-weight:normal; font-family:宋体; color:Black; font-style:normal">次/分</c><bookmark usage="4" type="end" name="46279||1^S011_V006_MCC0012" xid="235"/><c usage="4" props=""> </c><c props=""> </c><c props="display:inline; font-size:14pt">R:</c><bookmark usage="4" type="start" name="46279||1^S011_V006_MCC0013" xid="238"/><c props="et:2; font-size:12; color:Black; font-weight:normal; code:46279||1^S011_V006_MCC0013_N9156; font-style:normal; font-family:宋体">20</c><c props="font-size:12; font-weight:normal; font-family:宋体; color:Black; font-style:normal">次/分</c><bookmark usage="4" type="end" name="46279||1^S011_V006_MCC0013" xid="239"/><c usage="4" props=""> </c><c props=""> </c><c props="display:inline; font-size:14pt">Bp:</c><bookmark usage="4" type="start" name="46279||1^S011_V006_MCC0014" xid="242"/><c props="et:2; font-size:12; color:Black; font-weight:normal; code:46279||1^S011_V006_MCC0014_N9157; font-style:normal; font-family:宋体">180</c><c props="font-size:12; font-weight:normal; font-family:宋体; color:Black; font-style:normal">/</c><c props="et:2; font-size:12; color:Black; font-weight:normal; code:46279||1^S011_V006_MCC0014_N9158; font-style:normal; font-family:宋体">100</c><c props="font-size:12; font-weight:normal; font-family:宋体; color:Black; font-style:normal">mmHg</c><c props="font-size:12; font-family:宋体; color:Black; font-style:normal">  </c><bookmark usage="4" type="end" name="46279||1^S011_V006_MCC0014" xid="243"/><c props="">身高：</c><bookmark usage="2" type="start" name="46279||1^S011_V022" xid="881"/><c props="bgcolor:#cbe2cb; et:1; code:46279||1^S011_V022_L0140">170</c><c props="">cm  体重：</c><c props="code:46279||1^S011_V022_L0141; et:1">70</c><c props="">kg</c></p>
+<p text-align="left" xid="325" props="text-align:left; line-height:1.5"><c props="font-weight:bold">一般情况</c><c props="">：发育：</c><bookmark usage="4" type="start" name="S011_V022_MCC0030" xid="604"/><bookmark usage="4" type="end" name="S011_V022_MCC0030" xid="605"/><c props="bgcolor:e0ecff; et:3; code:46279||1^S011_V006_O0019">正常</c><c props="">，营养：</c><c props="bgcolor:e0ecff; et:3; code:46279||1^S011_V022_O0040">良好</c><bookmark usage="4" type="start" name="S011_V022_MCC0031" xid="608"/><bookmark usage="4" type="end" name="S011_V022_MCC0031" xid="609"/><c props="">，体位：</c><c props="bgcolor:e0ecff; et:3; code:46279||1^S011_V022_O0041">自主</c><c props="">，</c><bookmark usage="4" type="start" name="46279||1^S011_V022_MCC0036" xid="602"/><c props="et:3; font-size:12; color:Black; bgcolor:Silver; font-weight:normal; code:46279||1^S011_V022_MCC0036_O9177; font-style:normal; font-family:宋体">面容无病容，表情自如</c><c props="font-size:12; font-family:宋体; color:Black; font-style:normal">，神</c><bookmark usage="4" type="end" name="46279||1^S011_V022_MCC0036" xid="603"/><c props="">志清楚，</c><c>查体配合，</c><bookmark usage="4" type="start" name="S011_V022_MCC0039" xid="610"/><c props="">步态正常</c><bookmark usage="4" type="end" name="S011_V022_MCC0039" xid="611"/><c props="">。</c></p>
+<p xid="332" props="text-align:left"><c props="font-weight:bold">皮肤黏膜：</c><c props="">全身皮肤及黏膜色泽正常，无皮疹。</c><c props="bgcolor:#cbe2cb; et:1; code:46279||1^S011_V006_L0031">无皮下出血</c><c props="">。毛发状况：无异常，皮肤</c><c props="bgcolor:Silver; et:3; code:46279||1^S011_V006_O9184">干燥</c><c>，</c><c props="">弹性</c><c props="bgcolor:Silver; et:3; code:46279||1^S011_V006_O9186">皮肤组织萎缩，皮下脂肪减少，弹性减退</c><c>，</c><bookmark usage="4" type="start" name="S011_V022_MCC0047" xid="616"/><c props="">水肿：无</c><bookmark usage="4" type="end" name="S011_V022_MCC0047" xid="617"/><c props="">，</c><c props="bgcolor:e0ecff; et:3; code:46279||1^S011_V006_O0022">无</c><c props="">肝掌，</c><c props="bgcolor:e0ecff; et:3; code:46279||1^S011_V006_O0023">无</c><bookmark usage="2" type="end" name="46279||1^S011_V006" xid="882"/><c props="">蜘蛛痣淋巴结：全身浅表淋巴结未触及明显肿大。</c><bookmark usage="4" type="start" name="S011_V022_MCC0073" xid="618"/></p>
+<p xid="885" props="text-align:left"><c props="font-weight:bold">头面部：</c><c props="">无</c><bookmark usage="4" type="end" name="S011_V022_MCC0073" xid="619"/><c props="">巩膜黄染，瞳孔对光反射灵敏，口唇红润，无咽部充血，无扁桃体充血、肿大。</c></p>
+<p xid="336"><c props="font-weight:bold">颈部</c><c props="">：</c><c props="code:46279||1^S011_V022_O0036; et:3">无</c><c props="">抵抗感。</c><c props="bgcolor:c0c0c0; et:1; code:46279||1^S011_V022_L0084">颈动脉搏动无异常</c><c props="">，</c><c props="font-size:12pt">双侧颈静脉未见异常充盈</c><c props="">，肝颈静脉回流征：阴性，气管居中，甲状腺查体未见明显异常。</c></p>
+<p xid="337"><c props="font-weight:bold">胸部</c><c props="">: 胸廓对称起伏，</c><c props="bgcolor:#cbe2cb; et:1; code:46279||1^S011_V022_L0101">呼吸自如，节律规整</c><c props="">，</c><c props="bgcolor:c0c0c0; et:1; code:46279||1^S011_V022_L0103">肋间隙未触及明显异常</c><c props="">，胸壁未见明显异常。</c></p>
+<p xid="338"><c props="font-weight:bold">肺</c><c props="">: 叩诊音：清音，听诊啰音：无，啰音部位：无。    </c></p>
+<p xid="339"><c props="font-weight:bold">心</c><c props="">:心前区未见明显凸起及凹陷，心界左下扩大，心率</c><c props="bgcolor:#cbe2cb; et:1; code:46279||1^S011_V022_L0148">67</c><bookmark usage="2" type="end" name="46279||1^S011_V022" xid="883"/><c props="">次/分，心音正常，心律不齐，未闻及心脏病理性杂音及心包摩擦音。        </c></p>
+<p xid="340"><c props="font-weight:bold">腹部</c><c props="">: 外形平坦，软，瘢痕：无，压痛及反跳痛：无，肿物：无。肝、脾肋下未触及。 肠鸣音4次/分。</c></p>
+<p xid="341"><c props="font-weight:bold">肛门直肠</c><c props="">:未查。</c></p>
+<p xid="342"><c props="font-weight:bold">外生殖器</c><c props="">:未查</c></p>
+<p xid="343"><c props="font-weight:bold">脊柱四肢</c><c props="">: 畸形：无。关节活动受限：无，病理反射：无。</c></p>
+<p xid="620"><c props="font-weight:bold">其他重要阳性体征</c><c props="">：双下肢水肿（+）。 </c><bookmark usage="1" type="end" name="46279||1^S011" xid="90"/></p>
+<p xid="322" props="text-align:left; line-height:1pt"></p>
+<p xid="91" props="text-align:left; line-height:1.5"><bookmark usage="1" type="start" name="46279||1^S012" xid="92"/><c props="et:9; code:46279||1^S012; display:inline; font-weight:bold">专科情况：</c><c>口渴、多饮、多尿8年余，加重头痛、头晕1周。体格检查：T:37.3℃  P:67次/分  R:20次/分  Bp:180/100mmHg  身高：170cm  体重：70kg，神志清楚，心界左下扩大，心率67次/分，心音正常，心律不齐，双下肢水肿（+）。</c><bookmark usage="1" type="end" name="46279||1^S012" xid="93"/></p>
+<p xid="94" props="text-align:left; line-height:1.70"><bookmark usage="1" type="start" name="46279||1^S013" xid="95"/><c props="et:9; font-size:12pt; display:inline; bgcolor:e0ecff; font-weight:bold; code:46279||1^S013; font-family:宋体">辅助检查：</c></p>
+<p xid="891" props="text-align:left; line-height:1.70"><c props="display:inline; font-size:12pt; font-family:宋体">2020-07-08 空腹血糖11.3mmol/L。</c></p>
+<p xid="892" props="text-align:left; line-height:1.70"><c>2020-07-08 </c><c props="display:inline; font-size:12pt; font-family:宋体">心电图：窦性心律 心电轴不偏 异常心电图 频发室性早搏V1-V3导联r波递增不良。</c><c>2020-07-08 头颅CT:1.脑实质内未见明显异常，2.右侧上颌窦炎，必要时MR检查。</c><bookmark usage="1" type="end" name="46279||1^S013" xid="96"/></p>
+<p xid="793" props="text-align:center; line-height:1.70"><bookmark usage="1" type="start" name="46279||1^S021" xid="794"/><c props="et:9; code:46279||1^S021; display:inline; font-weight:bold"> </c><bookmark usage="1" type="end" name="46279||1^S021" xid="795"/></p>
+<table xid="820" props="table-column-props:0.12cm/18.48cm/; table-column-leftpos:0.00cm; list-tag:1">
+<cell xid="821" props="left-attach:0; right-attach:1; bot-style:0; bot-attach:1; top-attach:0; right-style:0; top-style:0; bg-style:1; left-style:0">
+<p xid="822" props="display:inline"></p>
+</cell>
+<cell xid="824" props="bg-style:1; left-color:000000; bot-style:0; right-attach:2; right-color:000000; top-color:000000; bot-color:000000; left-attach:1; top-style:0; right-style:0; left-style:0; bot-attach:1; top-attach:0">
+<p xid="840" props="text-align:center; text-indent:0.00cm; line-height:1.70"><bookmark usage="1" type="start" name="46279||1^S022" xid="841"/><c props="et:9; code:46279||1^S022; display:inline; font-weight:bold"> </c><bookmark usage="2" type="start" name="46279||1^S022_V036" xid="861"/><c props="bgcolor:e0ecff; et:3; code:46279||1^S022_V036_O0042; display:inline">初步诊断:</c><c props=""> </c></p>
+<p xid="873" props="text-align:left; text-indent:0.00cm; line-height:1.5; tabstops:0.62cm/L0,8.12cm/L0,8.12cm/L0; margin-left:9.12cm"><c revision="1">1.</c><c props="bgcolor:c0c0c0; et:4; code:46279||1^S022_V036_I0023">2型糖尿病</c><c props=""> </c></p>
+<p xid="897" props="text-align:left; text-indent:0.00cm; line-height:1.5; tabstops:0.62cm/L0,8.12cm/L0,8.12cm/L0; margin-left:9.12cm"><c>     并糖尿病性视网膜病变</c></p>
+<p xid="893" props="line-height:1.5"><c>                                                并糖尿病性周围血管病变</c></p>
+<p xid="894" props="line-height:1.5"><c>                                                并糖尿病性周围神经病</c></p>
+<p revision="-2" xid="895" props="line-height:1.5"><c revision="-2">                                                并糖尿病性肾病</c></p>
+<p xid="896" props="line-height:1.5"><c>                                           2.原发性高血压 3级 极高危</c></p>
+<p revision="1" xid="900" props="line-height:1.5"><c revision="1">                                           3.高血压性心脏病</c></p>
+<p xid="868" props="text-align:right; line-height:1.70"><bookmark usage="4" type="start" name="46279||1^S022_V036_V040" xid="898"/><c props="ReadOnly:1">主治医师：</c><c props="bgcolor:c0c0c0; et:1; code:46279||1^S022_V036_V040_L0149">马成祥</c><bookmark usage="4" type="end" name="46279||1^S022_V036_V040" xid="899"/><bookmark usage="2" type="end" name="46279||1^S022_V036" xid="862"/><bookmark usage="1" type="end" name="46279||1^S022" xid="842"/></p>
+</cell>
+<cell xid="827" props="bg-style:1; left-color:000000; bot-style:0; right-attach:1; right-color:000000; top-color:000000; bot-color:000000; left-attach:0; top-style:0; right-style:0; left-style:0; bot-attach:2; top-attach:1">
+<p xid="828" props="display:inline"></p>
+</cell>
+<cell xid="830" props="bg-style:1; left-color:000000; bot-style:0; right-attach:2; right-color:000000; top-color:000000; bot-color:000000; left-attach:1; top-style:0; right-style:0; left-style:0; bot-attach:2; top-attach:1">
+<p xid="843" props="text-align:center; text-indent:0.00cm; tabstops:8.87cm/L0; line-height:1.70; margin-left:0.12cm"><bookmark usage="1" type="start" name="46279||1^S023" xid="844"/><c props="et:9; code:46279||1^S023; display:inline; font-weight:bold"> </c><bookmark usage="2" type="start" name="46279||1^S023_V037" xid="863"/><c props="bgcolor:e0ecff; et:3; code:46279||1^S023_V037_O0043; display:inline">[诊断类型2:]</c><c props="display:inline"> </c></p>
+<p xid="869" props="text-align:left; text-indent:0.00cm; tabstops:1.37cm/L0,9.37cm/L0; line-height:1.70; margin-left:9.24cm"><c props="bgcolor:c0c0c0; et:4; code:46279||1^S023_V037_I0024">[诊断2:]</c><c props=""> </c></p>
+<p xid="870" props="text-align:right; line-height:1.70"><c props="bgcolor:c0c0c0; et:1; code:46279||1^S023_V037_L0150">[三级医师审核]</c><bookmark usage="2" type="end" name="46279||1^S023_V037" xid="864"/><bookmark usage="1" type="end" name="46279||1^S023" xid="845"/></p>
+</cell>
+<cell xid="833" props="bg-style:1; left-color:000000; bot-style:0; right-attach:1; right-color:000000; top-color:000000; bot-color:000000; left-attach:0; top-style:0; right-style:0; left-style:0; bot-attach:3; top-attach:2">
+<p xid="834" props="display:inline"></p>
+</cell>
+<cell xid="836" props="bg-style:1; left-color:000000; bot-style:0; right-attach:2; right-color:000000; top-color:000000; bot-color:000000; left-attach:1; top-style:0; right-style:0; left-style:0; bot-attach:3; top-attach:2">
+<p xid="846" props="text-align:center; text-indent:0.00cm; line-height:1.70; margin-left:-0.12cm"><bookmark usage="1" type="start" name="46279||1^S024" xid="847"/><c props="et:9; code:46279||1^S024; display:inline; font-weight:bold"> </c><bookmark usage="2" type="start" name="46279||1^S024_V038" xid="865"/><c props=""> </c><c props="bgcolor:e0ecff; et:3; code:46279||1^S024_V038_O0044; display:inline">[诊断类型3:]</c><c props="display:inline"> </c></p>
+<p xid="871" props="text-align:left; text-indent:0.00cm; line-height:1.70; margin-left:9.24cm"><c props="bgcolor:c0c0c0; et:4; code:46279||1^S024_V038_I0025">[诊断3:]</c><c props=""> </c></p>
+<p xid="872" props="text-align:right; line-height:1.70"><c props="bgcolor:c0c0c0; et:1; code:46279||1^S024_V038_L0151">[三级医师审核]</c><bookmark usage="2" type="end" name="46279||1^S024_V038" xid="866"/><bookmark usage="1" type="end" name="46279||1^S024" xid="848"/></p>
+</cell>
+</table>
+<p xid="624" props="text-align:left; line-height:1pt"></p>
+</section>
+<section id="1" listid="0" parentid="0" type="footer" xid="49">
+<p xid="50" props="text-align:center; line-height:1pt"><bookmark usage="1" type="start" name="Footer" xid="53"/><bookmark usage="2" type="start" name="Footer_V002" xid="51"/><bookmark usage="2" type="end" name="Footer_V002" xid="52"/></p>
+<table xid="57" props="list-tag:1">
+<cell xid="58" props="right-thickness:1.0pt; left-color:000000; bot-style:0; bot-thickness:1.0pt; right-attach:1; left-thickness:1.0pt; right-color:000000; bg-style:1; top-attach:0; left-attach:0; top-color:000000; left-style:0; bot-attach:1; bot-color:000000; top-thickness:1.0pt; right-style:0; top-style:1">
+<p xid="59" props="text-align:center"><c>第(</c><field type="page_number" xid="65"></field><c>)页</c></p>
+</cell>
+</table>
+<p xid="56" props="text-align:center; line-height:1pt"><bookmark usage="1" type="end" name="Footer" xid="54"/></p>
+</section>
+<section id="0" listid="0" parentid="0" type="header" xid="1">
+<p xid="2" props="text-align:left"><bookmark usage="1" type="start" name="Header" xid="5"/><bookmark usage="2" type="start" name="Header_V001" xid="41"/><c> </c></p>
+<table xid="8" props="table-row-heights:1.25cm/1.12cm/0.75cm/; list-tag:1; bg-style:1; left-color:000000; bot-style:0; table-column-props:5.87cm/7.87cm/4.75cm/; right-color:000000; top-color:000000; bot-color:000000; top-style:0; table-column-leftpos:0.00cm; right-style:0; left-style:0">
+<cell xid="9" props="bot-attach:1; left-attach:0; right-attach:3; top-attach:0">
+<p xid="10" props="text-align:center"><image dataid="6f5a51e6-8a91-11ea-96af-9dc642a70e45" xid="887" props="height:0.3542in; width:0.3326in"/><c props="font-weight:bold; et:1; code:Header_V001_L0001; font-family:宋体; font-size:20pt">临夏县人民医院</c></p>
+</cell>
+<cell xid="18" props="bot-attach:2; left-attach:0; right-attach:3; top-attach:1">
+<p xid="19" props="text-align:center; tabstops:0.00cm/L0,17.48cm/L0; margin-right:-0.12cm"><c props="font-weight:bold; font-family:宋体; font-size:18pt">入</c><c props="font-family:宋体; font-size:18pt"> </c><c props="font-weight:bold; font-family:宋体; font-size:18pt">院</c><c props="font-family:宋体; font-size:18pt"> </c><c props="font-weight:bold; font-family:宋体; font-size:18pt">记</c><c props="font-family:宋体; font-size:18pt"> </c><c props="font-weight:bold; font-family:宋体; font-size:18pt">录</c></p>
+</cell>
+<cell xid="27" props="bg-style:1; bot-style:1; bot-thickness:1.0pt; right-attach:1; left-thickness:1.0pt; right-thickness:1.0pt; top-color:000000; top-attach:2; left-attach:0; left-style:0; bot-attach:3; bot-color:000000; top-thickness:1.0pt; right-style:0; top-style:0">
+<p xid="28"><c>姓名：</c><c props="code:Header_V001_L0002; et:1">马东拉</c><c>  性别：</c><c props="code:Header_V001_L0135; et:1">男</c></p>
+</cell>
+<cell xid="30" props="bg-style:1; bot-style:1; bot-thickness:1.0pt; right-attach:2; left-thickness:1.0pt; right-thickness:1.0pt; top-color:000000; top-attach:2; left-attach:1; left-style:0; bot-attach:3; bot-color:000000; top-thickness:1.0pt; right-style:0; top-style:0">
+<p xid="31" props="tabstops:14.74cm/L0,1.37cm/L0,6.74cm/L0; margin-right:0.00cm"><c> 年龄：</c><c props="code:Header_V001_L0136; et:1">66岁</c><c>   科室：</c><c props="code:Header_V001_L0004; et:1">心内科</c></p>
+</cell>
+<cell xid="33" props="bg-style:1; bot-style:1; bot-thickness:1.0pt; right-attach:3; left-thickness:1.0pt; right-thickness:1.0pt; top-color:000000; top-attach:2; left-attach:2; left-style:0; bot-attach:3; bot-color:000000; top-thickness:1.0pt; right-style:0; top-style:0">
+<p xid="34" props="text-indent:0.00cm; tabstops:12.11cm/L0,11.24cm/L0,11.36cm/L0,11.61cm/L0; margin-left:0.00cm"><c> 病案号:</c><c props="code:Header_V001_L0003; et:1">2020101693</c><bookmark usage="2" type="end" name="Header_V001" xid="42"/></p>
+</cell>
+</table>
+<p xid="7" props="text-align:left; line-height:1pt"><bookmark usage="1" type="end" name="Header" xid="6"/></p>
+</section>
+<data>
+<d name="6f5a51e6-8a91-11ea-96af-9dc642a70e45" mime-type="image/jpeg" base64="yes">
+/9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAP//////+v//////////////////////////////
+////////////////////////////////////////////////2wBDAf//////////////////
+////////////////////////////////////////////////////////////////////wAAR
+CADaAM0DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAA
+AgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkK
+FhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWG
+h4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl
+5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREA
+AgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYk
+NOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
+hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk
+5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCSiiigAooooAKKKKACiiigAooooAKKKKAC
+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
+oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiim7hQA6imbvajca
+BXH0UzcaNxoC4+im7qXIoGLRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUU0nFACk4pp
+b0ptOxQIbRSkUlAh2OKQ9aAcUGgBKUdDSUuaAA0lKaSgBQSKcGpoGaSgCWiowcU8HNBQtFFF
+ABRRRQAUUUUAFFFFABRRTScUABPYUylFLxjFBO42nA02igBSaSnhfWnUDsM2mjb70+igLDdv
+vSbfen0UBYjwaSpaQgGgLDAfXpSU4jFNoEFKDigDuelKR7UAOBzS1GDipKBhRRRQMKKKKACi
+iigBDxUdOY9qTFAmJS54/lSUUCFAzTwMUAYoyKBi0U3cPelyDQMWiiigAooooAKKKTcKAFpp
+HpRuFLnNADBQTSsO9NoJCnKe1J1pKAJaKQHIpaCgooooAKKKa3SgBlOFNooJHH/PrSqO9N6m
+nE4GKB+YhPpTaKeF9aBbjKXB9DUlFA7DAfWn0mKTOOKBodSE4pNw96XGeaAGHJowfQ1JRQKx
+FRUhANMIxQKw8HNMIwaAcU5umaB7iZ//AFUhopKBDlPan1GOtSUDQUUUUDCmN2p9MbrQJiUl
+OH1xQfwoEC9aQ9aVe9IepoDoA61JTF60+gaCim5+alJwKBi0xuv4UbjSE5pDSEqQdB9Kjpdx
+oGySimbjTj0NMnYWkPIoU5FLQBFTxyDTKeveglDKXBpKfQAypB0ph608dBQNC0UUUDCmN1p9
+MbrQJjaKKKBD170jdaF604jIoH0GA4NSVFSg4oBB0P405ulIeeR+NJQCdmJRTxg9qa3WkWnc
+SiingDAoBuwzvT2PakJHYfjTetMlu49e9DHijIAx1plAgqQdKYBk1JQCIqXNJRQIKkHQVHUg
+6CgaFooooGFNbtTqQ9KAI6KKU/pQSA61JUVSA5FA0Iw70ypaYR3FANDaKKKBC9KU84+lNp69
+KBp2GYPoacTwB7U+oz1NA2xKKKKCQpetAGaeBigAAxQ3SlpjGgY2ilFBoEJUtRjrUlA0FFFF
+AwooooAjIwaB6U5hTKCQpQcUGkoAlopgPY0+goaRmmVLSEZoFYjpy96QgilXvQLqPqKpaioG
+wpQM04L606gLCAYpaKQnFAwJxUdKTmiglh2pKUmgDJoAco4p1FFBQUUUUAFFFFABUZGKkooA
+jooIxQKCRKcG9aTFJQBLRUecU7d60DuOpMUZFLQMKTGKWigAopNwppY/SgLjiQKYTmkooJCn
+f5//AF0nSkoAKkAxSAdzTqBoKKKKBhRRRQAUUUUAFFFFACEZphGKkooAjo60pX0ptBItJS5o
+4oASilxRigBKKXFGKAEopcUUAGKKSlAJoASngetKBiloHYKKKKBhRRRQAUUUUAFFFFABRRRQ
+AUUUUAFJjNLRQAzb6UmD6VJRQKxFRUtNwPSgVhlFOxTsCgCOl2mpKKB2GhR9adRRQMKKKKAC
+iiigAooooAKKKKAP/9k=
+</d>
+</data>
+</abiword>
+</NInstanceData></StructuredBody></Document>

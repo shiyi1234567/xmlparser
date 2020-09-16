@@ -1,0 +1,1041 @@
+WORD<?xml version="1.0" encoding="UTF-8"?><Document><Code Code="EMR090001" DisplayName="EMR090001 入院记录"/><TemplateGUID>b9dfc1e2-5439-4694-a7e9-887fc09ce151</TemplateGUID><TemplateType>Single</TemplateType><TemplateProperty Code="Domain01" DisplayName="住院病历"/><Title Code="EMR020102" DisplayName="初诊病历记录" NewDisplayName="初诊病历记录"><TitleItems></TitleItems></Title><Macros><Macro/></Macros><StructuredBody><MetaData Version="1" Editor="iEditor" Lang="zh-CN">
+<Component>
+<Section>
+<Code Code="Header" DisplayName="页眉" Instances="" BindKBBaseID="" BindKBName=""/>
+<Composite Virtual="True">
+<Code Code="V025" DisplayName="" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+<SubItems>
+<MIString>
+<Code>L0017</Code>
+<SourceCode>L0017</SourceCode>
+<CCode>V025</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>姓名</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者基本信息.患者姓名[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetPatientInfo#FNAME:Name#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>True</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+</SubItems>
+</Composite>
+<Composite Virtual="True">
+<Code Code="V026" DisplayName="" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+<SubItems>
+<MIString>
+<Code>L0018</Code>
+<SourceCode>L0018</SourceCode>
+<CCode>V026</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>性别</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者基本信息.患者性别[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetPatientInfo#FNAME:GenderDesc#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>True</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+</SubItems>
+</Composite>
+<Composite Virtual="True">
+<Code Code="V027" DisplayName="" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+<SubItems>
+<MIString>
+<Code>L0019</Code>
+<SourceCode>L0019</SourceCode>
+<CCode>V027</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>年龄</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者基本信息.患者年龄[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetPatientInfo#FNAME:Age#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+</SubItems>
+</Composite>
+<Composite Virtual="True">
+<Code Code="V028" DisplayName="" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+<SubItems>
+<MIString>
+<Code>L0020</Code>
+<SourceCode>L0020</SourceCode>
+<CCode>V028</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>门诊号</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者基本信息.患者登记号[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetPatientInfo#FNAME:RegisterNo#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>True</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>NONE</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="Footer" DisplayName="页脚" Instances="" BindKBBaseID="" BindKBName=""/>
+<Composite Virtual="True">
+<Code Code="V002" DisplayName="页脚" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+<SubItems>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S021" DisplayName="新建S章节" Instances="0..1" BindKBBaseID="" BindKBName=""/>
+<Composite Virtual="True">
+<Code Code="V029" DisplayName="" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+<SubItems>
+<MIString>
+<Code>L0021</Code>
+<SourceCode>L0021</SourceCode>
+<CCode>V029</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>科室</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者出入院信息.当前科室[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetATDInfo#FNAME:CurDeptDesc#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>True</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel></SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+</SubItems>
+</Composite>
+<Composite Virtual="True">
+<Code Code="V030" DisplayName="" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+<SubItems>
+<MIString>
+<Code>L0022</Code>
+<SourceCode>L0022</SourceCode>
+<CCode>V030</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>就诊时间</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]患者出入院信息.当前系统日期时间[日期]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetATDInfo#FNAME:CurDateTime#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>True</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel></SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S002" DisplayName="主    诉:" Instances="0..1" BindKBBaseID="2" BindKBName="主诉"/>
+</Section>
+<Section>
+<Code Code="S003" DisplayName="现 病 史:" Instances="0..1" BindKBBaseID="3" BindKBName="现病史"/>
+</Section>
+<Section>
+<Code Code="S004" DisplayName="既 往 史:" Instances="0..1" BindKBBaseID="4" BindKBName="既往史"/>
+</Section>
+<Section>
+<Code Code="S008" DisplayName="出 行 史:" Description="出行史" Instances="0..1" BindKBBaseID="" BindKBName=""/>
+<Composite Virtual="True">
+<Code Code="V023" DisplayName="" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+<SubItems>
+<MIMonoChoice>
+<Code>O0002</Code>
+<SourceCode>O0002</SourceCode>
+<CCode>V023</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>新建O单元</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType>CheckBox</ShowType>
+<Choices>
+<Choice Code="1" DisplayName="有" OriginalDisplayName="有"/>
+<Choice Code="2" DisplayName="无" OriginalDisplayName="无"/>
+</Choices>
+</MIMonoChoice>
+</SubItems>
+</Composite>
+<Composite Virtual="True">
+<Code Code="V031" DisplayName="" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+<SubItems>
+<MIMonoChoice>
+<Code>O0003</Code>
+<SourceCode>O0003</SourceCode>
+<CCode>V031</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>新建O单元</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<Separator>、</Separator>
+<DisplayType>Desc</DisplayType>
+<WrapChoice>False</WrapChoice>
+<AllowEdit>False</AllowEdit>
+<ShowType>CheckBox</ShowType>
+<Choices>
+<Choice Code="1" DisplayName="有殊" OriginalDisplayName="有殊"/>
+<Choice Code="2" DisplayName="无殊" OriginalDisplayName="无殊"/>
+</Choices>
+</MIMonoChoice>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S010" DisplayName="查体和辅助检查:" Instances="0..1" BindKBBaseID="9" BindKBName="查体和辅助检查"/>
+<Composite Virtual="True">
+<Code Code="V013" DisplayName="" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+<SubItems>
+<MIConcept>
+<Code>MCC0401</Code>
+<DisplayName>体温</DisplayName>
+<Description>体温</Description>
+<AllowInput>True</AllowInput>
+<FixedStructs>True</FixedStructs>
+<Attributes>
+<SignatureLevel></SignatureLevel>
+<SignDisplayName></SignDisplayName>
+</Attributes>
+<SubItems>
+<Attribute><KeyWord></KeyWord>
+<AbnormalColor></AbnormalColor>
+<TextPosition>normal</TextPosition>
+<Major>False</Major>
+<RefElement><MINumber>
+<Code>N9154</Code>
+<SourceCode>N9154</SourceCode>
+<CCode>MCC0401</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>体温</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType></BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<MinVal>34.0</MinVal>
+<MaxVal>43.0</MaxVal>
+<HasMinVal>True</HasMinVal>
+<HasMaxVal>True</HasMaxVal>
+<IncludeMin>False</IncludeMin>
+<IncludeMax>False</IncludeMax>
+<DecimalPlace>1</DecimalPlace>
+</MINumber>
+</RefElement>
+</Attribute>
+</SubItems>
+</MIConcept>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S007" DisplayName="初步诊断:" Instances="0..1" BindKBBaseID="" BindKBName=""/>
+<Composite Virtual="True">
+<Code Code="V011" DisplayName="" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+<SubItems>
+<MILink>
+<Code>H0004</Code>
+<SourceCode>H0004</SourceCode>
+<CCode>V011</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>双击录入诊断</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]用户自定义信息.门诊诊断#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetCustomInfo#FNAME:OpDiag#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>True</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<Url>diag</Url>
+<WriteBack>Replace</WriteBack>
+<AllowEdit>True</AllowEdit>
+</MILink>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S015" DisplayName="诊疗意见:" Instances="0..1" BindKBBaseID="" BindKBName=""/>
+<Composite Virtual="True">
+<Code Code="V005" DisplayName="" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+<SubItems>
+<MILink>
+<Code>H0002</Code>
+<SourceCode>H0002</SourceCode>
+<CCode>V005</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>双击录入医嘱</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode>[HIS]用户自定义信息.门诊医嘱#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetCustomInfo#FNAME:OpOeord#VALUETYPE:</BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>True</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<Url>oeord</Url>
+<WriteBack>Replace</WriteBack>
+<AllowEdit>True</AllowEdit>
+</MILink>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S020" DisplayName="医师签名:" Instances="0..1" BindKBBaseID="" BindKBName=""/>
+<Composite Virtual="True">
+<Code Code="V009" DisplayName="" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+<SubItems>
+<MIConcept>
+<Code>V032</Code>
+<DisplayName></DisplayName>
+<Description></Description>
+<AllowInput>False</AllowInput>
+<FixedStructs>True</FixedStructs>
+<Attributes>
+<SignatureLevel>All</SignatureLevel>
+<SignDisplayName>签名</SignDisplayName>
+</Attributes>
+<SubItems>
+<Attribute><KeyWord></KeyWord>
+<AbnormalColor></AbnormalColor>
+<TextPosition></TextPosition>
+<Major>False</Major>
+<RefElement><MIString>
+<Code>L0008</Code>
+<SourceCode>L0008</SourceCode>
+<CCode>V009</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>签名</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>False</FixedStructs>
+<Visible>True</Visible>
+<RegExp></RegExp>
+<MaxLength>-1</MaxLength>
+<DynamicField>False</DynamicField>
+<SignMode></SignMode>
+<SignatureLevel>All</SignatureLevel>
+<ShowSignerDescription>False</ShowSignerDescription>
+<Separator></Separator>
+<SimBindKBBaseID></SimBindKBBaseID>
+<SimBindKBName></SimBindKBName>
+<QrCode>False</QrCode>
+<HeaderImageCode></HeaderImageCode>
+<FingerImageCode></FingerImageCode>
+</MIString>
+</RefElement>
+</Attribute>
+</SubItems>
+</MIConcept>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S018" DisplayName="日期:" Description="日期" Instances="0..1" BindKBBaseID="" BindKBName=""/>
+<Composite Virtual="True">
+<Code Code="V024" DisplayName="" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+<SubItems>
+<MIDateTime>
+<Code>D0001</Code>
+<SourceCode>D0001</SourceCode>
+<CCode>V024</CCode>
+<KBNodeID></KBNodeID>
+<DisplayName>日期</DisplayName>
+<Description></Description>
+<InvalidValue></InvalidValue>
+<BindType>DataBase</BindType>
+<BindCode></BindCode>
+<ValidateMsg></ValidateMsg>
+<ConfidentialityCode>N</ConfidentialityCode>
+<TabIndex>0</TabIndex>
+<Synch>False</Synch>
+<SilentSynch>False</SilentSynch>
+<AllowNull>True</AllowNull>
+<ReadOnly>False</ReadOnly>
+<FixedStructs>True</FixedStructs>
+<Visible>True</Visible>
+<DateFormat>yyyy年MM月dd日</DateFormat>
+<TimeFormat>HH:mm</TimeFormat>
+<BenchMarkTime></BenchMarkTime>
+<PreSelect></PreSelect>
+<NextSelect></NextSelect>
+<IncludeDate>True</IncludeDate>
+<IncludeTime>True</IncludeTime>
+</MIDateTime>
+</SubItems>
+</Composite>
+</Section>
+</Component>
+</MetaData><Scripts>
+<Script ID="8edcf375-c1aa-43c9-b925-aac046d16cb2" DisplayName="Word_01_入院记录_04_男性隐藏婚育史，年龄小于14岁女性隐藏月经史" Name="" Object="Document" Scope="Document" Lang="lua" Event="create" >
+--替换内容
+--男性隐藏月经史\女性小于14岁隐藏月经史
+--'Header_V001_L0002'	性别	eg:Header_V001_I003
+--'Header_V001_L0003'	年龄	eg:Header_V001_L006
+--'男'	男性性别编码	eg:'M'\1 依据项目情况填写
+--'女'	女性性别编码	eg:'F'\2 依据项目情况填写
+--'S008'	月经史章节	eg:S012
+local cmd = luaGetEditorCommand();  
+if cmd == nil then      
+	return;  
+end;   
+local objDocument = cmd:GetActiveDocument();   
+if objDocument == nil then        
+	return; 
+end;  
+local objGender = objDocument:getElementByPath('Header_V001_L0002');  
+if objGender == nil then       
+	return;  
+end;    
+local objValue = objGender:getInstanceData();  
+if  objValue == nil then      
+	return;  
+end;   
+local strValueCode= objValue:getData(); 
+if  (strValueCode == '男') then      
+	cmd:SetSectionVisible(false, 'S008', '');  
+end;
+local objAge = objDocument:getElementByPath('Header_V001_L0003');  
+if objAge == nil then       
+	return;  
+end;    
+local objAgeValue = objAge:getInstanceData();  
+if  objAgeValue == nil then      
+	return;  
+end;   
+local strAgeValue= objAgeValue:getData(); 
+ 
+local ageNum=string.match(strAgeValue,&quot;(%d+)岁&quot;);
+local len=string.len(ageNum)
+if len==1 then
+    cmd:SetSectionVisible(false, 'S008', '');  
+elseif len==2 then
+	local nl=string.sub(ageNum,1,2)
+	if (strValueCode == '女')and(tonumber( nl)&lt;14) then
+                cmd:SetSectionVisible(false, 'S008', ''); 
+    	end;
+end;
+</Script>
+</Scripts><Medias>
+</Medias><NInstanceData InstanceID="44||1" HappenDateTime="2020-08-06 11:23:25" DateTimeFormat="yyyy-MM-dd HH:mm:ss" TimeStamp="1596713005">
+<ScatterData>
+<Component>
+<Section>
+<Code Code="Header" DisplayName="页眉"/>
+<Text></Text>
+<StyleText></StyleText>
+<Composite>
+<Code Code="V025" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+<Text></Text>
+<StyleText></StyleText>
+<SubItems>
+<MIString>
+<Code Code="L0017" SourceCode="L0017"  CCode="V025"  KBNodeID="" DisplayName="姓名"/>
+<Value>赵红霞</Value>
+</MIString>
+</SubItems>
+</Composite>
+<Composite>
+<Code Code="V026" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+<Text></Text>
+<StyleText></StyleText>
+<SubItems>
+<MIString>
+<Code Code="L0018" SourceCode="L0018"  CCode="V026"  KBNodeID="" DisplayName="性别"/>
+<Value>女</Value>
+</MIString>
+</SubItems>
+</Composite>
+<Composite>
+<Code Code="V027" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+<Text></Text>
+<StyleText></StyleText>
+<SubItems>
+<MIString>
+<Code Code="L0019" SourceCode="L0019"  CCode="V027"  KBNodeID="" DisplayName="年龄"/>
+<Value>35岁</Value>
+</MIString>
+</SubItems>
+</Composite>
+<Composite>
+<Code Code="V028" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+<Text></Text>
+<StyleText></StyleText>
+<SubItems>
+<MIString>
+<Code Code="L0020" SourceCode="L0020"  CCode="V028"  KBNodeID="" DisplayName="门诊号"/>
+<Value>0000000055</Value>
+</MIString>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="Footer" DisplayName="页脚"/>
+<Text></Text>
+<StyleText></StyleText>
+<Composite>
+<Code Code="V002" DisplayName="页脚" KBNodeID="" BindKBBaseID=""/>
+<Text></Text>
+<StyleText></StyleText>
+<SubItems></SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S021" DisplayName="新建S章节"/>
+<Text>科室：眼科门诊
+就诊时间：2020-08-06 11:23</Text>
+<StyleText></StyleText>
+<Composite>
+<Code Code="V029" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+<Text>眼科门诊</Text>
+<StyleText></StyleText>
+<SubItems>
+<MIString>
+<Code Code="L0021" SourceCode="L0021"  CCode="V029"  KBNodeID="" DisplayName="科室"/>
+<Value>眼科门诊</Value>
+</MIString>
+</SubItems>
+</Composite>
+<Composite>
+<Code Code="V030" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+<Text>2020-08-06 11:23</Text>
+<StyleText></StyleText>
+<SubItems>
+<MIString>
+<Code Code="L0022" SourceCode="L0022"  CCode="V030"  KBNodeID="" DisplayName="就诊时间"/>
+<Value>2020-08-06 11:23</Value>
+</MIString>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S002" DisplayName="主    诉:"/>
+<Text>右眼红疼2月。</Text>
+<StyleText></StyleText>
+</Section>
+<Section>
+<Code Code="S003" DisplayName="现 病 史:"/>
+<Text>伴分泌物多，无出血</Text>
+<StyleText></StyleText>
+</Section>
+<Section>
+<Code Code="S004" DisplayName="既 往 史:"/>
+<Text>睡眠晚，质量一般，平均每日看手机、电脑&gt;4h.</Text>
+<StyleText></StyleText>
+</Section>
+<Section>
+<Code Code="S008" DisplayName="出 行 史:"/>
+<Text>有无重点疫区出行史：无；来院交通工具：无殊</Text>
+<StyleText></StyleText>
+<Composite>
+<Code Code="V023" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+<Text>无</Text>
+<StyleText></StyleText>
+<SubItems>
+<MIMonoChoice>
+<Code Code="O0002" SourceCode="O0002"  CCode="V023"  KBNodeID="" DisplayName="新建O单元"/>
+<Value><Choice Code="2" DisplayName="无"/></Value>
+<Separator>、</Separator>
+</MIMonoChoice>
+</SubItems>
+</Composite>
+<Composite>
+<Code Code="V031" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+<Text>无殊</Text>
+<StyleText></StyleText>
+<SubItems>
+<MIMonoChoice>
+<Code Code="O0003" SourceCode="O0003"  CCode="V031"  KBNodeID="" DisplayName="新建O单元"/>
+<Value><Choice Code="2" DisplayName="无殊"/></Value>
+<Separator>、</Separator>
+</MIMonoChoice>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S010" DisplayName="查体和辅助检查:"/>
+<Text>T:36.0℃ 查体 。</Text>
+<StyleText></StyleText>
+<Composite>
+<Code Code="V013" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+<Text>T:36.0℃ 查体</Text>
+<StyleText></StyleText>
+<SubItems>
+<MIConcept>
+<Code Code="MCC0401" DisplayName="体温"/>
+<Text>36.0℃</Text>
+<StyleText></StyleText>
+<SubItems>
+<MINumber>
+<Code Code="N9154" SourceCode="N9154"  CCode="MCC0401"  KBNodeID="" DisplayName="体温"/>
+<Value>36.0</Value>
+</MINumber>
+</SubItems>
+</MIConcept>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S007" DisplayName="初步诊断:"/>
+<Text>睑缘炎(右)</Text>
+<StyleText></StyleText>
+<Composite>
+<Code Code="V011" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+<Text>睑缘炎</Text>
+<StyleText></StyleText>
+<SubItems>
+<MILink>
+<Code Code="H0004" SourceCode="H0004"  CCode="V011"  KBNodeID="" DisplayName="双击录入诊断"/>
+<Value>睑缘炎</Value>
+<Url>diag</Url>
+</MILink>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S015" DisplayName="诊疗意见:"/>
+<Text>1. 左氧氟沙星滴眼液[5ml：24.4mg](可乐必妥) X 1支
+   用法：每次0.2滴  每日4次  滴眼  5天 
+2.保持清洁
+3.左氧氟沙星滴眼液点右眼，每2小时一次
+4. 小牛血去蛋白提取物眼用凝胶点右眼， 每天4次
+5.复诊。</Text>
+<StyleText></StyleText>
+<Composite>
+<Code Code="V005" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+<Text>1. 左氧氟沙星滴眼液[5ml：24.4mg](可乐必妥) X 1支
+   用法：每次0.2滴  每日4次  滴眼  5天 
+2</Text>
+<StyleText></StyleText>
+<SubItems>
+<MILink>
+<Code Code="H0002" SourceCode="H0002"  CCode="V005"  KBNodeID="" DisplayName="双击录入医嘱"/>
+<Value>1. 左氧氟沙星滴眼液[5ml：24.4mg](可乐必妥) X 1支
+   用法：每次0.2滴  每日4次  滴眼  5天</Value>
+<Url>oeord</Url>
+</MILink>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S020" DisplayName="医师签名:"/>
+<Text></Text>
+<StyleText></StyleText>
+<Composite>
+<Code Code="V009" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+<Text></Text>
+<StyleText></StyleText>
+<SubItems>
+<MIConcept>
+<Code Code="V032" DisplayName=""/>
+<Text></Text>
+<StyleText></StyleText>
+<SubItems>
+<MIString>
+<Code Code="L0008" SourceCode="L0008"  CCode="V009"  KBNodeID="" DisplayName="签名"/>
+<Value></Value>
+</MIString>
+</SubItems>
+</MIConcept>
+<MIString>
+<Code Code="L0008"/>
+<Value></Value>
+</MIString>
+</SubItems>
+</Composite>
+</Section>
+<Section>
+<Code Code="S018" DisplayName="日期:"/>
+<Text>2020年08月06日 11:36</Text>
+<StyleText></StyleText>
+<Composite>
+<Code Code="V024" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+<Text>2020年08月06日 11:36</Text>
+<StyleText></StyleText>
+<SubItems>
+<MIDateTime>
+<Code Code="D0001" SourceCode="D0001"  CCode="V024"  KBNodeID="" DisplayName="日期"/>
+<Value>2020年08月06日 11:36</Value>
+<DateTimeFormat>yyyy年MM月dd日 HH:mm</DateTimeFormat>
+</MIDateTime>
+</SubItems>
+</Composite>
+</Section>
+</Component>
+</ScatterData>
+<abiword template="false" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:math="http://www.w3.org/1998/Math/MathML" xid-max="490" xmlns:dc="http://purl.org/dc/elements/1.1/" fileformat="1.1" xmlns:svg="http://www.w3.org/2000/svg" xmlns:awml="http://www.abisource.com/awml.dtd" xmlns="http://www.abisource.com/awml.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="2.8.6" xml:space="preserve" props="dom-dir:ltr; document-footnote-restart-section:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-endnote-initial:1; lang:zh-CN; document-endnote-restart-section:0; document-footnote-restart-page:0; document-footnote-type:numeric; document-footnote-initial:1; document-endnote-place-endsection:0">
+<metadata>
+<m key="dc.format">application/x-abiword</m>
+<m key="abiword.generator">AbiWord</m>
+</metadata>
+<revisions show="0" mark="1" show-level="268435455" auto="0">
+<r id="1" time-started="1596684995" version="0" revision-level="0" revision-key="14197">10.0.102.11(王巧荣)</r>
+</revisions>
+<styles>
+<s type="P" name="Normal" basedon="" followedby="Current Settings" props="font-family:宋体; margin-top:0pt; font-variant:normal; margin-left:0pt; text-indent:0in; widows:2; font-style:normal; font-weight:normal; text-decoration:none; color:000000; line-height:1.5; text-align:justify; margin-bottom:0pt; text-position:normal; margin-right:0pt; bgcolor:transparent; font-size:12pt; font-stretch:normal"/>
+<s type="P" name="Normal Table" props="text-align:left; lang:-none-; font-size:12pt; margin-right:0.0000in; margin-left:0.0000in"/>
+<s type="C" name="Default Paragraph Font" props="font-size:12pt"/>
+<s type="C" name="Reference" props="font-size:12pt"/>
+</styles>
+<pagesize pagetype="A4" orientation="portrait" width="210.000000" height="297.000000" units="mm" page-scale="1.000000"/>
+<section footer="1" header="0" xid="112" props="page-margin-footer:0.00cm; page-margin-header:0.00cm; page-margin-right:1.00cm; page-margin-left:1.00cm; page-margin-top:2.7514in; page-margin-bottom:1.00cm">
+<p xid="105" props="text-align:left; text-indent:-2.00cm; line-height:1.5; font-size:12pt; margin-left:2.00cm"><bookmark usage="1" type="start" name="44||1^S015" xid="106"/><c props="bgcolor:e0ecff; font-size:12pt; et:9; code:44||1^S015; display:inline; font-weight:bold">诊疗意见:</c><c props="display:inline; font-size:12pt">	</c><bookmark usage="2" type="start" name="44||1^S015_V005" xid="116"/><c props="bgcolor:c0c0c0; et:6; code:44||1^S015_V005_H0002; font-size:12pt">1. 左氧氟沙星滴眼液[5ml：24.4mg](可乐必妥) X 1支<br/></c><c props="bgcolor:c0c0c0; et:6; code:44||1^S015_V005_H0002; font-size:12pt">   用法：每次0.2滴  每日4次  滴眼  5天</c><c props="display:inline; font-size:12pt"> </c><c props="display:inline; font-size:12pt"><br/></c><c props="display:inline; font-size:12pt">2</c><bookmark usage="2" type="end" name="44||1^S015_V005" xid="117"/><c>.保持清洁<br/></c><c>3.左氧氟沙星滴眼液点右眼，每2小时一次<br/></c><c>4.</c><c> </c><c>小牛血去蛋白提取物眼用凝胶点右眼， 每天4次<br/></c><c>5.复诊。 </c><bookmark usage="1" type="end" name="44||1^S015" xid="107"/></p>
+</section>
+<section id="1" listid="0" parentid="0" type="footer" xid="49">
+<p xid="50" props="text-align:center; line-height:1pt"><bookmark usage="1" type="start" name="Footer" xid="53"/><bookmark usage="2" type="start" name="Footer_V002" xid="230"/></p>
+<table xid="57" props="list-tag:1">
+<cell xid="58" props="right-thickness:1.0pt; left-color:000000; bot-style:0; bot-thickness:1.0pt; right-attach:1; left-thickness:1.0pt; right-color:000000; bg-style:1; top-attach:0; left-attach:0; top-color:000000; left-style:0; right-style:0; bot-color:000000; bot-attach:1; top-style:1">
+<p style="Normal" xid="59" props="text-align:left"><c>                                        第(</c><field type="page_number" xid="65"></field><c>)页  共</c><field type="page_count" xid="61"></field><c>页                 </c><bookmark usage="2" type="end" name="Footer_V002" xid="231"/></p>
+</cell>
+</table>
+<p xid="56" props="text-align:center; line-height:1pt"><bookmark usage="1" type="end" name="Footer" xid="54"/></p>
+</section>
+<section id="0" listid="0" parentid="0" type="header" xid="1">
+</section>
+<data>
+<d name="2" mime-type="image/jpeg" base64="yes">
+/9j/4AAQSkZJRgABAQEAAAAAAAD/7gAOQWRvYmUAZAAAAAAB/9sAgxAACwALAAsACwALAAsA
+DAANAA0ADAARABIAEAASABEAGAAWABQAFAAWABgAJQAaABwAGgAcABoAJQA4ACMAKQAjACMA
+KQAjADgAMgA8ADEALgAxADwAMgBZAEYAPgA+AEYAWQBnAFYAUgBWAGcAfQBwAHAAfQCdAJUA
+nQDNAM0BFP/bAIMRAAsACwALAAsACwALAAwADQANAAwAEQASABAAEgARABgAFgAUABQAFgAY
+ACUAGgAcABoAHAAaACUAOAAjACkAIwAjACkAIwA4ADIAPAAxAC4AMQA8ADIAWQBGAD4APgBG
+AFkAZwBWAFIAVgBnAH0AcABwAH0AnQCVAJ0AzQDNART/wgARCACpAZADAREAAhEBAxEB/8QA
+HAABAAIDAQEBAAAAAAAAAAAAAAUGAwQHAgEI/9oACAEBAAAAAOuAADm1W7blAAAAAAACtcr6
+haQAAAAAAw17PNZmHil7uwAAAAAAh+RRclMdDl6bRuqTgAAAAAA4xH9RzUiOnoyfvwAAAAAA
+wcE6Pe2Gu5d2WAAAAABSqjgst+y8FtnUEVn3gAAAAAOa0PKjbF27nVCszYnryAAAAACL4jYu
+tZuWUS3ympBYbd0fIAAAAACpcq6zaWhwvHhdjtQAAAAABWeR9fsbV/P18uHG8f6E9mB9y4vn
+jJrfd7Dg2fvjMAABBck6nZWp+eOpdA51y/vM4UfNm24OTw5vcPYa1ZoGzadhAAAr1Fv841fz
+z0XpdE5L3mcKw0fe5G5cPjPc6LMaTbswAAFaofSJkqE7JUTmnbpgAAAAABVuedQnAUXlndJk
+ru81t6L2dSZi/MxofcPrJ79a3rUz+/bBvyAFW511GdBE0PpOyRD1718GfVmYjxvZ8GrvScd5
+1smLVl2pj9y+UGjWbXsgAAAAAAAAAAAAAAAQkHluULtVjdtUFJ1iZmITfq0jZIT3ASNjidmD
+xXGD9RHi6Qfyu5rzBfIddPQK7WLXPV3bq27c61K0SVu1elKJJ3Wu56ptXiCkan4v9c3tSpdN
+reWEz3Ot5oRdvYIqNkZaOZMUlHPP2Sj/AD4+ykd90dyR0fsf7m473Hp6Pxxyyx3yP25cAAAA
+AAAAB//EABoBAQADAQEBAAAAAAAAAAAAAAABAgMEBQb/2gAIAQIQAAAAAAD0N/IAAAAAAAB0
+ex5HMAAAAAADdjCfe87hAAAAAAGnr6Uy87Lt9HxsQAAAAAB7N/Kjv1ppx8AAAAAAAn6Dy+I6
+LZZAAAAAA6+qebie/wAXmta0AAAAAA9Luzi/N5Xo9/HG3JwgAAAAA093k8qO/wBDkztu5OEA
+AAAADq9jxuZf3qq+VzgAAAAAHV7HiYLe9w8XqvFBMSJVWqAAAOj1/HwW93h87t9DxszqmtNs
+0Rvjpjtz3xAAA6fS8vBPu8Pn9fpePkbWmaXSjm6aWVwAAA6fT8nE6+enX6XkYgAAAAAOr1fH
+wB1+n42RrSS0TneaWiYQtFkCtQOr1fHwBp3+YLwibwprWBFbxaJtSLTGYF+3hqAAAAAAAAAA
+AAAAABptHNrTeOfXPoxprn05ZaN8stKaX5ta7ObWN682jVzAb7YY9GW1uTfLtx5t8eynLtXq
+py7Z9FuLfO/V5+9do5eimrlAvelLItS8IiyVLL0rZZnZeM7N457TLMCJiSEkJiQRKCSEgRMS
+B//EABkBAQADAQEAAAAAAAAAAAAAAAABAgMEBf/aAAgBAxAAAAAAAOKO2QAAAAAAAw8z0ekA
+AAAAAIyayr4vf2gAAAAADPz4m3bfk4PW2AAAAAAHlO+eSmdevuAAAAAAFfG9DrRlnrqAAAAA
+Dnwnbd43Z3MrXAAAAAA4ebSzfq4Obqnm6e0AAAAAGfkdXoTzc970pO/SAAAAABzeb6m6nj62
+v26AAAAAAHN5vq7Keb17cenYIJhE1m0RMgAAHN53qbK8M9/Pl12OaLWpKWeuO+W9NgAAObz/
+AE9kedv144dVzCIXztWLb82kLbAAAc3nenuc218OTs2ACEokAAAcvm+ruDDk7dTG8JpNdc2l
+QlWayFrgcvm+ruCnJ2yZymhGmcXmIvNVZit5rE6SDPi77AAAAAAAAAAAAAAAAZUb0nKd8r4a
+6Z2xvrmyvrSc69OVso6cmM9WTKeiQY467ZWynfHTl06cr89t8rc2u+d+eOvDSnP3Yzk6sJzn
+okFKXvVNb0mJtVC9Ype9VWlVGtYzb0VnQAAAAAIkAAB//8QAMRAAAgMAAgADBwIFBQEAAAAA
+AwQBAgUABhESExAUFSAhNVA2QDAyNEFFFiIjMTNg/9oACAEBAAEIAP2Hc32qmCnTC22ct4fK
+XqWlb0/H9jxxaick5Cow2m0dTbljLqO34kxRgpYhTdswwzMcX7Nks0i1QmEekXF7DXoIRCXJ
+/wBRzpUTCTdvxOtqgyFpOXS03dMvnanmaWJqQMrOsol9VfK2gaIvra9KVm193YoYVlVTcwEp
+QzAiv+I7Do2e0jzzOz2NRuiwEurZCdIiWet5B4iY08xnOJ4EWPKx6E4aPrPDcw8C9y0cc/EG
+t6YS3j+0c6QCkKuH9pB0LSaEa6pmG+tI68HwiLK46KlovT8Jp9wTTtYSh+3bhZny17dv0mPH
+O70K8wPRCYTA6FDaItW1ZYBdY5gX6dp0XZMkb2OayiU+UiT62gH1V/wva925SEzlZ4BJxyZh
+ZrM0VKzdiedd3y4zMDLW0XrFq9vyLxf4mCeJ9w1VKxQrvdNRmk0CI9Gc9e9OogLSzjFvwmu5
+KGc0zFpmZmZ63hxrM3IYIRAHUYpiJj69u66JUfxFGF7z/Mh2t3OTArUPevH6N3xc3ai58Q+D
+tAtNbiwdo9orTH6SSl/W0RDoKlRj/Cdyv4Y/J51GlKYi9/bojqZBsdv7cnk/XgzFXLQwer9i
+pshkLH4ft44ti25POpT44Cntc/pmOFN5fCtegRM30bW0+vZepS3qaaB8twip818mW+s5Sl6k
+pW9PaMoy+bySUVL0pYphBpNyTPh4zwRRnpUgoIP1JHw7aqvh64ijNSLj+JZ/IfTtS945Qwze
+aKFfTASBltelKTe1L0JSt6VKK17jr+z358Eq8cWlYsxHU/sCXtdnwUZni44PesX6ZFamfinO
+/gpIUGeTzrlpJh5lvkyNXOQLrjZLoJaG/hSrrhjX0gZtshq7WTeD4N7ZgM3zGNC29onnHzVS
+pV0dFNZAGpBc/UXyUAerOjlxmdX0Yn/UmJwD1xZWyVJbAy1wwO0RbMvs5MYf2bL4h+oN39p2
+SfBCvCUGekjJ1qkL4aw/a3SSKsUrUX+2vOg18L6Xs7/9rT5POtx5MDNp8nXY+uxzTmB7mDfm
+Xm30aG0zUXtkatgxlJCe60msZGjDeo6s8i9XMUjN16WQPqZzCCmqid++g7vaKmjhaNVfLXw4
+JErqG7QAeyZ8UiG1FWNNp94+ZsKIohUfxqlO7p6M/s+0T4Z9OVvzAnxyV/kc6fnNnueudmq5
+a8AX53/7WnxRSxf+a2B9nR/ieHPD2+H7fts+GZTlb865PjjK/P3/AO1p8rc9ZiY67atsHOn5
+AsSX1rFXKb38617XKVxleqkNFYdpZA1zAm5KMNHlanPWOu2uCUmbHTWKVspgKHKIFzmil1tF
+04TmGIwyliIHm+8nAI5TFYM3ZYDV9BJJ+8vwwCkFEeWUq0NehynamBlcqF8YiM6Qwnm1PQ1Z
+rF5vo3N7nMlK6FZm0s2aTgZeBlhupZ5mQydcLBl3TWdmbqFuUz0X+fttLXzKRELEjnW6zXHV
+ifm18sOulZYlOjvyWIKsuJVcQBe1JSlBkgxKHC7doatD3ZYZKqAg2dK9wWaUgoeUzfGE6nEl
+ZFrzqoCIuisEp4Yutf0GhmerTl1j096rbLCyuIg2M0V10hCKUbC7tmQuj0XVX6c0Q3MCtB+H
+MwFlUFg2ItJHxlu5nUOfy09fQinhYQW0aAHF88hauRQOagG8XEiEgasRcYWw5A1xGyKUVrRY
+BGQFctArWvXzW+Z5Srq1hTGCzNvLxVeqq4gU/wDodhk64KVAjoufC62ugVyWbBrzCbM5nwYz
+jlE7KxItU0YNRS/oyRY4acRbObX2VrswzIbe7afxuso+demzBaSxzNbMw3rDI1DUgmVzNabS
+KTVasakP0TvzJbMyXTg2xBoWp6WGZ24pJy7TJ3cmpbTMVmYwmjO5KbJ3vfYD4p5fxkmTnyLN
+ndtD3k4i2c2tsLX2nLo5zRRMbl7MhFFw6Z36CjirZy7OktbbIWgVRitaA3blino3mnsRcObX
+2Vb7dixRIVLFZTYcUHcno0YMCkzNYmfm3v8AHV4jM+6rxx773i+zq/2evNRaT1UvFErxhVbl
+9W4gtsTHM37/ANj46mo2GKte4LHhZqqGYms/ZNnmN/X73GlyMDrWkAJaJ9BFQ8aTgGeYP/ru
+c3J8Ap8z7jHYdifElYcy7MX+tL86t9iQ4+ZkIIldfMYbw828op5ek4KyfM39Qdi5ufZdXink
+LssW4ElSBwlg8U/UWxzb/wAZx/4iyUmWMd9irsJM8Q/UnY+bX82TyQSoXbqOlH7kzqWp5orE
+W+Z1CGyrE4tge7+5zLqN2DqMB5nojz1oXpooS8CASyoJlM6kuow2lAK8AgJdx1uj6A3x0EV1
+H3qE4o4iNyy9p4smJQzZa6CXvwIDxlChFgLhfQq7QUxxNESVm7DbTo1dSZz8eiBhF4yn67SR
+4mPGJjiCQ85QKonQsnDNFiY1LgWU4bIASwCrcAgJdx1urqQHxeieuT7tdqUrY9IzIRDwaAhO
+tOV0UpeDSlV8vVUHA1j5ms1FaM8AgFd15ur6cuSnMTgryH0uP55GiLnXrExWIt+0j9pHyxyP
+4P8A/8QARxAAAgECAwUDCAYHBAsAAAAAAQIDAAQREiEQEzFBUQUiYSAjMlBScYGyFFNUcpGx
+FUBVYqGzwgY0QpMwM0NgY3ODkqLB0f/aAAgBAQAJPwD9QdkiMWd8umendrZ9JYqYFWAII1BB
+9YaTwKWRhRLN1NcYHMfqp1RFGJZjgBV0X+4jNU7KDzZCKkV1PBlOI2+iqkt7gNnOf1Tqx0RB
+xdqlJAPdQaImw6g5hUpRuY5N7xWCSj0kpgF6k4CmxU+m+zR2xd/e3qk+ahJiirQnVnPBFFWy
+zPzeUZ6tUhccHhAQihmiJ7koFejwf7p2oVRSDFGeJPVvVPFUJ/AbPTacJ8EUbVVlYYFSMQaz
+wseSGrlzgAOAqLM44O+pHqVPpEn4IKnSHwRB+bVeZ/BkWoN1/wAVNUqRXRxirA4giuBGFelE
+7IfepwpgBOQ0W0sx5hBjT5gDg3UHoR6mfBF0nf8Ao2WssuHHIhYCrKeNObMhy7GJs5G76+x+
++tEEEYgjUEUuKnScfk+zJcgc39Olit/FNXpsxESq/Mh1GuNAiJ8iL4lfUvpIhy/eOgokk8Se
+JoE20X/m1IqIowVVGAAoVGEXhMi/MtHCoopREuVXerEFeqPV0ivxe2euzpz4oucfitdm3HvZ
+Mg/Fqn/6MR+dqUKigBVAwAA9S85k2cXeUn4ORt4NBIPxHkSNHIhxV1OBFHLcw+mBwb1Rxzht
+nWX5zt+qf8q44amukNQKkvKVAA4r0l1VhwdTwYVj5p8WHtIdGFEFWAII5g+Q6tlYq2BxwYcQ
+acB3xygnVsNTgKkVF6sQBsdXQ8GU4g065wuYrjrh1wqeKPHhncLTq6HgwOIq9g/zFq4iKJ6b
+BxguxlbKxVsDjgw5GrmFHPBWcA0wCgYkk6AUwZWAIIOIINOpdMMyg6jH9U+tWvQbVD4dK6zf
+O23lE/5VKqDizMcK4BIdmjiUxbOdunkXSRMe1LhgDU6SBPpWfDxSv9SkTTz+9gUSj5+DPBN9
++Ov7rfRpl6JP/wDHrhF2Urn3KzGkjmnuE3rvIAwRDqAKvoFSRCJbZGBDtyZQDXZltJK7BIoh
+EuLyNSpv5ijzFBguYuK7QipwZLntd44H8ZioFWsUzEd95VDu56kmnJtzYPcwD2F1Vlr7JD8g
+r6q0/Jv1T61aGIP8D1FHE5pf4udvFonA+IrpXSHZ9rHyNs5QL5H7VuK9FBeM3wSrm7glu5M4
+WN8mEY0QGpJpYb6Bu+5zsJoh/wC1oHI9sBSHOLBYJm5Pqe+tJu90pQSMhMUqVaqkFtvnnnWL
+ImBQipihTMlrEUc5E5v73qQuyCMkZG5vSitJ07Xllh++hU0ZLecDvwujZhUTQJNbG1gR9Hyc
+SzCm+jTW6CMo4OoTQMtRskdw0SxK4wJWMYZv1T65NnV/nPkPJCX1YJSELxYnVmPU7PtY+RqX
+zanT9419UPU/16bOr/OfL+1j5GqR9PEkVzhHkdqbrCeZAnmxojlRxBNPmWO2gfEgAlnZwflq
+UoFhicFQCQWZuoPSr6UrBcKgGVNRu0fp+9RxYTSr8EcrU5Qvc3aF1VfRhdlUag1c78ShsVIU
+MoGufu4aV2uUZ4Ud180NWHitIZZUjZkT2mA0Fdppc4Eb1O4AVP3dVIqTLKIc0EQAJmarl4+p
+QKfmBq7dswbFCqAaHDkKk3QjRXkfAFu+SFVcdOVOsgitZJIpSADmUHRhV26hp4I8gVCAJJFj
+PEVcNLEpO9zKoIX2hlA9GiBBDiHb239keC1IiRmB27xA1DAVIsiJazyuqEE4oVq8US4Y5AoM
+Q8PaNSraRyIxdiQSJEIGQFqmVx5vdSgDN32wIIHSrxpVMsSFHRdRIwXQqBVy0RjuJU7irqAc
+BjmBq7d86YlCqBf4Cv7vO7pCehi/PPqRX+C4yL7sin/QfXpRNdZPnPl4qcQyvxysKngSPmy4
+lqGCRIEUeC+RCmdrid9QCSryMwqFpUlhSJlUgMpjLEEZiAQc1RGIOkcaIxBOCFiWOXEa5qXS
+W5V08QIkX81q0kmG9kdGRkwIkYvgcxGBFRJIoluJJFODKrTEvUKCCc+dRQFyMODCuyJGdIUR
+2G5IJUeL1gkxTFM+oDV2e0U2ZcJmKeb6spUk1aySO8zOkyMi/d1JxGQUFMhcuzrwcvQwYZsR
+7yTURlSWNEdAQGBQnBhmwHOocivayxRRErmZ2HEkYgUO8Lm3f4JKrnYgRkQAqKiVoxAy4nA4
+MWBpBGj2k8TOoAILlasWMuGGYOojJ95OYCk+kJkO9CAA71iWLjMRoSatBDHIsY3PdGZg+LOQ
+pIq1iVxwYKMRQwLXErj3McRS5ZxGEGo7hOmankzwqpgVpWKBo/RqymYSTB1KtHzRRzakZCR6
+JwxH4EjyzzBB8RSKB7WNcEH+8TQq0rGPzgbUlSdMlXsEO4SAM5ieVsHQEA6jFjXaZzSOZck1
+lLGSOYQu2wgs0si/BXIFKW386wjDkWBONSObj9FTXImJ5pRdJIHsSz/86RdhBjtzb7sdM6Ym
+mjWTTKZASvxAIqe01vIgMiOv9VTWbRcxGjhvgSx2HSC4CR+4oDTxrINQXUuPwBWru13c1xa5
+csLo2LONG75q6tC+TfOFgcYRhgvN9mohvXiTwUKDRuRmZQTA0aN+MtC5lnaKQrv51yNlfDQL
+iRVu9sfpUishYEN5lmroaYGR0xahCWx729LAYeGWntRjAmrh3LJlGU1PaHC7lU7xHb+rRdhB
+jgMAQdM6YmhJvBE4RkTPkbKSGNXUNkpg3rPdJgxOYoFCkrXaq5LmyLCSGMqCqONU75AYh+Ow
++ahigKe9wakaPf3cUTOmjBWNfptYombI6vIQUQatX6e1K4Es+wgxwbjd+GdMTUjoJ7yKJyhK
+tkOJIBFX+5iSaDz07hyiOhY5TJxJIr+00UkzDRHaHI7AaLQwJAxHl/amPwWFzX+O/wCyx+EE
+b17N18o2fXz/AMxqdVW3uUnct7KA0VyjsCZPi4D0QVnfs7L1GSUbOtp/LpSUQ59HKYEcyVIp
+HW3nv4Y4FMj6x83970jtMjb23lMr+cQH5k2fa1+QVdSwEHHNHlxPgcwar24NmL63SInJ35Wm
+xd17tdqXSXDBSrgR5Zol96aFeDbP2nJ8q1zv7T+aDVz9GT6DODMCAUxuerV2tb3G6uJSZFwQ
+qhhb069k19XVsZnY5QMwRR1Yk8hW5uXWKJ4onXIoQoAYwwq0SGK1cPP7Zl5Js62v8uvsc3yG
+sGC9n24+Od6laN1JSZ0/2aTtovgz7Pqrav2jBXaonMuKzBIFAhibmxBrtJYmJ8wdwpSZB+TD
+Z1tfkr9oxfk1SIUh3UrtcqZyRkqLs5HuoHfA2p7mUKfbrAtgMcBgMfLcq0O9wHImRCmJqbMY
+p4pT4mGDc1Nu5IHJBK5gVfRhsZmUO7YtqcXYtUzRozDeBeLpzXwBrFUkhaLu8lYYU+Uh4T/l
+OH2El7rd5xyG7XKKdxGHDOinAOPZanCCC5jlw6hKZkkhlDo6aMvUe5hodhYtcSiRugOAWp3j
+Rm85k0LpzTHkDQWNYZ4HUAaBYXDYU5jmhkDxSrxXr8CNCNhY/SJ2mbHkzACmI3M4mw6kAgVM
+WKQyRf8AfIZKYKLeR3K9cyFK50WKRjBS5xNXIgc8XKB6uZVtYYRGYQcC4GgzMKP0WWEBEaMD
+0OaEcCuxmL3Jjzg8BuxlFZzHxKq7Jm8DlIxFSLbCWGGNQiDBN2zE/NUrIUyFJSMWDo2cNsJL
+zrGGB4AJUmSSOVJUfDMA6Ve2USeylrgPmq/tJEDq2U2x4rqCO/sYl7nd5weA3Yyiny7i5SY+
+IUGp5WDyo85kOd5gnBGJq53E8OfK2QOMH4gijicNT64//8QANhEAAgECBAIIBAUEAwAAAAAA
+AQIRAAMEEiExEEETIjIzUWFxgSBCUFIwQHKCoRQ0Q5EjYLH/2gAIAQIBAT8A/IYK2pDOdxV+
+yLq+fKiI0P1DD3TbcfaaGtYtMt4kbH6UAToBS4W8dctNhrq/LRBG44qCWApYgVjjLr9JtWmu
+vAq3ZS0NBwYTrT21uCCKu2XtnaRUE7CsNYg53oQKxFzpbrN9JwtvJb8zvV66LaZjT4i6/wA0
+Clv3U+aRVq8twefhRWaAFDSsRif8aH1P0lRJA86GwrGsc6qeQ4gkc6XE3F3M1/UnktPeuPoT
+p9FtYR31bQUuEtDcTRwlk8quYMjVDNEFSZFAwRSNnUMNiKxtokK45b8Us3HGgp7bWzDD6NhL
+EDpGHpwa4ibsKW6jbMDwxFkXBI7VbVhL3+M+1eVPhLbGR1aXBop11oLlMVjXU5BzH0W0nSXF
+XxoaCsVe6NYG5okmtqwt8khH9qgmnwiMxaYo4IjVXoX7lnq3l96GJtHXNRxFofOKu4udE/39
+GwffjhizN9/LjbMOpHjWpijHM1pyplVgQwq/Z6I6bfSMIYujhiu/finaX1FDasdIFvWrd64h
+0NWrguICKuJ0iMpoiNPgg86gkTQBOgHAiDqKjnFBWbYE0QRyrI/2msjA7HXhr4VkYiQpqNY4
+QQJ/KYbvRSmRWK/uH4p2l9a5Csdtb4YNjmYUauiLjD4HtXHFsqsjKKFt0sX8wjs1aPRIbkak
+wKdQt0RsYIrEQ5aBDL/IqJtWx4tV24Q2S2YUbRTMzW4dTI2arZuO0ZyBzNW7hu4m34CQK/p7
+32/yK6P/AJbYYbJrTXrhac0USLgt3PmzQ1XO23rT9xZ/d+Uwve0NDWJ1vPxXtD1ocqxvyDhg
++8PC/wB6/wAF09jX5BSGbN4T9tXLgSLYAIWs3SoCYBQj/Rq45W+WFPCojLtmkU9s3Wz2tQeW
+0VDJadXOrRAprTqgRFGu5nerNt7d5M+m9SfGg4R7ZO2QA0cO5PV1HIzTMttUQakGWNPZZ2LI
+JU1dMJbtzqsz7/lML3oojWsR3z/AmLuIuXerlxrhljwwfeHhiO+f6PhO9FRWJ79/jwfeGojn
+V/vX+AgCOpOgogQD5mhAUEidaOWB1dxTgBiBQVYYxMAUQpUnLEUwAJHR0ACwGwohQSCkedKg
+IH8+VCBMrNXMgYgLFAALJEztQysVgRrSlSYK8jQysSAIPKiAo13oLKkgUqSNtZqUmMtZIzaS
+RShWZRHqKUK3Vyx5zRyrHVmRVwIGIC0ygLt1hv70wgLHMfgYTvRWasT37/HauG2wYUcamXRd
+aZsxJ+Bm2g8hQhlgmCDTEBQAZokQvpRhjOas4AeDvEe1FsygE7UxliQ9CAddqUhDOaR4eNSN
+OtAHKrhUmV28KuMGYkUCGUAmI2oZVKmedKYPseFwhmJFBoWAaW4QN9ZqEnt6UWVyx2NK4Vll
+pidaNx23NMQYjwolTdn5aFzrSwEHemykL1uX4FtzbcNX9UsSDTtnYt/2KyoZqZFziELZiY18
+KfLlnotuYbhfQW7mUUq5p8hNPbAuGNswEUlvrp4Nm/jg6KLVphu0z7UInXarYtHPo3ZpujjQ
+GeDoFS2fEUsZtdqVbSuwIbQGiEykwd4HC4oUJA3FW4zax7iavrbDwIAB5Csqi3chp2ihqRV5
+Bbuso2pIJE04tC4whoq70QywG7I4Oii1abm0zVpQ7AEihaADGM+sQDWa2EJ6LY7TwZALNt+Z
+matRJJEwCagELlySdxRkT3fB0AtWm5tNW46xjYVCFbblZJmQOcV1TANgwPM0fjsaFj5U3ZHo
+/wD7Sd1e/bwxPe+wpDEjxEU7A3YH3CkeXtL9ubhc7ix+6kZkPV3rpnWVnrBSSauXXdJB0O4j
+bhd7uz6GlIBkiaLLuyDOVJNXHUopVBl8PA8L3Zt/pq3u36TV4Eu2k9Yae1dGejuQkbaTNL2h
+61iY6ZvakClhJgUboW6wXqg7nerr3baHM8ltuFzuLH7qt9tfWmkJ+40wg3yQNQI9uD/29n1N
+Wvn/AEmkNtR0htRG2u5o9EVzranx623C53GH/dVr5/0mjDLZJBEyNK6mW4Zfq+f4CXMqsPGP
+4pr0iI8f5pHyhlIkNwdzcbMaRshmJNBoM0j5XzcC5KIp2WY96Rimo3pWjN5ilbLPgeDOWCqf
+lpGymYk0HMknUkGkfLPMHccCxYDypWyz5iKuXS86RJmg8I48YoaGady7FjvSFVIJWaFyCTAz
+eNC4dc3WB3B4M5KKp2WY96Rihld6N3NkziYmaF0l85/1wLkqqchVtghkiRsaa7aYybZPvQu2
+lMrbj34FyyonJZilbLPmIrpmGsDQaeU0jhQwZZB/CHP4OfxDhz/CFHcfmP/EAC8RAAICAQMC
+BAUEAgMAAAAAAAECABEDEiExBBAiM0FREyBQYXEwMkCBFFIjQmD/2gAIAQMBAT8A/gdS7AgT
+Hk0An0gNj6hnTWl+ojuSKE6V9WMD1H0okDmHPj94M+M8mAg8d2IAJjbEzo/2H6TkyDGI2Rsn
+JghuK5XgxMqtzCwmfMD4VhsmYE+HjVfpOd9bn7TGhdqi4UEbEjekfGUm8Jrtg6ezqbj2+kts
+DP8AsZ0qgLfciHCpn+MP9omFE4H0V+oA2G8OfIfWDNk94ma+YDfEO4MZdJIPM6Z6JU93zInM
+Vw42+jdRmvwKYLgRm4EKMvIg+8xuV7dTi31j+4NqIi53HMbOx4j2Z0isNZPB+i5W0IWl2bmD
+HrNmAV2y4wNxPiBd+YvUn2gzg8iHEj7of6nwnHIgxOYmH/aVX0XqvLIg2nTj/iB75BaGCt4L
+9pUU0bHMxvqG/P0jqvLgnT+Uvd/2mIlzDRJHtGxq8ZdDRDTA/KCDLHEJA57A3uJY4jMF5MBB
+F3Naj1msV2BBhcA1cse/a/4nU+XKnT+UvduDDsDOkvU5PbOLqCLx8mPIoLAn1hyK+bFpPvMn
+jfR6DmIxbHvyJiJSr4MY05/ERFK623JihQ+zbH0jqijjeOmjC3vtc+NjrmB/A5X3i4lriboX
+T09Jj/aInm5P6/idT5fbp/KXu3Bmo2Z0+5c9s3EExm1HyYgLbb1mQVmxH8xMeslyTZgU42I9
+DEAbGIoJYhhvFfQNL7QFWdSvAuzBlUsWf04Eyuj4m0/aUK4gQlHrm4M6ADVsYFZyzEUDxEyq
+g0vsZjHidvQ8fxOp8vt0/lL8jdMrG4iBBQ7Z9xMj0KmDyl/Uoe0od6H8fqvLlzp/KX585AUQ
+kEVUwisaj5ASeXik2RLJZhcAazb8RCStwsx0i+blsCN7uKzEWWhJCkxS3Ou47kGrhDEbGY9Z
+FloSxagaqeNQbNxg/OqHUtEtYgJY/aFqYWYz0RRlOBeqaya9LhLBSb/EOpaYtf2gLNdNUxli
+LLQMdX2PEUmzf6HVeXKnTeUvz5EDqRB0z6hvAKFfIqUN4bU7C7ig6iSKgBtoNS+HTNBOi/S5
+pKkkDmKCBWiGyIQz7VRmlhfhs+8QMBRiKQKMIIawLuHWbBEI2lRBpFQrbCxGSyKEtv8AWUVA
+HM0EhtquDGo9IoIBuAEY69YcW2xi6gT4YPnyJrQrB0+S6raIuhQv/osrUIrNoNtVRdWrzIZi
+bWlxm01FyWg94XsOPauyOS+RfQVGutuZkOS18Qg1A7kdkbUzCNdbQl2AYGAtqAvshJu5kvTt
+MJcpfJmolkBFQ7DaY21IGMe6NRdZSYzks+IdkYnK49BHbQLnxCxFGpTlx49uyuTkZfaZSaFT
+i7uCjVX2VicmRfQVMhOw95qYM66qG0sgmsm8Hz5hemD2/EbzcX9wzDukyCwDFSlBhWg7e9Qc
+TH52U/iOqsPFDiU0fQmJjRWo8jg9sf7njAkQBt6OwMRSGYFt5wJj5b8zIaExHZZqGpba4eDM
+PlCPdGhvPhllBJv7RERnGkVXbHXxcv8AUf8AabigEk/aKbGMXuCey+dk/qZa2jDITpGT87QD
+KGov+Nu2Pzs39TLyv5g2bL9qgFMg9/0HTUVPtBio3cZNTK18dkXQKjLqFQjw1Ctpp7BKZm94
+y6toyXX2hW67BaJMZdW0K+Goyaq9+wXTcZdVRMQSoVtgfaciKulajAkUDU+HtV7Q4/bbsEAZ
+mHrGUPsZoIumqfDAQKOwUBmb3jrqECOvDw43bluwTSzN7xk1VPhD3/MdCxUg0R+kf5Q/i//Z
+</d>
+</data>
+</abiword>
+</NInstanceData></StructuredBody></Document>

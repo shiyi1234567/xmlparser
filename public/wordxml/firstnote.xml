@@ -1,0 +1,425 @@
+WORD
+<?xml version="1.0" encoding="UTF-8"?>
+<Document>
+  <Code Code="EMR100002" DisplayName="EMR100002 日常病程记录"/>
+  <TemplateGUID>a146ff51-bb2f-4c0f-b2ff-74fd63c69410</TemplateGUID>
+  <TemplateType>Multiple</TemplateType>
+  <TemplateProperty Code="Domain01" DisplayName="EMR100002 日常病程记录"/>
+  <Title Code="EMR100002" DisplayName="日常病程记录" NewDisplayName="日常病程记录">
+    <TitleItems>
+      <TitleItem Code="EMR100002" DisplayName="日常病程记录"/>
+    </TitleItems>
+  </Title>
+  <StructuredBody>
+    <MetaData Version="1" Editor="iEditor" Lang="zh-CN">
+      <Component>
+        <Section>
+          <Code Code="Header" DisplayName="页眉" Instances="" BindKBBaseID="" BindKBName="" ReadOnly="False"/>
+          <Composite Virtual="True">
+            <Code Code="V001" DisplayName="页眉" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+            <SubItems>
+              <MIString>
+                <Code>L0009</Code>
+                <SourceCode>L0009</SourceCode>
+                <CCode>V001</CCode>
+                <KBNodeID></KBNodeID>
+                <DisplayName>医院名称</DisplayName>
+                <Description></Description>
+                <InvalidValue></InvalidValue>
+                <BindType>DataBase</BindType>
+                <BindCode>[HIS]用户自定义信息.医院名称[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetCustomInfo#FNAME:HospitalName#VALUETYPE:</BindCode>
+                <ValidateMsg></ValidateMsg>
+                <ConfidentialityCode>N</ConfidentialityCode>
+                <TabIndex>0</TabIndex>
+                <Synch>False</Synch>
+                <SilentSynch>False</SilentSynch>
+                <AllowNull>True</AllowNull>
+                <ReadOnly>False</ReadOnly>
+                <FixedStructs>True</FixedStructs>
+                <Visible>True</Visible>
+                <RegExp></RegExp>
+                <MaxLength>-1</MaxLength>
+                <DynamicField>False</DynamicField>
+                <SignMode></SignMode>
+                <SignatureLevel>NONE</SignatureLevel>
+                <ShowSignerDescription>False</ShowSignerDescription>
+                <Separator></Separator>
+                <SimBindKBBaseID></SimBindKBBaseID>
+                <SimBindKBName></SimBindKBName>
+                <QrCode>False</QrCode>
+                <HeaderImageCode></HeaderImageCode>
+                <FingerImageCode></FingerImageCode>
+              </MIString>
+              <MIString>
+                <Code>L0004</Code>
+                <SourceCode>L0004</SourceCode>
+                <CCode>V001</CCode>
+                <KBNodeID></KBNodeID>
+                <DisplayName>科室</DisplayName>
+                <Description></Description>
+                <InvalidValue></InvalidValue>
+                <BindType>DataBase</BindType>
+                <BindCode>[HIS]患者出入院信息.当前科室字符[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetATDInfo#FNAME:CurDeptDesc#VALUETYPE:</BindCode>
+                <ValidateMsg></ValidateMsg>
+                <ConfidentialityCode>N</ConfidentialityCode>
+                <TabIndex>0</TabIndex>
+                <Synch>False</Synch>
+                <SilentSynch>False</SilentSynch>
+                <AllowNull>True</AllowNull>
+                <ReadOnly>False</ReadOnly>
+                <FixedStructs>True</FixedStructs>
+                <Visible>True</Visible>
+                <RegExp></RegExp>
+                <MaxLength>-1</MaxLength>
+                <DynamicField>True</DynamicField>
+                <SignMode></SignMode>
+                <SignatureLevel>NONE</SignatureLevel>
+                <ShowSignerDescription>False</ShowSignerDescription>
+                <Separator></Separator>
+                <SimBindKBBaseID></SimBindKBBaseID>
+                <SimBindKBName></SimBindKBName>
+                <QrCode>False</QrCode>
+                <HeaderImageCode></HeaderImageCode>
+                <FingerImageCode></FingerImageCode>
+              </MIString>
+              <MIString>
+                <Code>L0001</Code>
+                <SourceCode>L0001</SourceCode>
+                <CCode>V001</CCode>
+                <KBNodeID></KBNodeID>
+                <DisplayName>姓名</DisplayName>
+                <Description></Description>
+                <InvalidValue></InvalidValue>
+                <BindType>DataBase</BindType>
+                <BindCode>[HIS]患者基本信息.患者姓名[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetPatientInfo#FNAME:Name#VALUETYPE:</BindCode>
+                <ValidateMsg></ValidateMsg>
+                <ConfidentialityCode>V</ConfidentialityCode>
+                <TabIndex>7</TabIndex>
+                <Synch>True</Synch>
+                <SilentSynch>False</SilentSynch>
+                <AllowNull>False</AllowNull>
+                <ReadOnly>True</ReadOnly>
+                <FixedStructs>True</FixedStructs>
+                <Visible>True</Visible>
+                <RegExp></RegExp>
+                <MaxLength>-1</MaxLength>
+                <DynamicField>False</DynamicField>
+                <SignMode></SignMode>
+                <SignatureLevel>NONE</SignatureLevel>
+                <ShowSignerDescription>False</ShowSignerDescription>
+                <Separator></Separator>
+                <SimBindKBBaseID></SimBindKBBaseID>
+                <SimBindKBName></SimBindKBName>
+                <QrCode>False</QrCode>
+                <HeaderImageCode></HeaderImageCode>
+                <FingerImageCode></FingerImageCode>
+              </MIString>
+              <MIString>
+                <Code>L0007</Code>
+                <SourceCode>L0007</SourceCode>
+                <CCode>V001</CCode>
+                <KBNodeID></KBNodeID>
+                <DisplayName>病案号</DisplayName>
+                <Description></Description>
+                <InvalidValue></InvalidValue>
+                <BindType>DataBase</BindType>
+                <BindCode>[HIS]患者基本信息.住院病案号[字符]#TYPE:DataSet#CNAME:EMRservice.SystemData#QNAME:GetPatientInfo#FNAME:IPRecordNo#VALUETYPE:</BindCode>
+                <ValidateMsg></ValidateMsg>
+                <ConfidentialityCode>V</ConfidentialityCode>
+                <TabIndex>0</TabIndex>
+                <Synch>True</Synch>
+                <SilentSynch>False</SilentSynch>
+                <AllowNull>False</AllowNull>
+                <ReadOnly>True</ReadOnly>
+                <FixedStructs>True</FixedStructs>
+                <Visible>True</Visible>
+                <RegExp></RegExp>
+                <MaxLength>-1</MaxLength>
+                <DynamicField>False</DynamicField>
+                <SignMode></SignMode>
+                <SignatureLevel>NONE</SignatureLevel>
+                <ShowSignerDescription>False</ShowSignerDescription>
+                <Separator></Separator>
+                <SimBindKBBaseID></SimBindKBBaseID>
+                <SimBindKBName></SimBindKBName>
+                <QrCode>False</QrCode>
+                <HeaderImageCode></HeaderImageCode>
+                <FingerImageCode></FingerImageCode>
+              </MIString>
+            </SubItems>
+          </Composite>
+        </Section>
+        <Section>
+          <Code Code="Footer" DisplayName="页脚" Instances="" BindKBBaseID="" BindKBName="" ReadOnly="False"/>
+        </Section>
+        <Section>
+          <Code Code="S001" DisplayName="查房内容" Instances="0..1" BindKBBaseID="153" BindKBName="查房内容" ReadOnly="False"/>
+        </Section>
+        <Section>
+          <Code Code="S002" DisplayName="医师签名：" Instances="0..1" BindKBBaseID="" BindKBName="" ReadOnly="False"/>
+          <Composite Virtual="True">
+            <Code Code="V003" DisplayName="" Instances="0..1" BindKBBaseID="" BindKBName="" KBNodeID=""/>
+            <SubItems>
+              <MIConcept>
+                <Code>V004</Code>
+                <DisplayName></DisplayName>
+                <Description></Description>
+                <AllowInput>False</AllowInput>
+                <FixedStructs>True</FixedStructs>
+                <Attributes>
+                  <SignatureLevel>Check</SignatureLevel>
+                  <SignDisplayName>三级医师审核</SignDisplayName>
+                </Attributes>
+                <SubItems>
+                  <Attribute>
+                    <KeyWord></KeyWord>
+                    <AbnormalColor></AbnormalColor>
+                    <TextPosition></TextPosition>
+                    <Major>False</Major>
+                    <RefElement>
+                      <MIString>
+                        <Code>L0001</Code>
+                        <SourceCode>L0001</SourceCode>
+                        <CCode>V003</CCode>
+                        <KBNodeID></KBNodeID>
+                        <DisplayName>三级医师审核</DisplayName>
+                        <Description></Description>
+                        <InvalidValue></InvalidValue>
+                        <BindType></BindType>
+                        <BindCode></BindCode>
+                        <ValidateMsg></ValidateMsg>
+                        <ConfidentialityCode>V</ConfidentialityCode>
+                        <TabIndex>0</TabIndex>
+                        <Synch>True</Synch>
+                        <SilentSynch>False</SilentSynch>
+                        <AllowNull>False</AllowNull>
+                        <ReadOnly>False</ReadOnly>
+                        <FixedStructs>True</FixedStructs>
+                        <Visible>True</Visible>
+                        <RegExp></RegExp>
+                        <MaxLength>-1</MaxLength>
+                        <DynamicField>False</DynamicField>
+                        <SignMode></SignMode>
+                        <SignatureLevel>Resident</SignatureLevel>
+                        <ShowSignerDescription>False</ShowSignerDescription>
+                        <Separator></Separator>
+                        <SimBindKBBaseID></SimBindKBBaseID>
+                        <SimBindKBName></SimBindKBName>
+                        <QrCode>False</QrCode>
+                        <SignerId>10209</SignerId>
+                        <HeaderImageCode></HeaderImageCode>
+                        <FingerImageCode></FingerImageCode>
+                      </MIString>
+                    </RefElement>
+                  </Attribute>
+                </SubItems>
+              </MIConcept>
+            </SubItems>
+          </Composite>
+        </Section>
+      </Component>
+    </MetaData>
+    <Scripts></Scripts>
+    <Medias></Medias>
+    <NInstanceData InstanceID="98||25" HappenDateTime="2020-04-28 15:55" DateTimeFormat="yyyy-MM-dd HH:mm" TimeStamp="1588089328">
+      <ScatterData>
+        <Component>
+          <Section>
+            <Code Code="Header" DisplayName="页眉"/>
+            <Text></Text>
+            <StyleText></StyleText>
+            <Composite>
+              <Code Code="V001" DisplayName="页眉" KBNodeID="" BindKBBaseID=""/>
+              <Text></Text>
+              <StyleText></StyleText>
+              <SubItems>
+                <MIString>
+                  <Code Code="L0009" SourceCode="L0009"  CCode="V001"  KBNodeID="" DisplayName="医院名称"/>
+                  <Value>xiehyxi</Value>
+                </MIString>
+                <MIString>
+                  <Code Code="L0004" SourceCode="L0004"  CCode="V001"  KBNodeID="" DisplayName="科室"/>
+                  <Value>内分泌科</Value>
+                </MIString>
+                <MIString>
+                  <Code Code="L0001" SourceCode="L0001"  CCode="V001"  KBNodeID="" DisplayName="姓名"/>
+                  <Value>张衣</Value>
+                </MIString>
+                <MIString>
+                  <Code Code="L0007" SourceCode="L0007"  CCode="V001"  KBNodeID="" DisplayName="病案号"/>
+                  <Value>100003</Value>
+                </MIString>
+              </SubItems>
+            </Composite>
+          </Section>
+          <Section>
+            <Code Code="Footer" DisplayName="页脚"/>
+            <Text></Text>
+            <StyleText></StyleText>
+          </Section>
+          <Section>
+            <Code Code="S001" DisplayName="查房内容"/>
+            <Text>2019-02-16 颈部动脉超声 1111 111222 颈部动脉超声
+2019-02-16 关节超声 ddddd dsadadsa 关节超我问问声
+2019-02-16 关节超声 ddddd dsadadsa 关节超声啊啊信息调调啊顶顶顶
+钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱11111111111111111111</Text>
+            <StyleText></StyleText>
+          </Section>
+          <Section>
+            <Code Code="S002" DisplayName="医师签名："/>
+            <Text>医生01</Text>
+            <StyleText></StyleText>
+            <Composite>
+              <Code Code="V003" DisplayName="" KBNodeID="" BindKBBaseID=""/>
+              <Text>医生01</Text>
+              <StyleText></StyleText>
+              <SubItems>
+                <MIConcept>
+                  <Code Code="V004" DisplayName=""/>
+                  <Text>医生01</Text>
+                  <StyleText></StyleText>
+                  <SubItems>
+                    <MIString>
+                      <Code Code="L0001" SourceCode="L0001"  CCode="V003"  KBNodeID="" DisplayName="三级医师审核"/>
+                      <Value>医生01</Value>
+                    </MIString>
+                  </SubItems>
+                </MIConcept>
+                <MIString>
+                  <Code Code="L0001"/>
+                  <Value>医生01</Value>
+                </MIString>
+              </SubItems>
+            </Composite>
+          </Section>
+        </Component>
+      </ScatterData>
+      <abiword template="false" version="2.8.6"
+        xmlns:svg="http://www.w3.org/2000/svg" xid-max="148"
+        xmlns:dc="http://purl.org/dc/elements/1.1/" fileformat="1.1"
+        xmlns:fo="http://www.w3.org/1999/XSL/Format"
+        xmlns:math="http://www.w3.org/1998/Math/MathML"
+        xmlns:awml="http://www.abisource.com/awml.dtd"
+        xmlns="http://www.abisource.com/awml.dtd"
+        xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" props="table-row-heights:0.5cm/; dom-dir:ltr; bot-style:0; top-style:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-footnote-restart-section:0; lang:zh-CN; table-column-props:14cm/; document-endnote-initial:1; document-endnote-restart-section:0; table-column-leftpos:0.200000cm; left-style:0; document-footnote-restart-page:0; document-footnote-type:numeric; right-style:0; document-footnote-initial:1; document-endnote-place-endsection:0">
+        <revisions show="0" mark="0" show-level="268435455" auto="0">
+          <r id="1" time-started="1591064251" version="0" revision-level="1" revision-key="10209">(医生01)</r>
+          <r id="2" time-started="1591064256" version="0" revision-level="1" revision-key="10209">(医生01)</r>
+          <r id="3" time-started="1591064309" version="0" revision-level="1" revision-key="10209">(医生01)</r>
+          <r id="4" time-started="1591064397" version="0" revision-level="1" revision-key="10209">(医生01)</r>
+          <r id="5" time-started="1591086798" version="0" revision-level="1" revision-key="10209">(医生01)</r>
+          <r id="6" time-started="1591086806" version="0" revision-level="1" revision-key="10209">(医生01)</r>
+          <r id="7" time-started="1591946233" version="0" revision-level="1" revision-key="10209">(医生01)</r>
+        </revisions>
+        <styles>
+          <s type="P" name="Normal" basedon="" followedby="Current Settings" props="font-family:宋体; margin-top:0pt; font-variant:normal; margin-left:0pt; text-indent:0in; widows:2; font-style:normal; font-weight:normal; text-decoration:none; color:000000; line-height:1.5; text-align:justify; margin-bottom:0pt; text-position:normal; margin-right:0pt; bgcolor:transparent; font-size:12pt; font-stretch:normal"/>
+        </styles>
+        <pagesize pagetype="A4" orientation="portrait" width="210.000000" height="297.000000" units="mm" symmetric-margin="1" page-scale="1.000000"/>
+        <section footer="1" header="0" xid="94" props="page-margin-footer:0.00cm; page-margin-header:0.00cm; page-margin-right:2.54cm; page-margin-left:2.54cm; page-margin-top:3.76cm; page-margin-bottom:2.54cm">
+          <p xid="106" props="text-align:left; line-height:1.70">
+            <bookmark usage="3" type="start" name="98||25^EMR100002" xid="107"/>
+            <c props="bgcolor:e0ecff; font-size:12pt; et:5; code:98||25^GuideDate; font-weight:bold">2020-04-28 15:55</c>
+            <bookmark usage="3" type="end" name="98||25^EMR100002" xid="108"/>
+          </p>
+          <p xid="109" props="text-align:left; line-height:1.70">
+            <bookmark usage="1" type="start" name="98||25^S001" xid="110"/>
+            <c props="display:none; code:98||25^S001; et:9; font-weight:normal">查房内容</c>
+            <c>2019-02-16 颈部动脉超声 1111 111222 颈部动脉超声
+              
+              
+              <br/>
+            </c>
+            <c>2019-02-16 关节超声 ddddd dsadadsa 关节超</c>
+            <c revision="2">我问问</c>
+            <c>声
+              
+              
+              <br/>
+            </c>
+            <c>2019-02-16 关节超声 ddddd dsadadsa 关节超声啊啊</c>
+            <c revision="1">信息</c>
+            <c revision="3">调调</c>
+            <c>啊</c>
+            <c revision="4">顶顶顶</c>
+            <c>
+              <br/>
+            </c>
+            <c>钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱11111111111111111111</c>
+            <c props="display:inline"></c>
+            <bookmark usage="1" type="end" name="98||25^S001" xid="111"/>
+          </p>
+          <p xid="112" props="text-align:right; line-height:1.70">
+            <bookmark usage="1" type="start" name="98||25^S002" xid="113"/>
+            <c props="et:9; code:98||25^S002; display:inline; font-weight:bold">医师签名：</c>
+            <bookmark usage="2" type="start" name="98||25^S002_V003" xid="114"/>
+            <bookmark usage="4" type="start" name="98||25^S002_V003_V004" xid="115"/>
+            <c props="bgcolor:c0c0c0; et:1; code:98||25^S002_V003_V004_L0001; display:inline">医生01</c>
+            <bookmark usage="4" type="end" name="98||25^S002_V003_V004" xid="116"/>
+            <bookmark usage="2" type="end" name="98||25^S002_V003" xid="117"/>
+            <bookmark usage="1" type="end" name="98||25^S002" xid="118"/>
+          </p>
+        </section>
+        <section id="1" listid="0" parentid="0" type="footer" xid="49">
+          <p xid="50" props="text-align:center; line-height:1pt">
+            <bookmark usage="1" type="start" name="Footer" xid="53"/>
+            <bookmark usage="2" type="start" name="Footer_V002" xid="51"/>
+            <bookmark usage="2" type="end" name="Footer_V002" xid="52"/>
+          </p>
+          <table xid="57" props="list-tag:1">
+            <cell xid="58" props="bg-style:1; left-color:000000; bot-style:0; bot-thickness:1.0pt; right-attach:1; left-thickness:1.0pt; right-thickness:1.0pt; right-color:000000; bot-color:000000; left-attach:0; top-color:000000; top-style:1; right-style:0; left-style:0; top-thickness:1.0pt; bot-attach:1; top-attach:0">
+              <p style="Normal" xid="59" props="text-align:center">
+                <c>第(</c>
+                <field type="page_number" xid="65"></field>
+                <c>)页</c>
+              </p>
+            </cell>
+          </table>
+          <p xid="56" props="text-align:center; line-height:1pt">
+            <bookmark usage="1" type="end" name="Footer" xid="54"/>
+          </p>
+        </section>
+        <section id="0" listid="0" parentid="0" type="header" xid="1">
+          <p xid="2" props="text-align:left">
+            <bookmark usage="2" type="start" name="Header_V001" xid="67"/>
+            <bookmark usage="1" type="start" name="Header" xid="5"/>
+            <c></c>
+          </p>
+          <table xid="8" props="table-row-heights:1.12cm/1.12cm/0.75cm/; list-tag:1; bg-style:1; left-color:000000; bot-style:0; table-column-props:5.37cm/7.87cm/4.00cm/; right-color:000000; top-color:000000; left-style:0; bot-color:000000; right-style:0; top-style:0">
+            <cell xid="9" props="bot-attach:1; left-attach:0; right-attach:3; top-attach:0">
+              <p style="Normal" xid="10" props="text-align:center">
+                <c props="bgcolor:c0c0c0; font-weight:bold; et:1; font-size:20pt; code:Header_V001_L0009">医院名称</c>
+              </p>
+            </cell>
+            <cell xid="18" props="bot-attach:2; left-attach:0; right-attach:3; top-attach:1">
+              <p style="Normal" xid="19" props="text-align:center; tabstops:0.00cm/L0,17.48cm/L0; margin-right:-0.12cm">
+                <c props="font-weight:bold; font-size:20pt">病程记录</c>
+              </p>
+            </cell>
+            <cell xid="27" props="bg-style:1; bot-style:1; bot-thickness:1.0pt; right-attach:1; left-thickness:1.0pt; right-thickness:1.0pt; top-color:000000; bot-color:000000; left-attach:0; top-style:0; right-style:0; left-style:0; top-thickness:1.0pt; bot-attach:3; top-attach:2">
+              <p style="Normal" xid="28">
+                <c>姓名：</c>
+                <field type="dynamic_field" param="姓名" xid="43" props="bgcolor:c0c0c0; et:1; code:Header_V001_L0001"></field>
+              </p>
+            </cell>
+            <cell xid="30" props="bg-style:1; bot-style:1; bot-thickness:1.0pt; right-attach:2; left-thickness:1.0pt; right-thickness:1.0pt; top-color:000000; bot-color:000000; left-attach:1; top-style:0; right-style:0; left-style:0; top-thickness:1.0pt; bot-attach:3; top-attach:2">
+              <p style="Normal" xid="31" props="tabstops:14.74cm/L0,1.37cm/L0,6.74cm/L0; margin-right:0.00cm">
+                <c>科室：</c>
+                <field type="dynamic_field" param="科室" xid="66" props="bgcolor:c0c0c0; et:1; code:Header_V001_L0004"></field>
+              </p>
+            </cell>
+            <cell xid="33" props="bg-style:1; bot-style:1; bot-thickness:1.0pt; right-attach:3; left-thickness:1.0pt; right-thickness:1.0pt; top-color:000000; bot-color:000000; left-attach:2; top-style:0; right-style:0; left-style:0; top-thickness:1.0pt; bot-attach:3; top-attach:2">
+              <p style="Normal" xid="34" props="text-indent:0.00cm; tabstops:12.11cm/L0,11.24cm/L0,11.36cm/L0,11.61cm/L0; margin-left:0.00cm">
+                <c>病案号：</c>
+                <field type="dynamic_field" param="病案号" xid="46" props="bgcolor:c0c0c0; et:1; code:Header_V001_L0007"></field>
+                <bookmark usage="2" type="end" name="Header_V001" xid="68"/>
+              </p>
+            </cell>
+          </table>
+          <p xid="7" props="text-align:left; line-height:1pt">
+            <bookmark usage="1" type="end" name="Header" xid="6"/>
+          </p>
+        </section>
+      </abiword>
+    </NInstanceData>
+  </StructuredBody>
+</Document>
